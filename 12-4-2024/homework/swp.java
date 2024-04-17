@@ -16,6 +16,6 @@ class Lab02_Ver2 {
         t1 = a;
         a = b;
         b = t1;
-        System.out.println("Value entered are a= " + a + " and b= " + b);
+        System.out.println("Value after swap are a= " + a + " and b= " + b);
     }
 }
