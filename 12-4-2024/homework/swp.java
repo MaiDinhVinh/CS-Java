@@ -1,21 +1,21 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
-class Lab02_Ex2 {
+class Lab02_Ver2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        double a;
-        double b;
+        double a, b;
 
         System.out.print("Enter the first number: ");
         a = sc.nextDouble();
+
         System.out.print("Enter the second number: ");
         b = sc.nextDouble();
 
-        double temp1 = b;
-        double temp2 = a;
-
-        System.out.println("Values entered are a= " + a + " and b= " + b);
-        System.out.println("Values after swap are a= " + temp1 + " and b= " + temp2);
+        System.out.println("Value entered are a= " + a + " and b= " + b);
+        double t1;
+        t1 = a;
+        a = b;
+        b = t1;
+        System.out.println("Value entered are a= " + a + " and b= " + b);
     }
 }
-
