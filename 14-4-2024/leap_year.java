@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //cach 1
-class Lab02_ex1 {
+class Lab2_ex1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int year;
