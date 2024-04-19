@@ -4,7 +4,8 @@ class Lab2_ex5{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter value: ");
         int value = sc.nextInt();
-        if (value % 100 == 11 || value % 100 == 12 || value % 100 == 13){
+        int last2digits = value % 100;
+        if (last2digits >= 11 && last2digits <= 13){
             System.out.println(value + "th");
         } else{
             int suff = value % 10;
