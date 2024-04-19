@@ -6,17 +6,16 @@ class Lab02_ex2{
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-
-        if (a == b && b == c) {
-            System.out.println("Please enter 3 DISTINCT integers");
-        } else if (a == b || a == c){
-            System.out.println("Please enter 3 DISTINCT integers");
-        } else if (a > b && a > c){
-            System.out.println(a + " is the largest");
-        } else if (b > c){
-            System.out.println(b + " is the largest");
-        } else{
-            System.out.println(c + " is the largest");
+        int max = 0; 
+        if (a > b && a > c){
+            max = a;
+        } 
+        if (b > a && b > c){
+            max = b;
+        } 
+        if (c > a && c > b){
+            max = c;
         }
+        System.out.println(max);
     }
-}
+} //toi gian lai
