@@ -18,4 +18,4 @@ class Lab02_ex2{
         }
         System.out.println(max);
     }
-} //toi gian lai
+} //toi gian lai, sua lai truong hop sao cho de nhin hon
