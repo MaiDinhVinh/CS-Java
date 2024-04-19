@@ -7,9 +7,14 @@ class Lab02_ex6{
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        //chia lay thuong so nguyen 
-        int x = a / 100;
-        int y = b / 100;
-        int z = c / 100;
+        //lay hang tram
+        int hund1 = (a % 1000)/100;
+        int hund2 = (b % 1000)/100;
+        int hund3 = (c % 1000)/100;
+        if (hund1 < hund2 && hund2 < hund3){
+            System.out.println("Yes");
+        } else{
+            System.out.println("No");
+        }
     }
 }
