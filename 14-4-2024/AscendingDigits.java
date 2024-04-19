@@ -17,4 +17,4 @@ class Lab02_ex6{
             System.out.println("No");
         }
     }
-}
+} 
