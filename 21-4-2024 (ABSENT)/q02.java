@@ -8,7 +8,7 @@ class Lab4_ex2{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the distance in inches: ");
-        double inp = sc.nextInt();
+        double inp = sc.nextDouble();
 
         System.out.println(inp + " inches = " + inchToCm(inp) + " cm");
     }
