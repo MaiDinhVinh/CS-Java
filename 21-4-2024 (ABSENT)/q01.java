@@ -49,7 +49,5 @@ class lab4_ex1{
         triangle();
         invertedV();
         System.out.println("---END OF FEMALE---\n");
-
-
     }
 }
