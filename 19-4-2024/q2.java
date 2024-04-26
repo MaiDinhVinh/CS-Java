@@ -14,4 +14,4 @@ class Lab3_ex2{
         }
         System.out.println("The maximum number is: " + max);
     }
-}
+} //sua lai do while
