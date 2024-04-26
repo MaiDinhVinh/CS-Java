@@ -17,4 +17,4 @@ class Lab3_ex5{
             }
         }
     }
-}
+} //cam dung while true
