@@ -15,4 +15,4 @@ class Lab3_ex6{
         }
         System.out.println(a + "! " + "= " + res);
     }
-}
+}//sua lai dung do while
