@@ -16,9 +16,12 @@ class Lab4_ex7{
     public static int sumWithout7(int inp){
         int sum = 0;
         for (int i = 1; i <= inp; i++){
-            if (containDigit7(i) == true){
-                continue;
-            } else{
+            // if (containDigit7(i) == true){
+            //     continue;
+            // } else{
+            //     sum += i;
+            // }
+            if (!containDigit7(i)){
                 sum += i;
             }
         }
