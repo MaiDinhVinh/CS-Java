@@ -8,4 +8,4 @@ class Lab3_ex3{
         }
         System.out.print("Sum of integer between 9 and 300 that are divisible by 7 but not 63 is " + sum);
     }
-} //sua lai doing condition
+} //tinh gian lai doing condition
