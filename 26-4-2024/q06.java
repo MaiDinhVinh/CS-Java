@@ -11,13 +11,14 @@ class Lab5_ex6{
         int prod2 = 1;
         //first diagonal line
         for (int i = 0; i < arr.length; i++){
-            prod1 *= arr[i][i];
+            prod1 *= arr[i][i]; //row = cols
         }
         //second diagonal line
         int floop = arr.length - 1;
         for (int i = 0; i < arr.length; i++){
-            prod2 *= arr[i][floop];
-            floop--;
+            // prod2 *= arr[i][floop];
+            // floop--;
+            prod2 *= arr[i][arr.length-1-i]; //row + col = length - 1
         }
         System.out.println("first product is " + prod1 + " ,second product is " + prod2);
     }
