@@ -13,7 +13,7 @@ class Lab5_ex3{
     }
     
     public static void main(String[] args){
-        int[] arr = {-4, -34, -1, 0, -100, -99};
+        int[] arr = {37, 13, 36, 10, 9};
         System.out.println("the greatest sum is " + greatestSum(arr));
     }
-}
+} //sai
