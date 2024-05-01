@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class lab02_Ex1 {
+class lab02_sualoi {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         //double inch = 2.54;
