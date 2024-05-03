@@ -10,40 +10,43 @@ class lab6_ex3{
                 break;
             } else{
                 int check = (int)inp.charAt(i);
-                switch (check){
-                    case 48:
-                        sum += 0;
-                        break;
-                    case 49:
-                        sum += 1;
-                        break;
-                    case 50:
-                        sum += 2;
-                        break;
-                    case 51:
-                        sum += 3;
-                        break;
-                    case 52:
-                        sum += 4;
-                        break;
-                    case 53:
-                        sum += 5;
-                        break;
-                    case 54:
-                        sum += 6;
-                        break;
-                    case 55:
-                        sum += 7;
-                        break;
-                    case 56:
-                        sum += 8;
-                        break;
-                    case 57:
-                        sum += 9;
-                        break;
-                    default:
-                        continue;
+                if (check >= '0' && check <= '9'){
+                    sum += check - 48; //quy luat ascii 48
                 }
+                // switch (check){
+                //     case 48:
+                //         sum += 0;
+                //         break;
+                //     case 49:
+                //         sum += 1;
+                //         break;
+                //     case 50:
+                //         sum += 2;
+                //         break;
+                //     case 51:
+                //         sum += 3;
+                //         break;
+                //     case 52:
+                //         sum += 4;
+                //         break;
+                //     case 53:
+                //         sum += 5;
+                //         break;
+                //     case 54:
+                //         sum += 6;
+                //         break;
+                //     case 55:
+                //         sum += 7;
+                //         break;
+                //     case 56:
+                //         sum += 8;
+                //         break;
+                //     case 57:
+                //         sum += 9;
+                //         break;
+                //     default:
+                //         continue;
+                // }
             }
         }
         System.out.println("Sum = " + sum);
