@@ -24,4 +24,4 @@ class lab6_ex4a{
             }
         }
     }
-}
+} //sai do hieu sai de bai, k co cach o 2 dau cuoi 

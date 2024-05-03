@@ -1,3 +1,5 @@
+//su dung cang nhieu thu vien cua string cang tot
+//Linh - Lan - Long sap xep nhu the nao ?
 import java.util.Scanner;
 class lab6_ex2{
     public static void main(String[] args){

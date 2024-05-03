@@ -1,3 +1,6 @@
+//kayak hannah
+//hannah length = 6
+//0-5, 1-4, 2-3
 import java.util.Scanner;
 class lab6_ex5a{
     public static boolean isPalindrome(String inp){

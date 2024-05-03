@@ -1,3 +1,4 @@
+//khong duoc dung array
 import java.util.Scanner;
 class lab6_ex6{
     public static String rearrange(String inp){
@@ -5,7 +6,7 @@ class lab6_ex6{
         char[] right = new char[inp.length()];
         int status = 0;
         if (inp.charAt(0) == 'a' || inp.charAt(0) == 'e' || inp.charAt(0) == 'i' || inp.charAt(0) == 'o' || inp.charAt(0) == 'u'){
-            status++;
+            status++; //tinh gian if lai, lam sao de rut gon dieu kien lai
         } 
         switch (status){
             case 0: //bat dau bang consonant
