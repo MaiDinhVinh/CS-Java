@@ -20,8 +20,8 @@ class Lab3_ex4{
             a = sc.nextInt();
         }
         double avg = sum/count;
-        if (!(count > 0)){
-            avg = 0;
+        if (!(count > 0)){ //cho cac truong hop input <= 0
+            avg = 0; //avg = 0 tranh loi NaN
         }
         System.out.println("Number of positive values entered is: " + (int)count);
         System.out.println("Maximum value entered is: " + max);
