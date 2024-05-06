@@ -5,7 +5,9 @@ class lab6_ex4b{
         System.out.print("Enter a sentence: ");
         String inp = sc.nextLine();
         int space_num = 0;
+        inp = ' ' + inp;
 
+        
         for (int i = 0; i < inp.length() - 1; i++){
             if(inp.charAt(i) == ' ' && inp.charAt(i+1) != ' '){
                 space_num += 1;

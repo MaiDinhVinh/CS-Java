@@ -16,7 +16,7 @@ class Lab5_ex3{
     }
     
     public static void main(String[] args){
-        int[] arr = {9, 0, 7, 3, 8};
+        int[] arr = {-1, -9, -7, -3, -8};
         System.out.println("the greatest sum is " + greatestSum(arr));
     }
-} 
+} //SAI VAI CA LON - DA CHUA LAI BAI (COMMIT ERROR)

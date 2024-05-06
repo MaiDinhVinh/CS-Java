@@ -32,20 +32,16 @@ class lab4_ex8{
             }
             char choice2 = ' ';
             toContinue();
-            System.out.print("Please enter your selection: ");
-            choice2 = sc.next().charAt(0);
+            do{
+                System.out.print("Please enter your selection: ");
+                choice2 = sc.next().charAt(0);
+            } while(choice != 'y' || choice != 'Y' || choice != 'c' || choice != 'C');
             switch (choice2){
                 case 'y':
-                    loop += 1;
-                    break;
                 case 'Y':
                     loop += 1;
                     break;
                 case 'c':
-                    loop += 1;
-                    System.out.print("\033[H\033[2J");  
-                    System.out.flush();  
-                    break;
                 case 'C':
                     loop += 1;
                     System.out.print("\033[H\033[2J");  
