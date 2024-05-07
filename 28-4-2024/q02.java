@@ -1,55 +1,49 @@
-//su dung cang nhieu thu vien cua string cang tot
-//Linh - Lan - Long sap xep nhu the nao ?
 import java.util.Scanner;
-class lab6_ex2{
+//BRO I TRIED TO SOLVE THIS FOR FUCKING 13 HOURS 
+class lab6_ex2_fix{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter the lowercase string: ");
-        String inp1 = sc.next();
+        String s1 = sc.next();
+        System.out.print("Please enter the lowercase string: "); 
+        String s2 = sc.next(); 
         System.out.print("Please enter the lowercase string: ");
-        String inp2 = sc.next();
-        System.out.print("Please enter the lowercase string: ");
-        String inp3 = sc.next();
-        char a = inp1.charAt(0);
-        char b = inp2.charAt(0);
-        char c = inp3.charAt(0);
-        if (a == b && b == c && a == c){
-            System.out.println("All string has the same order");
-        } else{
-            if (a > b && a > c){
-                if (b > c){
-                    System.out.println("The first string is: " + inp3);
-                    System.out.println("The last string is: " + inp1);
-                } else if (b == c){
-                    System.out.println("Both " + inp2 + " and " + inp3 + " have the same order");
-                    System.out.println("The last string is: " + inp1);
-                } else{
-                    System.out.println("The first string is: " + inp2);
-                    System.out.println("The last string is: " + inp1);
-                }
-            } else if (b > a && b > c){
-                if (a > c){
-                    System.out.println("The first string is: " + inp3);
-                    System.out.println("The last string is: " + inp2);
-                } else if(a == c){
-                    System.out.println("Both " + inp1 + " and " + inp3 + " have the same order");
-                    System.out.println("The last string is: " + inp2);
-                } else{
-                    System.out.println("The first string is: " + inp1);
-                    System.out.println("The last string is: " + inp2);
-                }
-            } else{
-                if (a > b){
-                    System.out.println("The first string is: " + inp2);
-                    System.out.println("The last string is: " + inp3);
-                } else if (a == b){
-                    System.out.println("Both " + inp1 + " and " + inp2 + " have the same order");
-                    System.out.println("The last string is: " + inp3);
-                } else{
-                    System.out.println("The first string is: " + inp1);
-                    System.out.println("The last string is: " + inp3);
-                }
+        String s3 = sc.next(); 
+        int a = s1.compareTo(s2);
+        int b = s2.compareTo(s1);    
+        int c = s2.compareTo(s3); 
+        int d = s3.compareTo(s2);
+        int e = s3.compareTo(s1);
+        int f = s1.compareTo(s3);
+        int[] arr = {a, b, c, d, e, f};
+        int max = a;
+        String first = "";
+        String last = "";
+        for (int i = 0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
             }
         }
+        if(max == a){
+            first = s2;
+            last = s1;
+        } else if(max == b){
+            first = s1;
+            last = s2;
+        } else if(max == c){
+            first = s3;
+            last = s2;
+        } else if(max == d){
+            first = s2;
+            last = s3;
+        } else if(max == e){
+            first = s1;
+            last = s3;
+        } else if(max == f){
+            first = s3;
+            last = s1;
+        }
+        System.out.println("The first string is: " + first);
+        System.out.println("The last string is: " + last);
     }
 }
