@@ -2,19 +2,32 @@ import java.util.Scanner;
 
 class review2{
     public static char firstCharNotRepeated(String inp){
-        char same = ' ';
-        for (int i = 0; i < inp.length()-1; i++){
-            for (int z = i; z < inp.length(); z++){
-                if(inp.charAt(z) == same){
-                    continue;
-                } else if (inp.charAt(z) == inp.charAt(i+1)){
-                    same = inp.charAt(z);
-                } else{
-                    return inp.charAt(z);
+        char res = ' ';
+        String current = "";
+        String right = "";
+        String left = "";
+        for (int i = 0; i < inp.length(); i++){
+            if(i == inp.length() - 1){
+                current = inp.substring(i);
+            } else{
+                current = inp.substring(i, i+1);
+            }
+            if(i > 0){
+                left = inp.substring(0, i);
+                right = inp.substring(i+1);
+                if((!left.contains(current)) && (!right.contains(current))){
+                    res = current.charAt(0);
+                    break;
+                }
+            } else{
+                String all = inp.substring(i+1);
+                if(!all.contains(current)){
+                    res = current.charAt(0);
+                    break;
                 }
             }
         }
-        return ' ';
+        return res;
     }
 
     public static void main(String[] args){
