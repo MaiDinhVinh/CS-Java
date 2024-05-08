@@ -1,38 +1,49 @@
-//khong duoc dung array
 import java.util.Scanner;
 class lab6_ex6{
     public static String rearrange(String inp){
-        char[] left = new char[inp.length()];
-        char[] right = new char[inp.length()];
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        String conso = "";
+        String vow = "";
+        String res = "";
         int status = 0;
-        if (inp.charAt(0) == 'a' || inp.charAt(0) == 'e' || inp.charAt(0) == 'i' || inp.charAt(0) == 'o' || inp.charAt(0) == 'u'){
-            status++; //tinh gian if lai, lam sao de rut gon dieu kien lai
-        } 
-        switch (status){
-            case 0: //bat dau bang consonant
-                for (int i = 0; i < inp.length(); i++){
-                    if(inp.charAt(i) != 'a' && inp.charAt(i) != 'e' && inp.charAt(i) != 'i' && inp.charAt(i) != 'o' && inp.charAt(i) != 'u'){
-                        left[i] = inp.charAt(i);
-                    } else if (inp.charAt(i) == 'a' || inp.charAt(i) == 'e' || inp.charAt(i) == 'i' || inp.charAt(i) == 'o' || inp.charAt(i) == 'u') {
-                        right[i] = inp.charAt(i);
-                    }
-                }
+        for (int i = 0; i < vowels.length; i++){
+            if(inp.charAt(0) == vowels[i]){
+                status++;
                 break;
-            case 1: //bat dau bang vowels
-                for (int i = 0; i < inp.length(); i++){
-                    if(inp.charAt(i) == 'a' || inp.charAt(i) == 'e' || inp.charAt(i) == 'i' || inp.charAt(i) == 'o' || inp.charAt(i) == 'u'){
-                        left[i] = inp.charAt(i);
-                    } else{
-                        right[i] = inp.charAt(i);
+            }
+        }
+        boolean check = false;
+        for(int i = 0; i <= inp.length() - 1; i++){
+            for(int z = 0; z < vowels.length; z++){
+                if(inp.charAt(i) == vowels[z]){
+                    if(i == inp.length() - 1){
+                        vow += inp.substring(i);
+                        check = true;
+                        break;
+                    } else {
+                        vow += inp.substring(i, i+1);
+                        check = true;
+                        break;
                     }
                 }
+            }
+            if(!check){
+                if(i == inp.length() -1){
+                    conso += inp.substring(i);
+                } else{
+                    conso += inp.substring(i, i+1);
+                }
+            }
+            check = false;
+        }
+        switch (status){
+            case 0:
+                res = conso + vow;
+                break;
+            case 1:
+                res = vow + conso;
                 break;
         }
-        String s1 = "";
-        String s2 = "";
-        s1 = s1.copyValueOf(left, 0, left.length); //noi gia tri cua char trong array left ve thanh 1 string hoan chinh  
-        s2 = s2.copyValueOf(right, 0, right.length);
-        String res = s1 + s2;
         return res;
     }
 
