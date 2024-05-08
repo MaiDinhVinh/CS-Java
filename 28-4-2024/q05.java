@@ -4,26 +4,31 @@
 import java.util.Scanner;
 class lab6_ex5a{
     public static boolean isPalindrome(String inp){
-        char[] before = new char[inp.length()];
-        char[] after = new char[inp.length()];
-        for (int i = 0; i < inp.length(); i++){
-            before[i] = inp.charAt(i);
+        //check do dai string 
+        int check = inp.length();
+        String middle1 = "";
+        String middle2 = "";
+        if(check % 2 == 1){
+            check = (inp.length() - 1)/2;
+            middle1 = inp.substring(0, check);
+            middle2 = inp.substring(check+1);
+        } else if(check % 2 == 0){
+            check = inp.length() / 2;
+            middle1 = inp.substring(0, check);
+            middle2 = inp.substring(check);
         }
-        //lam nguoc lai
-        int z = 0; 
-        for (int i = inp.length() - 1; i >= 0; i--){
-            after[z] = before[i];
-            z++;  
+        //lat nguoc middle2
+        char[] arr = new char[middle2.length()];
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = middle2.charAt(middle2.length() - 1 - i);
         }
-        //check ca 2array
-        boolean res = false;
-        for (int i = 0; i < inp.length(); i++){
-            res = before[i] == after[i];
-            if (res == false){
-                break;
-            }
+        String fin_middle2 = "";
+        fin_middle2 = fin_middle2.copyValueOf(arr, 0, arr.length);
+        if(middle1.compareTo(fin_middle2) == 0){
+            return true;
+        } else{
+            return false;
         }
-        return res; 
     }
     
     public static void main(String[] args){
@@ -31,9 +36,9 @@ class lab6_ex5a{
         System.out.print("Enter word: ");
         String s = sc.nextLine();
         if (isPalindrome(s) == true){
-            System.out.println("\" " + s + " \"" + " is a palindrome");
+            System.out.println("\"" + s + "\"" + " is a palindrome");
         } else{
-            System.out.println("\" " + s + " \"" + " is not a palindrome");
+            System.out.println("\"" + s + "\"" + " is not a palindrome");
         }
     }
 }
