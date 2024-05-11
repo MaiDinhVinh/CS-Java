@@ -9,39 +9,33 @@ class lab6_ex2_fix{
         String s2 = sc.next(); 
         System.out.print("Please enter the lowercase string: ");
         String s3 = sc.next(); 
-        int a = s1.compareTo(s2);
-        int b = s2.compareTo(s1);    
-        int c = s2.compareTo(s3); 
-        int d = s3.compareTo(s2);
-        int e = s3.compareTo(s1);
-        int f = s1.compareTo(s3);
-        int[] arr = {a, b, c, d, e, f};
-        int max = a;
         String first = "";
         String last = "";
-        for (int i = 0; i < arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
+        int a = s1.compareTo(s2); 
+        int b = s2.compareTo(s3);
+        int c = s3.compareTo(s1);
+        if(a > b && a > c){
+            last = s1;
+            if(b < c){
+                first = s2;
+            } else{
+                first = s3;
             }
         }
-        if(max == a){
-            first = s2;
-            last = s1;
-        } else if(max == b){
-            first = s1;
+        if(b > c && b > a){
             last = s2;
-        } else if(max == c){
-            first = s3;
-            last = s2;
-        } else if(max == d){
-            first = s2;
+            if(c < a){
+                first = s3;
+            } else{
+                first = s1;
+            }
+        } else{
             last = s3;
-        } else if(max == e){
-            first = s1;
-            last = s3;
-        } else if(max == f){
-            first = s3;
-            last = s1;
+            if(a < b){
+                first = s1;
+            } else{
+                first = s2;
+            }
         }
         System.out.println("The first string is: " + first);
         System.out.println("The last string is: " + last);
