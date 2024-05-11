@@ -16,38 +16,33 @@ class lab4_ex8{
     }
 
     public static void main(String[] args){
-        int loop = 1;
-        Scanner sc = new Scanner(System.in);
+        char choice = ' ';
         do{
-            loop -= 1;
-            printMenu();
-            int choice;
+            Scanner sc = new Scanner(System.in);
+            //step 1
+            printMenu(); 
+            //step 2 
+            int inp = 0;
             do{
                 System.out.print("Please enter your selection: ");
-                choice = sc.nextInt();
-              } while (choice <= 0 || choice > 7);
-            System.out.println("You have selected " + choice);
-            if (choice == 7){
-                break;
+                inp = sc.nextInt();
+            } while (inp <= 0 || inp > 7);
+            
+            //step 3
+            System.out.println("You have selected " + inp);
+            if(inp == 7){
+                return; //end program
             }
-            char choice2 = ' ';
+
+            //step 4
             toContinue();
             do{
-                System.out.print("Please enter your selection: ");
-                choice2 = sc.next().charAt(0);
-            } while(choice != 'y' || choice != 'Y' || choice != 'c' || choice != 'C');
-            switch (choice2){
-                case 'y':
-                case 'Y':
-                    loop += 1;
-                    break;
-                case 'c':
-                case 'C':
-                    loop += 1;
-                    System.out.print("\033[H\033[2J");  
-                    System.out.flush();  
-                    break;
+                System.out.print("Please enter choice: ");
+                choice = sc.next().charAt(0);
+            } while (choice != 'n' && choice != 'N' && choice != 'c' && choice != 'C' && choice != 'y' && choice != 'Y');
+            if(choice == 'c' || choice == 'C'){
+                System.out.println("clear fr fr fr");
             }
-        } while(loop == 1);
+        } while (choice == 'c' || choice == 'C' || choice == 'y' || choice == 'Y');   
     }
 }
