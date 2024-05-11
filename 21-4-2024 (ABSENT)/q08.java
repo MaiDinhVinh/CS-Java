@@ -1,3 +1,4 @@
+//QUY TAC LAM BAI - SUY NGHI DON GIAN THOI
 import java.util.Scanner;
 class lab4_ex8{
     public static void printMenu(){
@@ -36,13 +37,17 @@ class lab4_ex8{
 
             //step 4
             toContinue();
-            do{
+            System.out.print("Please enter choice: ");
+            choice = sc.next().charAt(0);
+            while (choice != 'n' && choice != 'N' && choice != 'c' && choice != 'C' && choice != 'y' && choice != 'Y'){
+                System.out.println("Invalid choice, please enter again!");
+                toContinue();
                 System.out.print("Please enter choice: ");
                 choice = sc.next().charAt(0);
-            } while (choice != 'n' && choice != 'N' && choice != 'c' && choice != 'C' && choice != 'y' && choice != 'Y');
+            }
             if(choice == 'c' || choice == 'C'){
                 System.out.println("clear fr fr fr");
             }
-        } while (choice == 'c' || choice == 'C' || choice == 'y' || choice == 'Y');   
+        } while (choice != 'n' && choice != 'N'); //&& chi true khi ca 2 cung true, || chi false khi ca 2 cai cung false
     }
 }
