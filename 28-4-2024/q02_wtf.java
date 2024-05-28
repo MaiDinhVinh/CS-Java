@@ -10,30 +10,28 @@ class lab6_ex2_question{
         String s3 = sc.next(); 
         String first = "";
         String last = "";
-        int a = s1.compareTo(s2); 
-        int b = s2.compareTo(s3);
-        int c = s3.compareTo(s1);
-        if(a > b && a > c){
+        if(s1.compareTo(s2) > 0 && s1.compareTo(s3) > 0){
             last = s1;
-            if(b < c){
-                first = s2;
-            } else{
+            if(s2.compareTo(s3) > 0){
                 first = s3;
+            } else{
+                first = s2;
             }
         }
-        if(b > c && b > a){
+        if(s2.compareTo(s1) > 0 && s2.compareTo(s3) > 0){
             last = s2;
-            if(c < a){
+            if(s1.compareTo(s3) > 0){
                 first = s3;
             } else{
                 first = s1;
             }
-        } else{
+        }
+        if(s3.compareTo(s1) > 0 && s3.compareTo(s2) > 0){
             last = s3;
-            if(a < b){
-                first = s1;
-            } else{
+            if(s1.compareTo(s2) > 0){
                 first = s2;
+            } else{
+                first = s1;
             }
         }
         System.out.println("The first string is: " + first);
