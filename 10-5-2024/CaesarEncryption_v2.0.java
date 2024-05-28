@@ -9,35 +9,32 @@ class ad_review1{
         int ert = sc.nextInt();
 
         String res = "";
-        char encrypting = ' ';
+        char encryption = ' ';
+        int loop = 0;
+        if(ert > 0){
+            loop = 1;
+        } else if(ert < 0){
+            loop = -1;
+        }
         for(int i = 0; i < inp.length(); i++){
-            encrypting = inp.charAt(i);
-            if(ert < 0){
-                for(int j = ert; j < 0; j++){
-                    if(encrypting == 'a'){
-                        encrypting = (char)('z');
-                    } else if(encrypting == 'A'){
-                        encrypting = (char)('Z');
+            encryption = inp.charAt(i);
+            for(int j = 0; j != ert; j+=loop){
+                if(ert > 0){
+                    if(encryption == 'Z' || encryption == 'z'){
+                        encryption -= 25;
                     } else{
-                        encrypting = (char)(encrypting - 1);
+                        encryption += 1;
                     }
                 }
-            } else if(ert > 0){
-                for(int j = 0; j < ert; j++){
-                    if(encrypting == 'z'){
-                        encrypting = (char)('a');
-                    } else if(encrypting == 'Z'){
-                        encrypting = (char)('A');
+                if(ert < 0){
+                    if(encryption == 'A' || encryption == 'a'){
+                        encryption += 25;
                     } else{
-                        encrypting = (char)(encrypting + 1);
+                        encryption -= 1;
                     }
                 }
-            } else{
-                res = inp;
-                break;
             }
-            res += encrypting;
-            encrypting = ' ';
+            res += encryption;
         }
         System.out.println("The cipher text string is: " + res);
     }
