@@ -24,7 +24,7 @@ class ex_review1{
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.err.print("str = ");
+        System.out.print("str = ");
         String str = sc.nextLine();
         printWord(str);
     }
