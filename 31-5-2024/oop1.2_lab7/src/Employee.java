@@ -8,7 +8,7 @@
  *
  * @author ducksabervn
  */
-public class employee {
+public class Employee {
     //attribute - instance variable
     private int id;
     private String firstname;
@@ -16,7 +16,7 @@ public class employee {
     private int salary;
     
     //constructor - from input 
-    public employee(int id, String firstname, String lastname, int salary){
+    public Employee(int id, String firstname, String lastname, int salary){
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -37,7 +37,7 @@ public class employee {
     }
     
     public String getName(){
-        return this.firstname + this.lastname;
+        return this.firstname + " " + this.lastname;
     }
     
     public int getSalary(){
@@ -53,9 +53,11 @@ public class employee {
         this.salary = salary;
     }
     
-    public void raiseSalary(int percentage){
+    public int raiseSalary(int percentage){
         
-        //(int)this.salary = (double)(this.salary) + ((percentage/100)*(double)(this.salary)); -- loi required variable, found value ?
+        //System.out.println((double)percentage/100*this.salary + this.salary);
+        this.salary = (int)(percentage/100.0*this.salary + this.salary);
+        return this.salary;
     }
     
     @Override
