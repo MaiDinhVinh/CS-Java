@@ -48,6 +48,6 @@ public class Circle {
     //print radius
     @Override
     public String toString(){
-        return "Radius: " + this.radius;
+        return "Circle[radius=" + this.radius + "]";
     }
 }
