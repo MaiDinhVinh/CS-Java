@@ -10,10 +10,12 @@
  */
 public class employeeTest {
     public static void main(String[] args){
-        employee emp1 = new employee(1234, "John", "Cena", 1000);
+        Employee emp1 = new Employee(1234, "John", "Cena", 1000);
         System.out.println("Begin Salary: " + emp1.getSalary());
         
-        emp1.raiseSalary(70);
+        emp1.raiseSalary(7);
         System.out.println("Salary after: " + emp1.getSalary());
+        
+        
     }
 }
