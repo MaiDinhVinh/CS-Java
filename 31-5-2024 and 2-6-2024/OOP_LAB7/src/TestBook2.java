@@ -8,22 +8,16 @@
  *
  * @author vingi
  */
-public class TestBook1 {
+public class TestBook2 {
     public static void main(String[] args){
-        Author JKRow = new Author("JKRow", "testing@.com", 'f');
-        Book1 HP = new Book1("HP", JKRow, 15.2);
+        Author[] tacgia = new Author[2];
+        tacgia[0] = new Author("Nam Cao", "namcao@example.com", 'm');
+        tacgia[1] = new Author("To Hoai", "tohoai@tohoai.com", 'm');
+        Book2 demo1 = new Book2("tromcho", tacgia, 20);
+        System.out.println("book name: " + demo1.getName());
+        System.out.println("book price: " + demo1.getPrice());
+        System.out.println(demo1);
+        System.out.println(demo1.getAuthorNames());
         
-        Author who = new Author("who", "who@who.com", 'm');
-        Book1 asked = new Book1("asked", who, 1.45, 100);
-        
-        System.out.println("book name: " + asked.getName());
-        System.out.println("book price: " + asked.getPrice());
-        System.out.println("book author: " + asked.getAuthor());
-        System.out.println("book author name: " + asked.getAuthor().getName());
-        System.out.println("book author email: " + asked.getAuthor().getEmail());
-        System.out.println("book author gender: " + asked.getAuthor().getGender());
-        System.out.println("book qty: " + asked.getQty());
-        
-        
-    }
+   }
 }
