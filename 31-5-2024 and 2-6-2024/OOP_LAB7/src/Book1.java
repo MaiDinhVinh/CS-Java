@@ -19,7 +19,7 @@ public class Book1 {
         this.name = name;
         this.author = author;
         this.price = price; 
-        this.qty = 1;
+        this.qty = 0;
     }
     
     //constructor - more than 1 book
