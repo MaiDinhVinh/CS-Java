@@ -21,7 +21,7 @@ public class Book2 {
         this.name = name;
         this.authors = authors;
         this.price = price;
-        this.qty = 1;
+        this.qty = 0; //so luong ban in, not buy
     }
     
     public Book2(String name, Author[] authors, double price, int qty){
@@ -58,7 +58,23 @@ public class Book2 {
     }
     
     //method to return all author
-    public String returnAllInf(){
+//    public String returnAllInf(){
+//        String n = "";
+//        for(int i = 0; i < authors.length; i++){
+//            n += authors[i].toString();
+//            if(i == authors.length - 1){
+//                continue;
+//            } else{
+//                n += ", ";
+//            }
+//        }
+//        return n;
+//    }
+    
+    
+    
+    @Override
+    public String toString(){
         String n = "";
         for(int i = 0; i < authors.length; i++){
             n += authors[i].toString();
@@ -68,15 +84,9 @@ public class Book2 {
                 n += ", ";
             }
         }
-        return n;
-    }
-    
-    
-    
-    @Override
-    public String toString(){
+        
         return "Book= " + this.name + ", " + 
-                "authors={ " + returnAllInf() + " }" + 
+                "authors={ " + n + " }" + 
                 ", " + "price= " + this.price + ", " + "qty= " + this.qty;
     }
     
@@ -113,7 +123,7 @@ public class Book2 {
         for(int i = 0; i < authors.length; i++){
             name += authors[i].getName();
             if(i == authors.length - 1){
-                continue;
+                break;
             } else{
                 name += ", ";
             }
@@ -122,4 +132,6 @@ public class Book2 {
     }
     
     //QUESTION: Vì sao method toString() bản 1 gửi trong zalo lại k chạy? 
+    //ANSWER: Do gọi hàm returnAllInf() trong method toString() thì nó sẽ khởi chạy hàm return trước
+    //sau đó mới return string
 }
