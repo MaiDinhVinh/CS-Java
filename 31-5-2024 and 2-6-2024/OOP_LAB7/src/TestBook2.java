@@ -14,10 +14,11 @@ public class TestBook2 {
         tacgia[0] = new Author("Nam Cao", "namcao@example.com", 'm');
         tacgia[1] = new Author("To Hoai", "tohoai@tohoai.com", 'm');
         Book2 demo1 = new Book2("tromcho", tacgia, 20);
-        System.out.println("book name: " + demo1.getName());
-        System.out.println("book price: " + demo1.getPrice());
-        System.out.println(demo1);
-        System.out.println(demo1.getAuthorNames());
+//        System.out.println("book name: " + demo1.getName());
+//        System.out.println("book price: " + demo1.getPrice());
+//        System.out.println(demo1);
+//        System.out.println(demo1.getAuthorNames());
+        System.out.println(demo1.getAuthor()[0]);
         
    }
 }
