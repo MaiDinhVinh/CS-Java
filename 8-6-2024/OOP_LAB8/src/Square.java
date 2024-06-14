@@ -30,25 +30,33 @@ public class Square extends Rectangle{
     
     @Override //da ke thua tu bo, nhung con lam khac
     public void setWidth(double side){
-        super.setWidth(side);
-        super.setLength(side);
+//        super.setWidth(side);
+//        super.setLength(side);
+        this.setSide(side);
     }
     
     @Override //da ke thua tu bo, nhung con lam khac
     public void setLength(double side){
+//        super.setWidth(side);
+//        super.setLength(side);
+        this.setSide(side);
+    }
+    
+    public void setSide(double side){
         super.setWidth(side);
         super.setLength(side);
     }
     
     @Override //suyt nua bi lua phan getArea() and getPerimeter()
     public double getArea(){
-        return (this.getLength() * this.getLength());
+        return (this.getLength() * this.getWidth());
     }
+    
     
     public double getPerimeter(){
         return (this.getLength() * 4);
     }
-    
+      
     @Override
     public String toString(){
         return "A Square with side= " + this.getLength() + ", which is a subclass of "
