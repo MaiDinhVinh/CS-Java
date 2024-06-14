@@ -28,35 +28,6 @@ public class Student extends Person{
         String[] temp_courses;
         int[] temp_grades;
         
-        //copy toan bo gia tri tu array attribute cua Student sang temp arr
-        //note: ve logic neu nhu khong co mon hoc => khong co diem va nguoc lai
-//        if(this.courses.length == 0 && this.grades.length == 0){
-//            /*neu nhu chua khai bao course => arr.length = 0 
-//            => khong co mon hoc va diem mon hoc => them 1 mon moi 
-//            => chi can arr.length = 1*/
-//            temp_courses = new String[1];
-//            temp_grades = new int[1];
-//            temp_courses[0] = course;
-//            temp_grades[0] = grade;
-//            
-//            //khai bao lai array courses voi length moi
-//            this.courses = new String[temp_courses.length];
-//            int original_courses_index = 0;
-//            for(String i: temp_courses){
-//                this.courses[original_courses_index] = i;
-//                original_courses_index++;
-//            }
-//            
-//            //khai bao lai array grades voi length moi 
-//            this.grades = new int[temp_grades.length];
-//            int original_grades_index = 0;
-//            for(int g: temp_grades){
-//                this.grades[original_grades_index] = g;
-//                original_grades_index++;
-//            }
-//        } else{
-            /*neu khong se chi co truong hop so mon hoc = so diem mon hoc
-            tuong ung*/
             
             //khai bao 2 array moi dua tren do dai array cu
             temp_courses = new String[this.courses.length + 1];
@@ -80,30 +51,10 @@ public class Student extends Person{
             //add them diem cua course tu argument method
             temp_grades[this.grades.length] = grade;
             
-            //khai bao lai array courses moi dua tren length moi
-//            this.courses = new String[temp_courses.length];
-//
-//            //add lai ten course vao array this.courses
-//            int original_courses_index = 0;
-//            for(String str: temp_courses){
-//                this.courses[original_courses_index] = str;
-//                original_courses_index++;
-//            }
             
             this.courses = temp_courses; //reference tu this.courses vao temp_courses
             this.grades = temp_grades; //refernce tu this.grades vao temp_grades;
-            
-//            //khai bao lai array grades voi length moi
-//            this.grades = new int[temp_grades.length];
-//            
-//            //add lai diem courses vao array this.grades
-//            int original_grades_index = 0;
-//            for(int g: temp_grades){
-//                this.grades[original_grades_index] = g;
-//                original_grades_index++;
-//            }
-           
-//        }
+
         
         //chinh lai so luong mon hoc
         this.numCourse = this.courses.length;
