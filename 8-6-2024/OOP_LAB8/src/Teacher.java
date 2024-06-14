@@ -28,7 +28,7 @@ public class Teacher extends Person{
             } 
         }
         return check;
-    }
+    } //phai add them course
     
     public boolean removeCourse(String course){
         boolean check = false;
@@ -39,7 +39,7 @@ public class Teacher extends Person{
             }
         }
         return check;
-    }
+    } //phai remove course
     
     @Override
     public String toString(){
