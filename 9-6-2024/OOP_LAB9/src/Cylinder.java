@@ -31,13 +31,15 @@ public class Cylinder extends Circle {
     }
     
     public double getVolume(){
-        return Math.PI * (this.getRadius() * this.getRadius()) * this.height;
+//        return Math.PI * (this.getRadius() * this.getRadius()) * this.height;
+        return super.getArea() * this.height; 
     }
     
     @Override
     public double getArea(){
-        return (2 * Math.PI * (this.getRadius() * this.getRadius())) +
-               (2 * Math.PI * this.getRadius() * this.height);
+//        return (2 * Math.PI * (this.getRadius() * this.getRadius())) +
+//               (2 * Math.PI * this.getRadius() * this.height);
+        return 2 * super.getArea() + super.getPerimeter() * this.height;
     }
     
     @Override
