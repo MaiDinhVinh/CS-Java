@@ -11,7 +11,7 @@
 public class TeacherTest {
     public static void main(String[] args){
         Teacher demo1 = new Teacher("nam cao", "example4321");
-        String[] courses = {"CS30", "MATH2", "LAB101"};
+        String[] courses = {"CS30", "CS30" ,"MATH2"};
         for(String course: courses){
             if(demo1.addCourse(course)){
                 System.out.println(course + " added");
@@ -20,6 +20,9 @@ public class TeacherTest {
             }
         }
         
+        demo1.getArray();
+        
+        System.out.println("------------------------------");
         for(String course: courses){
             if(demo1.removeCourse(course)){
                 System.out.println(course + " removed");
@@ -27,5 +30,7 @@ public class TeacherTest {
                 System.out.println(course + " cannot be removed");
             }
         }
+        
+        demo1.getArray();
     }
 }
