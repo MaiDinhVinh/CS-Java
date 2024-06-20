@@ -19,27 +19,49 @@ public class Teacher extends Person{
         super(name, address);
     }
     
+    public void getArray(){
+        for(String i: this.courses){
+            System.out.println(i);
+        }
+    }
+    
     public boolean addCourse(String course){
         boolean check = false;
-        for(String i: courses){
-            if(course == i){
-                check = true;
-                break;
-            } 
-        }
-        return check;
-    } //phai add them course
-    
-    public boolean removeCourse(String course){
-        boolean check = false;
-        for(String i: courses){
-            if(course == i){
-                check = true;
+        boolean existed = false;
+        for(String i: this.courses){
+            if(i == course){
+                existed = true;
                 break;
             }
         }
+        
+        
+        //if no duplicate courses => adding new course
+        if(existed == false){
+            check = true;
+            //initalizing new courses array for copying all elements from attribute array
+            String[] temp_courses = new String[this.courses.length + 1];
+            int temp_courses_index = 0;
+            for(String j: this.courses){
+                temp_courses[temp_courses_index] = j;
+                temp_courses_index++;
+            }
+                
+            //adding new course to temp array 
+            temp_courses[this.courses.length] = course;
+                
+            //referencing this.courses to temp_courses
+            this.courses = temp_courses;
+        }
+        
+        //update numCourses
+        this.numCourses = this.courses.length;
+        
         return check;
-    } //phai remove course
+    }
+    
+    public boolean removeCourse(String course){
+    } 
     
     @Override
     public String toString(){
