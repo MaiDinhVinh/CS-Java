@@ -61,6 +61,33 @@ public class Teacher extends Person{
     }
     
     public boolean removeCourse(String course){
+        boolean check = false;
+        int removePos = -1; 
+        for(int i = 0; i < this.courses.length; i++){
+            if(this.courses[i] == course){
+                removePos = i;
+            }
+        }
+        
+        if(removePos > -1){
+            check = true;
+        }
+        
+        if(check == true){
+            String[] temp_courses = new String[this.courses.length - 1];
+            int temp_courses_index = 0;
+            for(int i = 0; i < this.courses.length; i++){
+                if(i == removePos){
+                    continue;
+                } else{
+                    temp_courses[temp_courses_index] = this.courses[i];
+                    temp_courses_index++;
+                }
+            }
+            
+            this.courses = temp_courses;
+        }
+        return check;
     } 
     
     @Override
