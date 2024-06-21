@@ -11,7 +11,7 @@
 public class TeacherTest {
     public static void main(String[] args){
         Teacher demo1 = new Teacher("nam cao", "example4321");
-        String[] courses = {"CS30", "CS30" ,"MATH2"};
+        String[] courses = {"CS30", "CS30", "MATH2", "PSY1", "LAB4", "LIT4"};
         for(String course: courses){
             if(demo1.addCourse(course)){
                 System.out.println(course + " added");
