@@ -33,7 +33,7 @@ public class MathRead1_Final {
                     
                 
                     switch (mathop){
-                        case 43:
+                        case 43: 
                             System.out.println("Result: " + (LHS + RHS));
                             break;
                         case 45:
