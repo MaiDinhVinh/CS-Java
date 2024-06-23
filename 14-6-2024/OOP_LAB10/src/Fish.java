@@ -36,11 +36,11 @@ public class Fish extends Animal implements Pet{
         System.out.println("Fish play in water");
     }
     
-    @Override
-    public int getLegs(){
-        System.out.println("brain issue ?");
-        return 0;
-    }
+//    @Override
+//    public int getLegs(){
+//        System.out.println("brain issue ?");
+//        return 0;
+//    }
     
     @Override 
     public void eat(){
