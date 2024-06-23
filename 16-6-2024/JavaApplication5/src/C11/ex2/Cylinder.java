@@ -18,9 +18,9 @@ public class Cylinder {
         this.height = height;
     }
     
-    public double getRadius(){
-        return this.base.getRadius();
-    }
+//    public double getRadius(){
+//        return this.base.getRadius(); //duplicated method
+//    } 
     
     public double getHeight(){
         return this.height;
