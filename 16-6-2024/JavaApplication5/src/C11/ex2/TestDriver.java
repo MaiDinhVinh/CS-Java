@@ -20,7 +20,7 @@ public class TestDriver {
         System.out.println(cir1.getPerimeter());
         System.out.println(cir1.getArea());
         System.out.println(cy1.getHeight());
-        System.out.println(cy1.getRadius());
+//        System.out.println(cy1.getRadius());
         System.out.println(cy1.getVolume());
     }
 }
