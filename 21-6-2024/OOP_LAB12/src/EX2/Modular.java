@@ -16,6 +16,7 @@ public class Modular extends MathExpression{
     
     @Override
     public int calculate(){
-        return super.getLHS() % super.getRHS();
+//        return super.getLHS() % super.getRHS();
+        return this.getLHS() % this.getRHS();
     }
 }
