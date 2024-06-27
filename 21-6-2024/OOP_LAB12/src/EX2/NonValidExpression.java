@@ -14,10 +14,15 @@ public class NonValidExpression extends MathExpression{
         super(exp);
     }
     
+    public NonValidExpression(String exp, boolean check){
+        super(exp, check);
+    }
+    
     @Override
     public int calculate(){
 //        System.out.print("(Invalid Operator)");
 //        return 0; 
+        System.out.print("");
         return Integer.MAX_VALUE;
     }
 }
