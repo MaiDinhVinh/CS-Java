@@ -16,6 +16,14 @@ public class Division extends MathExpression{
     
     @Override
     public int calculate(){
-        return super.getLHS() / super.getRHS(); 
+        int result = 0;
+//        return super.getLHS() / super.getRHS(); 
+        if(this.getRHS() == 0){
+            result = Integer.MAX_VALUE;
+        } else{
+            result = this.getLHS() / this.getRHS();
+        }
+        
+        return result;
     }
 }
