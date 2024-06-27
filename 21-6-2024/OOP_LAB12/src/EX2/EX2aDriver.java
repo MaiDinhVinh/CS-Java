@@ -18,12 +18,32 @@ public class EX2aDriver {
         int math_result_index = 0;
         boolean end = false;
         String line = "";
+        boolean check = false;
+        String LHSTest = "";
+        String RHSTest = "";
         
         try(BufferedReader bfr = new BufferedReader(new FileReader("src/EX2/math.txt"))){
             do{
                 try{
                     line = bfr.readLine();
-                    switch (line.charAt(line.length() / 2)){
+                    LHSTest = line.substring(0, (line.length() / 2) - 1);
+                    for(int i = 0; i < LHSTest.length(); i++){
+                        if(LHSTest.charAt(i) < 48 && LHSTest.charAt(i) > 57){
+                            check = true;
+                            break;
+                        }
+                    }
+                    RHSTest = line.substring((line.length() / 2 ) + 2);
+                    for(int i = 0; i < RHSTest.length(); i++){
+                        if(RHSTest.charAt(i) < 48 && RHSTest.charAt(i) > 57){
+                            check = true;
+                            break;
+                        }
+                    }
+                    if(check == true){
+                        result[math_result_index] = new NonValidExpression(line, check);
+                    } else{
+                        switch (line.charAt(line.length() / 2)){
                         case 43:
                             result[math_result_index] = new Addition(line);
                             break;
@@ -41,6 +61,7 @@ public class EX2aDriver {
                             break;
                         default:
                             result[math_result_index] = new NonValidExpression(line);
+                        }
                     }
                 } catch(Exception ein){
                     System.out.print("Error Found: " + ein.getMessage() + "\n");
