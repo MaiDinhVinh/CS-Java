@@ -14,9 +14,6 @@ public class NonValidExpression extends MathExpression{
         super(exp);
     }
     
-    public NonValidExpression(String exp, boolean check){
-        super(exp, check);
-    }
     
     @Override
     public int calculate(){
