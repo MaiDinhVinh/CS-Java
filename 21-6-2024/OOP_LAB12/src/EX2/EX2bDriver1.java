@@ -6,24 +6,32 @@
 package EX2;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 /**
  *
  * @author vingi
  */
-public class EX2aDriver {
+public class EX2bDriver1 {
     public static void main(String[] args){
         MathExpression[] result = new MathExpression[150];
         int math_result_index = 0;
         boolean end = false;
         String line = "";
-        String error = "";
+        String error_in = "";
+        int res_index = 0;
+        int[] res_array = new int[150];
+        String error_out = null;
         
         try(BufferedReader bfr = new BufferedReader(new FileReader("src/EX2/math.txt"))){
             do{
                 try{
                     line = bfr.readLine();
+                    if(line == null){
+                        break;
+                    }
                     switch (line.charAt(line.length() / 2)){
                         case 43:
                             result[math_result_index] = new Addition(line);
@@ -44,20 +52,28 @@ public class EX2aDriver {
                             result[math_result_index] = new NonValidExpression(line);
                     }
                 } catch(Exception ein){
-                    error = ein.getMessage(); //cach lam tam thoi, co cach khac khong ?
+                    System.out.println("Error found: " + ein.getMessage()); 
                 } finally{
-                    if(line == null){
-                        end = true;
-                    }
+                    res_array[res_index] = result[math_result_index].calculate();
                     math_result_index++;
+                    res_index++;
                 } 
             } while(!end);
         } catch(Exception eout){
-            System.out.println("Error: " + eout.getMessage() + "\n");
+            System.out.println("Error: " + eout.getMessage());
         }
         
+        res_index = 0;
+        int count = 1;
         for(MathExpression i: result){
-            System.out.println(i);
+            try(BufferedWriter bfw = new BufferedWriter(new FileWriter("src/EX2/math_result_oop.txt"))){
+                System.out.println("ID " + count + ". " + res_array[res_index]);
+                System.out.println(res_index);
+                res_index++;
+                count++;
+            } catch(Exception eprint){
+                System.out.println("Error encountered" + eprint.getMessage());
+            }
         }
     }
 }
