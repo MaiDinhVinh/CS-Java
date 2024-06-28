@@ -21,11 +21,15 @@ public class MathRead1_Final {
         int mathop = 0;
         int count = 1;
         boolean end = false;
+        String test_line = null;
         try(BufferedReader bfr = new BufferedReader(new FileReader(input_dir))){
             do{
                 try{
-                    print_line = bfr.readLine(); 
-                    System.out.println("Expression: " + print_line);
+                    print_line = bfr.readLine();
+                    if(print_line == null){
+                        break;
+                    }
+                    System.out.print(print_line);
                     math_expression_length = print_line.length();
                     LHS = Integer.parseInt(print_line.substring(0, (math_expression_length / 2) - 1));
                     RHS = Integer.parseInt(print_line.substring((math_expression_length / 2 ) + 2));
@@ -34,34 +38,28 @@ public class MathRead1_Final {
                 
                     switch (mathop){
                         case 43: 
-                            System.out.println("Result: " + (LHS + RHS));
+                            System.out.println("=" + (LHS + RHS));
                             break;
                         case 45:
-                            System.out.println("Result: " + (LHS - RHS));
+                            System.out.println("=" + (LHS - RHS));
                             break;
                         case 47:
-                            System.out.println("Result: " + (LHS / RHS));
+                            System.out.println("=" + (LHS / RHS));
                             break;
                         case 42:
-                            System.out.println("Result: " + (LHS * RHS));
+                            System.out.println("=" + (LHS * RHS));
                             break;
                         case 37:
-                            System.out.println("Result: " + (LHS % RHS));
+                            System.out.println("=" + (LHS % RHS));
                             break;
                         default:
-                            System.out.println("Invalid Operator");
+                            System.out.println(" = Invalid Operator");
                     }
                     
                     
                 }catch(Exception ein){
-                    System.out.println("Error Found: " + ein.getMessage());
+                    System.out.println(" = Error Found: " + ein.getMessage());
                 } finally{
-                    if(print_line == null){
-                        end = true;
-                    }
-                    System.out.println("ID: " + count);
-                    System.out.println("Operation Type: " + (char)mathop);
-                    System.out.println("-----------------------");
                     count++;
                     mathop = 0;
                 }
