@@ -28,8 +28,11 @@ public class MathRead2 {
             do{
                 try{
                     print_line = bfr.readLine(); 
+                    if(print_line == null){
+                        break;
+                    }
 //                    System.out.println("Expression: " + print_line);
-                    bfw.write("Expression: " + print_line + "\n"); //replaced with this
+                    bfw.write(print_line); //replaced with this
                     math_expression_length = print_line.length();
                     LHS = Integer.parseInt(print_line.substring(0, (math_expression_length / 2) - 1));
                     RHS = Integer.parseInt(print_line.substring((math_expression_length / 2 ) + 2));
@@ -39,43 +42,37 @@ public class MathRead2 {
                     switch (mathop){
                         case 43:
 //                            System.out.println("Result: " + (LHS + RHS));
-                            bfw.write("Result: " + (LHS + RHS) + "\n"); //replaced with this
+                            bfw.write("=" + (LHS + RHS) + "\n"); //replaced with this
                             break;
                         case 45:
 //                            System.out.println("Result: " + (LHS - RHS));
-                            bfw.write("Result: " + (LHS - RHS) + "\n");
+                            bfw.write("=" + (LHS - RHS) + "\n");
                             break;
                         case 47:
 //                            System.out.println("Result: " + (LHS / RHS));
-                            bfw.write("Result: " + (LHS / RHS) + "\n");
+                            bfw.write("=" + (LHS / RHS) + "\n");
                             break;
                         case 42:
 //                            System.out.println("Result: " + (LHS * RHS));
-                            bfw.write("Result: " + (LHS * RHS) + "\n");
+                            bfw.write("=" + (LHS * RHS) + "\n");
                             break;
                         case 37:
 //                            System.out.println("Result: " + (LHS % RHS));
-                            bfw.write("Result: " + (LHS % RHS) + "\n");
+                            bfw.write("=" + (LHS % RHS) + "\n");
                             break;
                         default:
 //                            System.out.println("Invalid Operator");
-                            bfw.write("Invalid Operator" + "\n");
+                            bfw.write(" = Invalid Operator" + "\n");
                     }
                     
                     
                 }catch(Exception ein){
 //                    System.out.println("Error Found: " + ein.getMessage());
-                    bfw.write("Error Found: " + ein.getMessage() + "\n");
+                    bfw.write(" = Error Found: " + ein.getMessage() + "\n");
                 } finally{
-                    if(print_line == null){
-                        end = true;
-                    }
 //                    System.out.println("ID: " + count);
 //                    System.out.println("Operation Type: " + (char)mathop);
 //                    System.out.println("-----------------------");
-                    bfw.write("ID: " + count + "\n");
-                    bfw.write("Operation Type: " + (char)mathop + "\n");
-                    bfw.write("-----------------------" + "\n");
                     count++;
                     mathop = 0;
                 }
