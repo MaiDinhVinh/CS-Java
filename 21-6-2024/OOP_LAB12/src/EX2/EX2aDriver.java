@@ -24,6 +24,9 @@ public class EX2aDriver {
             do{
                 try{
                     line = bfr.readLine();
+                    if(line == null){
+                        break;
+                    }
                     switch (line.charAt(line.length() / 2)){
                         case 43:
                             result[math_result_index] = new Addition(line);
@@ -44,11 +47,8 @@ public class EX2aDriver {
                             result[math_result_index] = new NonValidExpression(line);
                     }
                 } catch(Exception ein){
-                    error = ein.getMessage(); //cach lam tam thoi, co cach khac khong ?
+                    System.out.println("Error Found: " + ein.getMessage());
                 } finally{
-                    if(line == null){
-                        end = true;
-                    }
                     math_result_index++;
                 } 
             } while(!end);
