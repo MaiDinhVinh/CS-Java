@@ -13,9 +13,9 @@ public abstract class MathExpression {
     private int left;
     private int right;
     private String operator;
-    private String invalid_left;
-    private String invalid_right;
-    private boolean is_invalid;
+    private boolean is_invalid = false;
+    private String invalid_LHS;
+    private String invalid_RHS;
     
     
     public MathExpression(){
@@ -25,17 +25,19 @@ public abstract class MathExpression {
     }
     
     public MathExpression(String exp){
-        this.left = Integer.parseInt(exp.substring(0, (exp.length() / 2) - 1));
-        this.right = Integer.parseInt(exp.substring((exp.length() / 2 ) + 2));
-        this.operator = exp.substring((exp.length() / 2), (exp.length() / 2) + 1);
+        try{
+            this.left = Integer.parseInt(exp.substring(0, (exp.length() / 2) - 1));
+            this.right = Integer.parseInt(exp.substring((exp.length() / 2 ) + 2));
+            this.operator = exp.substring((exp.length() / 2), (exp.length() / 2) + 1);
+        } catch(Exception arithmeticError){
+            this.is_invalid = true;
+            this.invalid_LHS = exp.substring(0, (exp.length() / 2) - 1);
+            this.invalid_RHS = exp.substring((exp.length() / 2 ) + 2);
+            this.operator = exp.substring((exp.length() / 2), (exp.length() / 2) + 1);
+        } 
+
     }
     
-    public MathExpression(String exp, boolean check){
-        this.invalid_left = exp.substring(0, (exp.length() / 2) - 1);
-        this.invalid_right = exp.substring((exp.length() / 2 ) + 2);
-        this.operator = exp.substring((exp.length() / 2), (exp.length() / 2) + 1);
-        this.is_invalid = true;
-    }
     
     public int getLHS(){ //mean getLeftHandSide
         return this.left;
@@ -66,12 +68,12 @@ public abstract class MathExpression {
     @Override
     public String toString(){
         if(!is_invalid){
-            return this.left + this.operator + this.right + "=" +
-                this.calculate();
+            return this.left + this.operator + this.right + "=" + 
+                    this.calculate();
         } else{
-            return this.invalid_left + this.operator + this.invalid_right + 
-                    "=" + this.calculate();
-        }
+            return this.invalid_LHS + this.operator + this.invalid_RHS + "=" + 
+                    Integer.MAX_VALUE;
+        } 
     }
     
 }
