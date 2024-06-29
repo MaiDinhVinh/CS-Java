@@ -18,7 +18,6 @@ public class EX2aDriver {
         int math_result_index = 0;
         boolean end = false;
         String line = "";
-        String error = "";
         
         try(BufferedReader bfr = new BufferedReader(new FileReader("src/EX2/math.txt"))){
             do{
