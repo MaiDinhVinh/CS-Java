@@ -14,16 +14,16 @@ import java.io.FileWriter;
  *
  * @author vingi
  */
-public class EX2bDriver1 {
+public class Unsolved_EX2bDriver {
     public static void main(String[] args){
         MathExpression[] result = new MathExpression[150];
         int math_result_index = 0;
         boolean end = false;
         String line = "";
-        String error_in = "";
         int res_index = 0;
         int[] res_array = new int[150];
-        String error_out = null;
+        
+        int test_count = 0;
         
         try(BufferedReader bfr = new BufferedReader(new FileReader("src/EX2/math.txt"))){
             do{
@@ -57,10 +57,14 @@ public class EX2bDriver1 {
                     res_array[res_index] = result[math_result_index].calculate();
                     math_result_index++;
                     res_index++;
+                    //for testing
+                    System.out.println("test " + test_count);
+                    test_count++;
                 } 
             } while(!end);
         } catch(Exception eout){
-            System.out.println("Error: " + eout.getMessage());
+            System.out.println("Error: " + eout.getMessage()); //why this lines of code keep catching
+                                                               //Error: 150 ?
         }
         
         res_index = 0;
