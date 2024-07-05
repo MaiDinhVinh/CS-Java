@@ -13,8 +13,8 @@ public class largest_word_sentence{
         String max_word_string = null;
         String check_line = null;
         String reversed_max_string = "";
-        Path read = Paths.get("src/EX2/random_sentences (1).txt");
-        Path write = Paths.get("src/EX2/result.txt");
+        Path read = Paths.get("23-6-2024/OOP_LAB13/src/EX2/random_sentences (1).txt");
+        Path write = Paths.get("23-6-2024/OOP_LAB13/src/EX2/result.txt");
 
         try(BufferedReader br = Files.newBufferedReader(read, StandardCharsets.UTF_8);
             BufferedWriter bw = Files.newBufferedWriter(write, StandardCharsets.UTF_8)){
