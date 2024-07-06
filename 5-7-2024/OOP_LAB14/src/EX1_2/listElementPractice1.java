@@ -1,9 +1,14 @@
 package EX1_2;
 
+import java.io.BufferedReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class listElementPractice {
+public class listElementPractice1 {
     public static void swapElements(List<String> origin,  int first, int second) throws Exception{
         List<String> temp_list = new ArrayList<>();
         temp_list.addAll(origin);
@@ -26,14 +31,18 @@ public class listElementPractice {
 
     public static void main(String[] args) throws Exception{
         List<String> origin = new ArrayList<>();
-        origin.add("a");
-        origin.add("c");
-        origin.add("e");
-        origin.add("k");
-        origin.add("b");
-        swapElements(origin, 0, 4);
+        Path read = Paths.get("src/EX1_2/word_list.txt");
+        BufferedReader br = Files.newBufferedReader(read, StandardCharsets.UTF_8);
+        String line = null;
+        while((line = br.readLine()) != null){
+            origin.add(line);
+        }
+
+        swapElements(origin, 1, 4);
+
         for(String i: origin){
             System.out.println(i);
         }
+
     }
 }
