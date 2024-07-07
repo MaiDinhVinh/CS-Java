@@ -57,9 +57,6 @@ public class Unsolved_EX2bDriver {
                     res_array[res_index] = result[math_result_index].calculate();
                     math_result_index++;
                     res_index++;
-                    //for testing
-                    System.out.println("test " + test_count);
-                    test_count++;
                 } 
             } while(!end);
         } catch(Exception eout){
