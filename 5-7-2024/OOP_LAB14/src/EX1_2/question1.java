@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class listElementPractice1 {
+public class question1 {
     public static void swapElements(List<String> origin,  int first, int second) throws Exception{
         List<String> temp_list = new ArrayList<>();
         temp_list.addAll(origin);
