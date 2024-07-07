@@ -60,8 +60,8 @@ public class Unsolved_EX2bDriver {
                 } 
             } while(!end);
         } catch(Exception eout){
-            System.out.println("Error: " + eout.getMessage()); //why this lines of code keep catching
-                                                               //Error: 150 ?
+            System.out.println("Error: " + eout.getStackTrace()); //why this lines of code keep catching
+            // Error: 150 ?
         }
         
         res_index = 0;
