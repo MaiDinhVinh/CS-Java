@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class listElementPractice2 {
+public class question2 {
     public static List<String> extractElement(List<String> origin, int start, int end) throws Exception{
         List<String> result = new ArrayList<>();
         for(int i = start; i < origin.size(); i++){
