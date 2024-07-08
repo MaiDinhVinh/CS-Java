@@ -10,21 +10,16 @@ import java.nio.charset.StandardCharsets;
 
 public class question3 {
     public static boolean isSubSet(Set<String> a, Set<String> b) throws Exception{
-//        if(a.equals(b)){
-//            return true;
-//        } else{
-//            return false;
-//        } //too long
 
-        return a.equals(b); //actually this thing is suggested by inteliJ
+        return a.containsAll(b);
 
     }
 
     public static void main(String[] args){
         Set<String> a = new HashSet<>();
         Set<String> b = new HashSet<>();
-        Path read_a = Paths.get("src/EX3_4_5_6/word_set_a.txt");
-        Path read_b = Paths.get("src/EX3_4_5_6/word_set_b.txt");
+        Path read_a = Paths.get("src/EX3_4_5_6/word_set_b.txt");
+        Path read_b = Paths.get("src/EX3_4_5_6/word_sub_set.txt");
         String write_a = null;
         String write_b = null;
 
