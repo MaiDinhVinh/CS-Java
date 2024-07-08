@@ -14,45 +14,22 @@ import java.io.BufferedReader;
 public class question5 {
     public static Set<String> intersection(Set<String> a, Set<String> b) throws Exception{
         Set<String> result = new HashSet<>();
-        List<String> compare = new ArrayList<>();
-        List<String> temp_a = new ArrayList<>();
 
-        compare.addAll(a);
-        compare.addAll(b);
-        temp_a.addAll(a);
-
-
-        int compare_index = 0;
-        int a_index = 0;
-        int condition = 0;
-        while(a_index < a.size()){
-            if(compare.get(compare_index) == temp_a.get(a_index)){
-                condition++;
-            }
-
-            if(condition == 2){
-                result.add(temp_a.get(a_index));
-            }
-
-
-
-            if(compare_index == compare.size() - 1){
-                compare_index = 0;
-                a_index++;
-                condition = 0;
-            } else{
-                compare_index++;
+        for(String i: a){
+            if(b.contains(i)){
+                result.add(i);
             }
         }
 
         return result;
+
     }
 
     public static void main(String[] args){
         Set<String> a = new HashSet<>();
         Set<String> b = new HashSet<>();
-        Path read_a = Paths.get("src/EX3_4_5_6/word_set_a.txt");
-        Path read_b = Paths.get("src/EX3_4_5_6/word_set_b.txt");
+        Path read_a = Paths.get("src/EX3_4_5_6/word_set_b.txt"); //parent set
+        Path read_b = Paths.get("src/EX3_4_5_6/word_set_a.txt"); //child set
         String write_a = null;
         String write_b = null;
 
