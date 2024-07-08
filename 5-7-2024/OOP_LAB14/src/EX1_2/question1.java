@@ -29,20 +29,24 @@ public class question1 {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         List<String> origin = new ArrayList<>();
         Path read = Paths.get("src/EX1_2/word_list.txt");
-        BufferedReader br = Files.newBufferedReader(read, StandardCharsets.UTF_8);
-        String line = null;
-        while((line = br.readLine()) != null){
-            origin.add(line);
+        try(BufferedReader br = Files.newBufferedReader(read, StandardCharsets.UTF_8)){
+            String line = null;
+            while((line = br.readLine()) != null){
+                origin.add(line);
+            }
+
+            swapElements(origin, 1, 4);
+
+            for(String i: origin){
+                System.out.println(i);
+            }
+        } catch(Exception e){
+            System.out.println("Exception Detected! " + e.getStackTrace());
         }
 
-        swapElements(origin, 1, 4);
-
-        for(String i: origin){
-            System.out.println(i);
-        }
 
     }
 }
