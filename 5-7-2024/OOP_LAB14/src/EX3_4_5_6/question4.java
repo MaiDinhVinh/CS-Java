@@ -14,35 +14,16 @@ import java.io.BufferedReader;
 public class question4 {
     public static Set<String> union(Set<String> a, Set<String> b) throws Exception{
         Set<String> result = new HashSet<>();
-        List<String> compare = new ArrayList<>();
-        List<String> temp_a = new ArrayList<>();
 
-        compare.addAll(a);
-        compare.addAll(b);
-        temp_a.addAll(a);
+        result.addAll(a);
 
-        int comparing_index = 0;
-        int a_index = 0;
-        int condition = 0;
-        while(a_index < a.size()){
-            if(compare.get(comparing_index) == temp_a.get(a_index)){
-                condition++;
-            }
-
-            if(condition > 1){
-                compare.remove(comparing_index);
-            }
-
-            if(comparing_index == compare.size() - 1){
-                comparing_index = 0;
-                a_index++;
-                condition = 0;
+        for(String i: b){
+            if(result.contains(i)){
+                continue;
             } else{
-                comparing_index++;
+                result.add(i);
             }
         }
-
-        result.addAll(compare);
 
         return result;
 
