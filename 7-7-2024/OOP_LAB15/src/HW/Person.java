@@ -1,2 +1,76 @@
-package HW;public class Person {
+package HW;
+
+import java.time.LocalDate;
+
+
+public class Person {
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private int birthYear;
+    private String country;
+
+    public Person(String firstName, String lastName, String gender, int birthYear, String country){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.birthYear = birthYear;
+        this.country = country;
+    }
+
+    public String getFirstName(){
+        return this.firstName;
+    }
+
+    public String getLastName(){
+        return this.lastName;
+    }
+
+    public String getGender(){
+        return this.gender;
+    }
+
+    public int getBirthYear(){
+        return this.birthYear;
+    }
+
+    public String getCountry(){
+        return this.country;
+    }
+
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+
+    public void setBirthYear(int birthYear){
+        this.birthYear = birthYear;
+    }
+
+    public void setCountry(String country){
+        this.country = country;
+    }
+
+    //own method
+    public int getAge(){
+        int currentYear = LocalDate.now().getYear();
+        return currentYear - this.birthYear;
+    }
+
+    @Override
+    public String toString(){
+        return "Person[" + "name= " + this.firstName + " " + this.lastName + ", " + "gender= " + this.gender +
+                ", " + "birthYear= " + this.birthYear + ", " + "age= " + this.getAge() + ", " + "country= " +
+                this.country + "]";
+    }
 }
+
+
+
