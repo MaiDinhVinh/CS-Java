@@ -23,26 +23,29 @@ public class RunDriver {
             br.readLine(); //ignore first line, search on gg
             while((read_Line = br.readLine()) != null){
                 final_separation = read_Line.split(separation);
-                if(final_separation.length == 5){
-                    personList.add(new Person(final_separation[0], final_separation[1],
+                personList.add(new Person(final_separation[0], final_separation[1],
                             final_separation[2], Integer.parseInt(final_separation[3]),
                             final_separation[4]));
-                } else if(final_separation.length > 5){
-                    /*
-                      This line of code is basically handling
-                      the case where country name has more than 2 strings
-                     */
-                    String country_name = final_separation[4] + final_separation[5];
-                    personList.add(new Person(final_separation[0], final_separation[1],
-                            final_separation[2], Integer.parseInt(final_separation[3]),
-                            country_name));
-                }
+//                if(final_separation.length == 5){
+//                    personList.add(new Person(final_separation[0], final_separation[1],
+//                            final_separation[2], Integer.parseInt(final_separation[3]),
+//                            final_separation[4]));
+//                } else if(final_separation.length > 5){
+//                    /*
+//                      This line of code is basically handling
+//                      the case where country name has more than 2 strings
+//                     */
+//                    String country_name = final_separation[4] + final_separation[5];
+//                    personList.add(new Person(final_separation[0], final_separation[1],
+//                            final_separation[2], Integer.parseInt(final_separation[3]),
+//                            country_name));
+//                }
+
             }
 
         } catch(Exception e){
             System.out.println("Exception found! " + e.getStackTrace());
         }
-
 
         //sorting by firstName - lambda expression
         Comparator<Person> firstNameComparsion = (p1, p2) -> {
@@ -50,6 +53,7 @@ public class RunDriver {
         };
 
         Collections.sort(personList, firstNameComparsion);
+
 
 
         //sorting by lastName (descending) - lambda expression
@@ -68,14 +72,19 @@ public class RunDriver {
 
 
         //print out all persons born after 1968
-        Object[] after_1968 = personList.stream().filter(p_1968 -> p_1968.getBirthYear() > 1968).toArray();
+        Object[] after_1968 = personList.stream()
+                .filter(p_1968 -> p_1968.getBirthYear() > 1968)
+                .toArray();
 
         //print out all persons from Vietnam
-        Object[] from_vietnam = personList.stream().filter(p_vietnam -> p_vietnam.getCountry().equals("Vietnam"))
+        Object[] from_vietnam = personList.stream()
+                .filter(p_vietnam -> p_vietnam.getCountry().equals("Vietnam"))
                 .toArray();
 
         //print out all persons older than 40
-        Object[] older_than_40 = personList.stream().filter(p_more_40 -> p_more_40.getAge() > 40).toArray();
+        Object[] older_than_40 = personList.stream()
+                .filter(p_more_40 -> p_more_40.getAge() > 40)
+                .toArray();
 
         //print out all persons who have the longest lastName
         Collections.sort(personList, (p_longest_ln1, p_longest_ln2) -> {
@@ -84,8 +93,9 @@ public class RunDriver {
 
         int largest_length = personList.get(0).getLastName().length(); //largest lastName length
 
-        Object[] all_largest_fn = personList.stream().
-                filter(p_largest_ln -> p_largest_ln.getLastName().length() == largest_length).toArray();
+        Object[] all_largest_fn = personList.stream()
+                .filter(p_largest_ln -> p_largest_ln.getLastName().length() == largest_length)
+                .toArray();
 
         //print out all persons less than 30 years old and from Japan
         Object[] less_30_Japan = personList.stream().filter(p_30_Japan -> {
@@ -104,7 +114,8 @@ public class RunDriver {
         Object[] oldest_person = personList.stream().filter(p_oldest -> p_oldest.getAge() == oldest_age).toArray();
 
         //Calculate total age of all males
-        int total_age_male = personList.stream().filter(ponlymale -> ponlymale.getGender().equals("Male"))
+        int total_age_male = personList.stream()
+                .filter(ponlymale -> ponlymale.getGender().equals("Male"))
                 .mapToInt(pmale -> pmale.getAge()).sum();
 
         //calculate total age of all females from US
