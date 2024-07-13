@@ -38,26 +38,6 @@ public class Person {
         return this.country;
     }
 
-    public void setFirstName(String firstName){
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName){
-        this.lastName = lastName;
-    }
-
-    public void setGender(String gender){
-        this.gender = gender;
-    }
-
-    public void setBirthYear(int birthYear){
-        this.birthYear = birthYear;
-    }
-
-    public void setCountry(String country){
-        this.country = country;
-    }
-
     //own method
     public int getAge(){
         int currentYear = LocalDate.now().getYear();
@@ -71,6 +51,8 @@ public class Person {
                 this.country + "]";
     }
 }
+
+
 
 
 
