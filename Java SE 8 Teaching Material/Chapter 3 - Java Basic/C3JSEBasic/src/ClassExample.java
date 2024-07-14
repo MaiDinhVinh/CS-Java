@@ -15,12 +15,22 @@ class Car{
 }
 
 class Dealership{
-    java.util.ArrayList<Car> cars = new java.util.ArrayList<>();
+    private java.util.ArrayList<Car> cars; //null
+    //java.util.ArrayList<Car> cars = new java.util.ArrayList<>();
     void addCar(Car c){ cars.add(c); }
     void removeCar(Car c){ cars.remove(c); }
     void printCars(){
         for(Car c: cars){
             System.out.println("Make: "+c.make+"Model: "+c.model+"Year: "+c.year);
         }
+    }
+}
+
+//main method here
+class Deploy{
+    public static void main(String[] args) {
+        Car c1 = new Car();
+        Dealership dealer1 = new Dealership();
+        dealer1.addCar(c1);
     }
 }
