@@ -42,9 +42,10 @@ public class README {
         int user_input = 0;
         boolean escape = false;
         boolean invalid_input = false;
+        Scanner sc = new Scanner(System.in);
         do{
             System.out.println("Welcome to About Us program ! - wrote by DucksaberVN (JDK 1.8)");
-            Thread.sleep(1000);
+//            Thread.sleep(1000);
             System.out.println("1 - What is our project name ?");
             System.out.println("2 - What is our main project aim ?");
             System.out.println("3 - What is our primary project theme for 2024 session ?");
@@ -54,9 +55,11 @@ public class README {
             System.out.println("7 - How many members has joined since the start of the project ?");
             System.out.println("8 - End program");
             try{
-                Scanner sc = new Scanner(System.in);
                 System.out.print("Please enter your choice: ");
-                user_input = sc.nextInt();
+//                user_input = sc.nextInt();
+                String input_str = sc.nextLine();
+                user_input = Integer.parseInt(input_str);
+                System.out.println("###" + user_input);
                 switch (user_input){
                     case 1:
                         System.out.println(mainObject.getOur_project_name());
@@ -92,13 +95,15 @@ public class README {
                     break;
                 }
                 char condition = ' ';
-                Scanner check_condit = new Scanner(System.in);
+//                Scanner check_condit = new Scanner(System.in);
                 do{
                     if(invalid_input){
                         break;
                     }
                     System.out.print("Do you want to run the program again (y/n or Y/N) ?: ");
-                    condition = check_condit.next().charAt(0);
+//                    condition = check_condit.next().charAt(0);
+                    String check_str = sc.nextLine();
+                    condition = check_str.charAt(0);
                     if(condition == 'n' || condition == 'N'){
                         escape = true;
                     } else if(condition != 'y' && condition != 'Y'){
