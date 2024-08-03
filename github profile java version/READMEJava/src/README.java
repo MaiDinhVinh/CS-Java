@@ -2,28 +2,20 @@ import java.util.ArrayList;
 import java.util.List;
 class READMEMechanism {
     private String welcomingSlogan;
-
     private String govermentName;
-
     private String nickName;
-
     private String whoAmI;
-
     private String favoriteSubject;
-
     private String whichClubImIn;
-
     private String favoriteGame;
-
     private String favoriteSport;
-
     private String currentSkill;
-
     private String contactEmail;
-
     private String personalWebsite;
-
     private List<String> myGitProfile = new ArrayList<>();
+
+
+
 
     public READMEMechanism(){
         this.welcomingSlogan = "Welcome to the ricefield (VN) 👋";
