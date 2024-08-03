@@ -64,6 +64,7 @@ public class README{
         READMEMechanism VinhDev = new READMEMechanism();
         VinhDev.addAttribute();
         VinhDev.getMyProfile();
+        System.out.println("lol");
     }
 }
 
