@@ -1,8 +1,15 @@
 package TestSector_3;
 
 public class testshit1 {
+
+    public static boolean dmm(){
+        return true;
+    }
+
     public static void main(String[] args) {
-        long dmm = 1234;
-        System.out.println(dmm);
+        boolean ditconmemay = true;
+        if(dmm() && ditconmemay){
+            System.out.println("lon");
+        }
     }
 }
