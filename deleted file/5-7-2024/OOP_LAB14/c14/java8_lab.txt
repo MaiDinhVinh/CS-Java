@@ -1,0 +1,61 @@
+~~For question 1 and 2, read file word_list.txt to origin list
+
+***RUN EACH METHOD IN QUESTION 1 AND 2 WITH origin TO TEST YOUR CODE
+
+(1)
+public static void swapElements(List<String> origin, int first, int second){
+
+}
+origin = "a", "c", "e", "k", "b"
+swapElements(origin, 1, 4) ==> origin = "a", "b", "e", "k", "c"
+
+
+(2)
+public static List<String> extractList(List<String> origin, int start, int end){
+	//return a new list which has elements from start to end of origin list
+	//you have to take care all posibilities of start and end!!!
+	//do NOT use subList
+}
+
+origin = "a", "c", "e", "k", "b"
+extractList(origin, 1, 4) = "c", "e", "k", "b"
+
+
+
+
+~~For question 3 to 6, 
+read file word_set_a.txt to Set a
+read file word_set_b.txt to Set b
+read file word_sub_set.txt to Set subSet
+
+***RUN EACH METHOD IN QUESTION 3 TO 6 WITH a, b and subSet TO TEST YOUR CODE
+https://www.mathsisfun.com/sets/venn-diagrams.html
+
+(3)
+public static boolean isSubset(Set<String> a, Set<String> b){
+	//return true if a contains all elements in b
+	//otherwise, return false
+
+}
+
+
+(4)
+public static Set<String> union(Set<String> a, Set<String> b){
+	//return a new set which contains all elements that belong to either a or b
+	//you have to take care all posibilities !!!
+}
+
+
+(5)
+public static Set<String> intersection(Set<String> a, Set<String> b){
+	//return a new set which contains all elements that belong to both a and b
+	//you have to take care all posibilities !!!
+}
+
+
+(6)
+public static Set<String> difference(Set<String> a, Set<String> b){
+	//return a new set which contains all elements that belong to a but not b
+	//you have to take care all posibilities !!!
+}
+

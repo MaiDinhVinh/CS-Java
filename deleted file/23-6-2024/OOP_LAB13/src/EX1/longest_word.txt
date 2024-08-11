@@ -1,0 +1,7 @@
+Word: tax , length: 3
+Word: pat , length: 3
+Word: confrontation , length: 13
+Word: fog , length: 3
+Word: nun , length: 3
+Word: fee , length: 3
+Word: put , length: 3
