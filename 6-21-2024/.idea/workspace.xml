@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2dfeade-4f29-425f-84be-c61bbf314d3c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/OOP_LAB12/src/EX2/math_result_oop.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/OOP_LAB131.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX1/longest_word.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX1/random_words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX1/vowel_word.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX1/wording_nio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX1/wording_vowel_nio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX2/random_sentences (1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/EX2/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/build/classes/largest_word_sentence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/c13/java7_lab.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/c13/random_sentences.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/c13/random_words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/c13/source.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX1/longest_word.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX1/random_words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX1/vowel_word.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX1/wording_nio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX1/wording_vowel_nio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX2/largest_word_sentence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX2/random_sentences (1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/EX2/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23-6-2024/OOP_LAB13/src/OOP_LAB13.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2ipszxooPIEyr0lA6ThUbnSZ7GA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EX2bDriver.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ducksabervn/Desktop/học hành/học thêm/comp sci/CS-Java/21-6-2024",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2dfeade-4f29-425f-84be-c61bbf314d3c" name="Changes" comment="" />
+      <created>1720199118866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720199118866</updated>
+      <workItem from="1720199119870" duration="183000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
