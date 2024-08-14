@@ -1,3 +1,4 @@
+//THIS IS FOR SECTION 4.2 (THIS IS FOR SECTION 4.2.1)
 public class InvalidVariableName {
     public static void main(String[] args) {
         /*

@@ -1,7 +1,10 @@
+//THIS IS FOR SECTION 4.2.2
+
 /*package com.fpt
 * //this may not work since this Java file resides in something called "default package"
 * in this situation is "src"
 * */
+
 
 
 import java.util.Scanner; //this is importing the Scanner classes from Java APIs
