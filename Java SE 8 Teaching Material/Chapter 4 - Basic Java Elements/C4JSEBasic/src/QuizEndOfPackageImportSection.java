@@ -4,7 +4,7 @@
 * A file named Student.java, which of these codes
 * below will compile without any error ?*/
 
-//CODE SNIPPET 1
+//CODE SNIPPET 1 (INCORRECT)
 
 //Start of the file
 public class Student{
@@ -15,7 +15,7 @@ public class Grade{
 }
 //end of the file
 
-//CODE SNIPPET 2
+//CODE SNIPPET 2 (CORRECT)
 
 //start of the file
 class Student{
@@ -31,7 +31,7 @@ class Score{
 //end of the file
 
 
-//CODE SNIPPET 3
+//CODE SNIPPET 3 (INCORRECT)
 
 //start of the file
 public class Gradeable{
@@ -41,7 +41,7 @@ public class Person{
 }
 //end of the file
 
-//CODE SNIPPET 4
+//CODE SNIPPET 4 (INCORRECT)
 
 //start of the file
 class Student{ //doan nay de bi bay
@@ -53,7 +53,7 @@ public class Professor{
 }
 //end of the file
 
-//CODE SNIPPET 5
+//CODE SNIPPET 5 (CORRECT)
 
 //start of the file
 package com.fpt.education;
