@@ -1,0 +1,15 @@
+3 Java literals:
+ - true
+ - false
+ - null
+3 Java keywords:
+ - class
+ - implements
+ - extends
+1 Java reserved word: goto
+1 non-reserved word: hello
+3 classes from java.lang package:
+ - java.lang.String
+ - java.lang.Object
+ - java.lang.Exception
+
