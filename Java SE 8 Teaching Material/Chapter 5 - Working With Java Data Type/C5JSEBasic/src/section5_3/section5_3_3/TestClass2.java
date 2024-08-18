@@ -8,6 +8,6 @@ public class TestClass2 {
 
     public static void main(String[] args) {
         int p;
-        System.out.println(a + " " + new TestClass2().y);
+        System.out.println(a + " " + new TestClass2().y); //new TestClass2 instance and then access their instance field
     }
 }
