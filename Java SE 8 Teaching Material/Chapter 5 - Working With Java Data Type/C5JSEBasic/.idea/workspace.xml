@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -31,7 +32,7 @@
     &quot;Application.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ducksabervn/Library/CloudStorage/GoogleDrive-admin@vinhdev.vn/My Drive/JavaSE 8 (Foundation) Teaching Material/Chapter 5 - Working With Java Data Type/C5JSEBasic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/My Drive/JavaSE 8 (Foundation) Teaching Material/Chapter 5 - Working With Java Data Type/C5JSEBasic&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,6 +60,10 @@
       <workItem from="1723892151342" duration="175000" />
       <workItem from="1723892350470" duration="5863000" />
       <workItem from="1723905633041" duration="5100000" />
+      <workItem from="1723954035217" duration="15267000" />
+      <workItem from="1723981429729" duration="340000" />
+      <workItem from="1723981779494" duration="2000" />
+      <workItem from="1723983837552" duration="2672000" />
     </task>
     <servers />
   </component>
