@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/section5_4/DeclareAndInstantiate.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -64,6 +67,8 @@
       <workItem from="1723981429729" duration="340000" />
       <workItem from="1723981779494" duration="2000" />
       <workItem from="1723983837552" duration="2672000" />
+      <workItem from="1724127582458" duration="12535000" />
+      <workItem from="1724163556379" duration="62000" />
     </task>
     <servers />
   </component>
