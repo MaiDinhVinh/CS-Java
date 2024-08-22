@@ -9,6 +9,12 @@ import section6_1.section6_1_1.RelationalOperators.RelationalOperator2;
 import section6_1.section6_1_1.LogicalConditionalOperators.AndOrOperators;
 import section6_1.section6_1_1.LogicalConditionalOperators.Negation;
 import section6_1.section6_1_1.LogicalConditionalOperators.Ternary;
+import section6_1.section6_1_1.MiscellaneousOperators.StringConcatenation;
+import section6_1.section6_1_1.MiscellaneousOperators.CastOperator;
+import section6_1.section6_1_1.MiscellaneousOperators.DotOperator;
+import section6_1.section6_1_1.MiscellaneousOperators.LambdaOperator;
+import section6_1.section6_1_1.MiscellaneousOperators.InstanceOfOperator;
+import section6_1.section6_1_1.MiscellaneousOperators.ArrayAccessOperator;
 
 public class OverviewOfOperators {
     /**
@@ -22,7 +28,7 @@ public class OverviewOfOperators {
      * {@link java.lang.Long}<p>
      * {@link java.lang.Float}<p>
      * {@link java.lang.Double}<p>
-     * These wrapper classes are applicable due to the auto-boxing featur in Java 1.5<p>
+     * These wrapper classes are applicable due to the auto-boxing feature in Java 1.5<p>
      * (Go to {@link AddSubMulDivi} for {@code +}, {@code -}, {@code *}, {@code /} operators)<p>
      * (Go to {@link ModulusOperators} for {@code %} operator)<p>
      * (Go to {@link UnaryMinus} for {@code -} operator (Unary Operation ONLY !))<p>
@@ -44,7 +50,16 @@ public class OverviewOfOperators {
      * - The first one is: {@code =}, which represents for Simple Assignment<p>
      * - The second one is called Compound Assignment, there are 11 of them in
      * total, but we will just focusing on these type of operators:<p>
-     * {@code *=}, {@code /=}, {@code %=}, {@code +=}, {@code -=}*/
+     * {@code *=}, {@code /=}, {@code %=}, {@code +=}, {@code -=}<p>
+     * ------------------------------------------------<p>
+     * 5) Miscellaneous Operator: Other type of operators<p>
+     * (Go to {@link StringConcatenation} for {@code +} operator)<p>
+     * (Go to {@link CastOperator} for {@code ()} operator)<p>
+     * (Go to {@link DotOperator} for {@code .} operator)<p>
+     * (Go to {@link LambdaOperator} for {@code ->} operator)<p>
+     * (Go to {@link InstanceOfOperator} for {@code instanceof} operator)<p>
+     * (Go to {@link ArrayAccessOperator} for {@code []} operator)<p>
+     * */
     public static void main(String[] args) {
         System.out.println("operators illustration in javadoc");
     }
