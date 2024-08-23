@@ -100,17 +100,10 @@ public class Main {
         int x = (int) (f - 1);
         float f2 = (float) (f + d);*/
 
-        
-
-
-
-
-
-
-
-
-
-
+        //Section 6.1.6 snippet 14
+        /*
+        int i = 0;
+        byte b = (byte) i + 1;*/
 
     }
 }
