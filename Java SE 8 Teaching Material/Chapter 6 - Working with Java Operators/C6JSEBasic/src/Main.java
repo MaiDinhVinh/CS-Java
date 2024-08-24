@@ -105,5 +105,23 @@ public class Main {
         int i = 0;
         byte b = (byte) i + 1;*/
 
+        //section 6.1.6 snippet 15
+        /*
+        String s1 = "hello";
+        int i = 1;
+        String s2 = s1 + 1 + i;
+        System.out.println(s2); //prints hello11*/
     }
 }
+
+//section 6.1.6 snippet 16
+/*
+class TestClass{
+    static boolean a ;
+    static boolean b ;
+    static boolean c ;
+    public static void main(String[] args) {
+        boolean bool = (a = true) || (b = true) && (c = true) ;
+        System.out.println(a + ", " + b + ", "+ c );
+    }
+}*/
