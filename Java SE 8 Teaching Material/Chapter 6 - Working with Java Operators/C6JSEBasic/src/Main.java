@@ -1,26 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        /* Section 6.1.3 snippet 1
-        int i = 1, post = 0, pre = 0;
+        //Section 6.1.3 snippet 1
+        /*int i = 1, post = 0, pre = 0;
         post = i++;
         System.out.println(i+", "+post); //prints 2, 1
         i = 1; //resetting to i back to 1
         pre = ++i;
-        System.out.println(i+", "+pre); //prints 2, 2
-        */
+        System.out.println(i+", "+pre); //prints 2, 2*/
 
-        /* Section 6.1.3 snippet 2
-        int i = 1;
+        //Section 6.1.3 snippet 2
+        /*int i = 1;
         i = i++;
-        System.out.println(i); //print 1
-        * */
+        System.out.println(i); //print 1*/
 
-        /* Section 6.1.3 snippet 3
-        * int a = 2;
+
+        //Section 6.1.3 snippet 3
+        /*int a = 2;
           int b = 5;
           int c = a * (a++ - --b) * a * b;
-          System.out.println(a+" "+b+" "+c); //print out 3 4 -48
-        *  */
+          System.out.println(a+" "+b+" "+c); //print out 3 4 -48*/
 
         /* Section 6.1.3 snippet 4
         int a = 2;
@@ -35,8 +33,8 @@ public class Main {
         a++;
         System.out.println(a == b); //print out false*/
 
-        /* Section 6.1.4 snippet 6
-        String s1 = "hello" + " world"; //both the operands are Strings
+        //Section 6.1.4 snippet 6
+        /*String s1 = "hello" + " world"; //both the operands are Strings
         System.out.println(s1); //prints "hello world"
         String s2 = "hello " + 1; //first operand is a String and second is an int
         System.out.println(s2); //prints "hello 1"
@@ -45,20 +43,20 @@ public class Main {
         String s3 = d + s; //first operand is a Double and second is a String
         System.out.println(s3); //prints "1.02"*/
 
-        /* Section 6.1.4 snippet 7
-        Object obj = new Object();
+        //Section 6.1.4 snippet 7
+        /*Object obj = new Object();
         String str = obj.toString();
         System.out.println( str );
         System.out.println( "hello " + obj );*/
 
-        /* Section 6.1.4 snippet 8
-        Object obj = null;
+        //Section 6.1.4 snippet 8
+        /*Object obj = null;
         System.out.println("hello " + obj);*/
 
-        /* Section 6.1.4 code snippet 9
+        //Section 6.1.4 code snippet 9
         String str = "2";
         str += 1; //this is the same as str = str + 1;
-        System.out.print(str); //prints "21"*/
+        System.out.print(str); //prints "21"
 
         /* Section 6.1.4 snippet 10
         Object obj = new Object();
@@ -101,13 +99,11 @@ public class Main {
         float f2 = (float) (f + d);*/
 
         //Section 6.1.6 snippet 14
-        /*
-        int i = 0;
+        /*int i = 0;
         byte b = (byte) i + 1;*/
 
         //section 6.1.6 snippet 15
-        /*
-        String s1 = "hello";
+        /*String s1 = "hello";
         int i = 1;
         String s2 = s1 + 1 + i;
         System.out.println(s2); //prints hello11*/
