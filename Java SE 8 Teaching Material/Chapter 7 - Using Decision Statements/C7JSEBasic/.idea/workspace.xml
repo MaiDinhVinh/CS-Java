@@ -17,9 +17,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2l5gqlHQ8H6zpS6Ne7WkA9hHIDD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,6 +30,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "I:/My Drive/JavaSE 8 (Foundation) Teaching Material/Chapter 7 - Using Decision Statements/C7JSEBasic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1724475545365</updated>
       <workItem from="1724475547732" duration="11800000" />
+      <workItem from="1724563589526" duration="9619000" />
+      <workItem from="1724580711540" duration="1734000" />
     </task>
     <servers />
   </component>
