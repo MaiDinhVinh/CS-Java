@@ -150,13 +150,13 @@ public class Main {
         else System.out.println("d");*/
 
         //snippet 21
-        boolean flag = false;
+        /*boolean flag = false;
         if(flag = true){
             System.out.println("true");
         }
         else {
             System.out.println("false");
-        }
+        }*/
 
         //snippet 22
         /*String data = null;
