@@ -8,8 +8,8 @@ class Student{
 public class Main {
     public static void main(String[] args) {
         //snippet 1
-        int[] a = new int[30]; 
-         /*int i; //i is an int
+        /*int[] a = new int[30];
+        int i; //i is an int
         int[] ia1, ia2; //ia1 and ia2 are one dimensional arrays of ints
         int[][] iaa; //iaa is a two dimensional array of ints and so on*/
 
