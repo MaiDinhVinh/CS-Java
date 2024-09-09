@@ -1,3 +1,5 @@
+import sun.security.util.AuthResources_it;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +22,7 @@ public class Main {
 
         //snippet 3
         /*int i, ia[]; //i is an int but ia is a one dimensional array of int values
-        int[] ia, iaa[]; //ia is a one dimensional array of ints but iaa is a two dimensional array of ints and so on*/
+        int[] ia1, iaa[]; //ia is a one dimensional array of ints but iaa is a two dimensional array of ints and so on*/
 
         //snippet 4
         /*Object[] obja, objaa[]; //obja is a one dimensional array of Objects but objaa is a two dimensional array of Objects
@@ -47,7 +49,7 @@ public class Main {
         System.out.println(stra.getClass().getName()
                 +" , "+stra.getClass().getSuperclass().getName());
         System.out.println(ta.getClass().getName()
-                +" , "+ta.getClass().getSuperclass().getName());*/
+                +" , "+ta.getClass().getSuperclass().getName()); */
 
         //snippet 8
         /*int[] ia = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; //an array of ints of size 10
@@ -56,10 +58,15 @@ public class Main {
         MyClass[] myca = { new MyClass(), new MyClass(), new MyClass(), new MyClass(), new MyClass()} ; //an array of MyClass objects of size 5*/
 
         //snippet 9
-        /*int[] ia = new int[]{ 1, 2, 3, 4, 5 };*/
+        /*int[] ia1 = new int[]{ 1.1, 2.0, 3.0, 4.0, 5.0 };
+        double[] ia2 = new double[]{ 1, 2, 3, 4, 5 };*/
 
         //snippet 10
         /*int[] ia = new int[2]{ 1, 2 }; //will not compile.*/
+
+        /*int[] intarr1 = {1,2,3,4,5};
+        int[] intarr2 = intarr1.clone();
+        System.out.println(intarr2[3]);*/
 
         //snippet 11
         /*String[] sa = { "1", "2", "3" };
@@ -69,6 +76,21 @@ public class Main {
         //snippet 12
         /*Number[] na = { 1, 2, 3 };
         na[0] = new Float(1.2f);*/
+
+        /*int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = new int[arr1.length + 1];
+        int arr1Index = 0;
+        for(int i = 0; i < arr2.length; i++){
+            if(i == 2){
+                arr2[i] = -1;
+            }else{
+                arr2[i] = arr1[arr1Index];
+                arr1Index++;
+            }
+        }
+        for(int i = 0; i < arr2.length; i++){
+            System.out.println(arr2[i]);
+        }*/
 
         //snippet 13
         /*ArrayList al = new ArrayList();
@@ -84,6 +106,10 @@ public class Main {
         //dump contents of the list
         System.out.println("All names: "+al);*/
 
+        //ClassCastException
+        /*Object x = new Integer(0);
+        System.out.println((String)x); */
+
         //snippet 14
         /*ArrayList<String> al = new ArrayList<String>();
         al.add(new Object());*/
@@ -98,14 +124,22 @@ public class Main {
         //snippet 16
         /*List list = new ArrayList(); //ok because ArrayList is a List
         ArrayList<String> al2 = new ArrayList<String>(list);
-        List<Student> list1 = new ArrayList<>();*/
+        List<Student> list1 = new ArrayList<>(); */
+
+        /*ArrayList<String> al1 = new ArrayList<>();
+        al1.add("shi");
+        al1.add("foo");
+        ArrayList<String> al2 = new ArrayList<>(al1);
+        al2.set(0, "hello");
+        System.out.println(al1);
+        System.out.println(al2);*/
 
         //snippet 17
         /*ArrayList<String> sList1 = new ArrayList<>(); //observe the usage of the diamond operator
         sList1.add("a"); //[a]
         ArrayList<String> sList2 = new ArrayList<>();
         sList2.add("b"); //[b]
-        sList2.addAll(sList1); //sList2 now contains [b, a]*/
+        sList2.addAll(sList1); //sList2 now contains [b, a] */
 
         //snippet 18
         /*ArrayList<String> sList1 = new ArrayList<>();
@@ -135,6 +169,10 @@ public class Main {
         ArrayList<String> al2 = new ArrayList<>(Arrays.asList( new String[]{"a", "b" } ));
         al1.removeAll(al2);
         System.out.println(al1); //prints [ c ]*/
+
+        /*ArrayList<String> al1 = new ArrayList<>(Arrays.asList( new String[]{"a", "b",
+                "c", "a" } ));
+        System.out.println(al1.indexOf("a"));*/
 
         //snippet 22
         /*ArrayList<String> al = new ArrayList<>(); // an ArrayList containing [a, b, c]
@@ -194,7 +232,7 @@ public class Main {
         System.out.println(list1);*/
 
         //snippet 29 (check the class above main method too)
-        /*List<Student> students = new ArrayList<>();//adding a few Students to the list
+        List<Student> students = new ArrayList<>();//adding a few Students to the list
         students.add(new Student("alice")); students.add(new Student("bob"));
         students.add(new Student("chad"));
         int size = students.size();
@@ -211,6 +249,6 @@ public class Main {
         while(it.hasNext()){
             Student s = (Student) it.next();
             System.out.println(s.name);
-        }*/
+        }
     }
 }
