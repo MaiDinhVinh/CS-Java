@@ -11,8 +11,7 @@ public class Main6 {
     double taxAmt = price*tc.rate;
 }*/
 //2ND VERSION
-/*
-class TaxCalculator{
+/*class TaxCalculator{
     //double rate = 0.1; //no more hardcoding
     double getTaxAmount(double price){
         return getRateFromDB()*price;
