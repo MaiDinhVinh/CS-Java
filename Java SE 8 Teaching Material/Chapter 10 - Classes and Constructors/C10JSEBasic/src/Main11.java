@@ -2,8 +2,7 @@
  * Now, consider the following program. Can you tell which line out of the four lines marked
  * LINE A, LINE B, LINE C, and LINE D should be uncommented so that it will print {@code 111, dummy}?*/
 
-/*
-class Account{
+/*class Account{
     int id;
     String name;
     public Account(){
