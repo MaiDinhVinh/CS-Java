@@ -29,4 +29,5 @@ class Scopes{
         block2 = 9; //compilation error
         int loop1 = 0, loop2 = 0, block1 = 0, block2 = 8; //all valid
     }
-}*/
+}
+*/
