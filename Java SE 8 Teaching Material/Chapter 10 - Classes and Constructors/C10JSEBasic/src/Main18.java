@@ -11,4 +11,5 @@ class Person{
             int i = 2; //block scope. Not OK.
         }
     }
-}*/
+}
+*/
