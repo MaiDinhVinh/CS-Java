@@ -7,4 +7,5 @@ class Student{
         Student.count = count; //works fine in instance as well as static methods
         this.count = count; //works fine in an instance method
     }
-}*/
+}
+*/
