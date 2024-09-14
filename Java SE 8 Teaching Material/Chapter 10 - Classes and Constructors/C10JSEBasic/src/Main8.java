@@ -6,4 +6,5 @@ class TestClass{
     {
         this.someValue = x;
     }
-}*/
+}
+*/
