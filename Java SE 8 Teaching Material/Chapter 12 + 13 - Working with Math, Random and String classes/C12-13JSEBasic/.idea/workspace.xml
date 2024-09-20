@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4388aa58-b6e7-47e0-809c-b2c6b597f988" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/C12-13JSEBasic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/C12-13JSEBasic/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ducksabervn/Desktop/học hành/học thêm/comp sci/CS-Java/Java SE 8 Teaching Material/Chapter 12 + 13 - Working with Math, Random and String classes/C12-13JSEBasic&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/Java SE 8 Teaching Material/Chapter 12 + 13 - Working with Math, Random and String classes/C12-13JSEBasic&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,8 +50,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -78,6 +77,15 @@
       <workItem from="1726763031281" duration="21000" />
       <workItem from="1726763328164" duration="105000" />
       <workItem from="1726763731932" duration="26000" />
+      <workItem from="1726765904292" duration="9000" />
+      <workItem from="1726765921722" duration="13000" />
+      <workItem from="1726765942129" duration="10000" />
+      <workItem from="1726765981736" duration="503000" />
+      <workItem from="1726766854873" duration="12000" />
+      <workItem from="1726767172354" duration="21000" />
+      <workItem from="1726768220598" duration="53000" />
+      <workItem from="1726799596503" duration="78000" />
+      <workItem from="1726799870110" duration="267000" />
     </task>
     <servers />
   </component>
