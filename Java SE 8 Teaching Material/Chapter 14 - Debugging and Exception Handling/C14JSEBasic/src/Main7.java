@@ -1,6 +1,7 @@
 /**
- * Look at the parameter passed in into the method and the catch block*/
-/*public class Main7 {
+ * Look at the parameter passed in into the method and the catch block*//*
+
+public class Main7 {
     public static double computeInterest(double p, double r, int t) throws Exception{
         if(t<0) throw new Exception("t must be > 0");
         else return p*r*t;
@@ -13,4 +14,5 @@
         }
         System.out.println(interest);
     }
-}*/
+}
+*/
