@@ -1,4 +1,3 @@
-/*
 public class Main8 {
     public static double computeInterest(double p, double r, int t) throws Exception{
         if(t<0) throw new Exception("t must be > 0");
@@ -10,9 +9,8 @@ public class Main8 {
             computeInterest(100, 0.1, -1);
         }catch(Exception e){
             e.printStackTrace();
-            //or System.out.println(e);
+//          or  System.out.println(e);
         }
         System.out.println(interest);
     }
 }
-*/
