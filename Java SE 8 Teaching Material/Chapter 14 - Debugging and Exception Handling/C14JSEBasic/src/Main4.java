@@ -1,5 +1,4 @@
-/*
-public class Main4 {
+/*public class Main4 {
     public static void message() throws Exception{
         if(true) throw new Exception();
         else return;
@@ -11,5 +10,4 @@ public class Main4 {
             e.printStackTrace();
         }
     }
-}
-*/
+}*/
