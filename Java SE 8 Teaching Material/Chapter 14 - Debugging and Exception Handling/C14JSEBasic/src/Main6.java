@@ -1,4 +1,5 @@
-/*public class Main6 {
+/*
+public class Main6 {
     public static void message() throws Exception{
         if(true) throw new Exception();
         else return;
@@ -7,4 +8,5 @@
         message();
     }
     //NOTICE THE TYPE OF EXCEPTION IS BEING THROWN RIGHT NOW
-}*/
+}
+*/
