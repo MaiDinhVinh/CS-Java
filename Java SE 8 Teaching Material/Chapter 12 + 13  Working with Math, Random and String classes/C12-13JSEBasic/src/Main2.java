@@ -1,4 +1,3 @@
-/*
 class TestClass{
     static String code = "1234";
     public static void checkCode(String str){
@@ -9,4 +8,3 @@ class TestClass{
         checkCode(new String("1234"));
     }
 }
-*/
