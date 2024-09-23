@@ -173,7 +173,7 @@ public class Main{
 
         //snippet 26 - check Main2
         //snippet 27
-        /*System.out.println(new String("1234").equals("1234"));*/
+        /*System.out.println(new String("1234").equals("1234")); */
 
         //snippet 28
         /*String a = "alice";
@@ -189,9 +189,9 @@ public class Main{
         int acctNo = 1234;
         int points = 100;
         System.out.format("Hello, %s!%nThe point balance in your account %s is %d.%n",
-                name, acctNo, points); //4
+                acctNo, name, points); //4
         System.out.format("Great Job!\n", name); //5
-        System.out.format("These points are worth %d USD.%nThank you!", points*10.0); //6*/
+        System.out.format("These points are worth %d USD.%nThank you!", points*10); //6*/
 
         
 
