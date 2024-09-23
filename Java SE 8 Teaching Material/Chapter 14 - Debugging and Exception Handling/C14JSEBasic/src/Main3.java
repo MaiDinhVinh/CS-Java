@@ -1,5 +1,4 @@
-/*
-public class Main3 {
+/*public class Main3 {
     public static void message() throws Exception{
         if(true) throw new Exception();
         else return;
@@ -7,6 +6,5 @@ public class Main3 {
     public static void main(String[] args) throws Exception {
         message();
     }
-}
+}*/
 
-*/
