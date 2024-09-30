@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77fd516b-f2b7-4aba-8108-eaee9f49c500" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LAB2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LAB1.2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2mdYnSTgeCMBhaaGYB3RPALY1Ld" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,6 +49,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/redo lab/LAB2/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
@@ -79,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727408086889</updated>
       <workItem from="1727408087966" duration="7875000" />
+      <workItem from="1727667591555" duration="33000" />
     </task>
     <servers />
   </component>
