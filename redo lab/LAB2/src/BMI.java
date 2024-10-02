@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class EX4 {
+public class BMI {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your gender (0 for female, 1 for male): ");
