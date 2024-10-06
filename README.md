@@ -10,6 +10,12 @@
 ![](https://github.com/MaiDinhVinh/CS-Java/blob/main/Java.png)
 
 **Oracle Foundation Certification**
+
+
+
+
+
+
 my mom didn't have enough time to find for me a best time to take the test
 so i have to write a Java script to generate the best date for me lol :)
 ```java
