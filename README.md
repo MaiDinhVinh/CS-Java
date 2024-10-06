@@ -20,7 +20,7 @@ my mom didn't have enough time to find for me a best time to take the test
 so i have to write a Java script to generate the best date for me lol :)
 ```java
 import java.util.Random;
-public class dmm{
+class RandomDate{
     /**
      * minecraft best seed is used to generate my final date<p>
      * for Oracle Foundation Test :V<p>
