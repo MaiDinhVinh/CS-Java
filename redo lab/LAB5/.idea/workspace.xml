@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a260118-74f0-4048-94ee-d513b2b03559" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0778c74e-f707-46e1-8f6f-3bfacdfc66f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LAB5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +34,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
+  "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2nYN75hLv45XyBwdW9fgsYKmJdb" />
+  <component name="ProjectId" id="2nZRMFJ3JRhP7iQW78bspbVrj9g" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,13 +45,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.EX1.executor": "Run",
     "Application.EX2.executor": "Run",
     "Application.EX3.executor": "Run",
     "Application.EX4.executor": "Run",
     "Application.EX5.executor": "Run",
-    "Application.EX7.executor": "Run",
-    "Application.EX8.executor": "Run",
-    "Application.MagicNumber.executor": "Run",
+    "Application.EX6.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -53,8 +60,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/redo lab/LAB4/src/Main.java",
-    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "onboarding.tips.debug.path": "/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/redo lab/LAB5/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,12 +79,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a260118-74f0-4048-94ee-d513b2b03559" name="Changes" comment="" />
-      <created>1729145878867</created>
+      <changelist id="0778c74e-f707-46e1-8f6f-3bfacdfc66f0" name="Changes" comment="" />
+      <created>1729178561259</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729145878867</updated>
-      <workItem from="1729145879978" duration="8792000" />
+      <updated>1729178561259</updated>
+      <workItem from="1729178562250" duration="4631000" />
     </task>
     <servers />
   </component>
