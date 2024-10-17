@@ -11,5 +11,6 @@
 
 **Oracle Foundation Certification**
 
-- My first major milestone, after 6 months of pure painfulness :) (achieved on Oct, 15, 2024) 
-![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCFA eCertificate.png)
+- My first major milestone, after 6 months of pure painfulness :) 
+**achieved on Oct, 15, 2024**
+![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCFA-eCertificate.png)
