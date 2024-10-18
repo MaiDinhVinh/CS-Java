@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0778c74e-f707-46e1-8f6f-3bfacdfc66f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LAB5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX8_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EX8_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2nZRMFJ3JRhP7iQW78bspbVrj9g" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,6 +43,8 @@
     "Application.EX4.executor": "Run",
     "Application.EX5.executor": "Run",
     "Application.EX6.executor": "Run",
+    "Application.EX7.executor": "Run",
+    "Application.EX8_1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -85,10 +79,22 @@
       <option name="presentableId" value="Default" />
       <updated>1729178561259</updated>
       <workItem from="1729178562250" duration="4631000" />
+      <workItem from="1729226482415" duration="3115000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
