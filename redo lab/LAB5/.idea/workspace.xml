@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0778c74e-f707-46e1-8f6f-3bfacdfc66f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX8_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EX8_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +41,7 @@
     "Application.EX6.executor": "Run",
     "Application.EX7.executor": "Run",
     "Application.EX8_1.executor": "Run",
+    "Application.EX8_2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -79,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729178561259</updated>
       <workItem from="1729178562250" duration="4631000" />
-      <workItem from="1729226482415" duration="3115000" />
+      <workItem from="1729226482415" duration="3843000" />
     </task>
     <servers />
   </component>
