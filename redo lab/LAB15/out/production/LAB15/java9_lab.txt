@@ -1,0 +1,53 @@
+create the following class
+public class Person {
+	private String firstName;
+	private String lastName;
+	private String gender;
+	private int birthYear;
+	private String country;
+	
+	//constructors
+	//setters
+	//getters
+	//getAge() ~~ LocalDate.now().getYear() - this.birthYear;
+	//toString
+
+}
+
+
+Read file person_list.txt. For each line, create a new Person object.
+Store all 50 persons in a List<Person>
+
+
+//use lambda for the following questions
+Sort persons by firstName in ascending order then print out to confirm
+
+Sort persons by lastName in descending order then print out to confirm
+
+Sort persons by age in descending order then print out to confirm
+
+
+//use lambda and stream for the following questions
+Print out all persons born after 1968
+
+Print out all persons from Vietnam
+
+Print out all persons older than 40
+
+Print out all persons who have the longest lastName
+
+Print out all persons less than 30 years old and from Japan
+
+Print out the youngest person
+
+Print out the oldest person
+
+Calculate total age of all males. Hint: .sum()
+
+Calculate total age of all females from United States
+
+Calculate the average age of persons from Vietnam
+
+Among Vietnam, Thailand, and Japan, which country has the maximum total age of all males?
+
+Among United States, United Kingdom, which country has the minimum total age of all females?
