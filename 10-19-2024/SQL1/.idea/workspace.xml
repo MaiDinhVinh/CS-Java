@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94ed3fa9-2b8c-40b3-bbd7-ccb8987da5a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SQL1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/LAB15.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../redo lab/LAB15/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0531ec33-32d4-41be-a822-99cc7d52398e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0531ec33-32d4-41be-a822-99cc7d52398e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/NorthWind.jYLXkQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ducksabervn",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing",
-    "sql.codeStylePanel.last.previewDialect": "MySQL"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ducksabervn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
+    &quot;sql.codeStylePanel.last.previewDialect&quot;: &quot;MySQL&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

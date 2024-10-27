@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dd8b4f8-4cc4-40d9-a9d9-b30f3a1171fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SQL2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/0531ec33-32d4-41be-a822-99cc7d52398e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/0531ec33-32d4-41be-a822-99cc7d52398e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/NorthWind.jYLXkQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/dataSources/12c8ce35-29fe-4b17-80cb-ae8cba34cf6c/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-19-2024/SQL1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2nztDQlqH3lam9oPbxbF8dXWGPQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/ducksabervn",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
