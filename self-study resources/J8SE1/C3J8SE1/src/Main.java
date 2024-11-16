@@ -1,8 +1,11 @@
+import javax.xml.transform.Source;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.time.*;
 import java.time.format.*;
+import java.util.List;
+
 public class Main{
     //for snippet 37
     /*private static void performAnimalEnrichment(LocalDate start, LocalDate end) {
@@ -29,7 +32,7 @@ public class Main{
 
         //snippet 2
         /*String s = "hello world";
-        String s2 = "hell" + "o";
+        String s2 = "hello" + " world";
         System.out.println(s == s2);*/
 
         //snippet 3
@@ -84,24 +87,25 @@ public class Main{
 
         //snippet 11
         /*String alpha = "";
-        for(char current = 'a'; current <= 'z'; current++) alpha += current;
+        for(char current = 'a'; current <= 'z'; current++)
+            alpha += current;
         System.out.println(alpha);*/
 
         //snippet 12
         /*StringBuilder alpha = new StringBuilder();
-        for(char current = 'a'; current <= 'z'; current++) alpha.append(current);
+        for(char current = 'a'; current <= 'z'; current++)
+            alpha.append(current);
         System.out.println(alpha);*/
 
         //snippet 13
         /*String[] arr = new String[2];
-        Object[] obj = arr; //what is this called ?
-        Number[] num = {1,2,3,4};
-        Integer[] inte = (Integer[])num; //what is this called ?*/
+        Object[] obj = arr; //what is this called ?*/
 
         //snippet 14
         /*int[] numbers = { 6, 9, 1 };
         Arrays.sort(numbers);
-        for (int i = 0; i < numbers.length; i++) System.out.print (numbers[i] + " ");*/
+        for (int i = 0; i < numbers.length; i++)
+            System.out.print (numbers[i] + " ");*/
 
         //snippet 15
         /*String[] strings = { "10", "9", "100" };
@@ -122,9 +126,9 @@ public class Main{
         System.out.println(Arrays.binarySearch(numbers, 3)); */
 
         //snippet 18
-        /*int[][] arr = new int[12][12];
-        int[][] arr2 = new int[2][3];
-        int[][] arr3 = new int[2][];
+       /* int[][] arr = new int[12][12];
+        int[][] arr2 = new int[2][3]; //{ {3}, {3} }
+        int[][] arr3 = new int[2][]; //{2}
         arr3[0] = new int[3];
         arr3[1] = new int[2];*/
 
@@ -160,7 +164,6 @@ public class Main{
                 System.out.println(i);
             }
         }*/
-
         //snippet 22
         /*ArrayList<Integer> arrlist = new ArrayList<>();
         arrlist.add(1);
@@ -203,14 +206,23 @@ public class Main{
         System.out.println(arr);*/
 
         //snippet 27
-        /*ArrayList<Integer> arrlist = new ArrayList<>();
+        ArrayList<Integer> arrlist = new ArrayList<>();
         arrlist.add(3);
         arrlist.add(1);
         arrlist.add(0);
         arrlist.add(-1);
         System.out.println(arrlist);
         Collections.sort(arrlist);
-        System.out.println(arrlist);*/
+        System.out.println(arrlist);
+
+        /*String[] array = { "hawk", "robin" }; // [hawk, robin]
+        List<String> list = Arrays.asList(array); // returns fixed size list
+        System.out.println(list.size()); // 2
+        list.set(1, "test"); // [hawk, test]
+        array[0] = "new"; // [new, test]
+        for (String b : list)
+            System.out.print(b + " "); // new test
+        list.remove(1);*/
 
         //snippet 28
         /*System.out.println(LocalDate.now());
