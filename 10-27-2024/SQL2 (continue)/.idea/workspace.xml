@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4402988-eca9-4f9e-a324-fa1f24c3bbe1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10-26-2024/SQL2/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-26-2024/SQL2/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10-26-2024/SQL2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10-26-2024/SQL2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/out/production/C3J8SE1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/out/production/C3J8SE1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../self-study resources/J8SE1/C3J8SE1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../self-study resources/J8SE1/Chapter 3 - Core Java APIs.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../self-study resources/J8SE1/Chapter 3 - Core Java APIs.pptx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2oEgJxR3oqxkMvomZxJwR1Lsph1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +31,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenDatabaseViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/ducksabervn",
