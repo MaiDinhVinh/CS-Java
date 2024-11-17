@@ -13,7 +13,9 @@ public class Main{
         while (upTo.isBefore(end)) {
             System.out.println("give new toy: " + upTo);
             upTo = upTo.plusMonths(1); //what is the problem ?
-        }}*/
+            }
+    }*/
+
 
     //for snippet 38
     /*private static void performAnimalEnrichment(LocalDate start, LocalDate end,
@@ -22,7 +24,8 @@ public class Main{
         while (upTo.isBefore(end)) {
             System.out.println("give new toy: " + upTo);
             upTo = upTo.plus(period);
-        }}*/
+        }
+    }*/
 
     public static void main(String[] args) {
         //snippet 1
@@ -206,14 +209,14 @@ public class Main{
         System.out.println(arr);*/
 
         //snippet 27
-        ArrayList<Integer> arrlist = new ArrayList<>();
+        /*ArrayList<Integer> arrlist = new ArrayList<>();
         arrlist.add(3);
         arrlist.add(1);
         arrlist.add(0);
         arrlist.add(-1);
         System.out.println(arrlist);
         Collections.sort(arrlist);
-        System.out.println(arrlist);
+        System.out.println(arrlist);*/
 
         /*String[] array = { "hawk", "robin" }; // [hawk, robin]
         List<String> list = Arrays.asList(array); // returns fixed size list
@@ -243,14 +246,16 @@ public class Main{
         LocalDate locald1 = LocalDate.now();
         LocalTime localt1 = LocalTime.now();
         LocalDateTime local2 = LocalDateTime.of(locald1, localt1);
-        System.out.println(local2);*/
+        System.out.println(local2);
+        System.out.println(local1);*/
 
         //snippet 32
         /*LocalDate date = LocalDate.of(2014, Month.JANUARY, 20);
         System.out.println(date);
         date = date.plusDays(2);
         System.out.println(date);
-        date = date.plusWeeks(1);*/
+        date = date.plusWeeks(1);
+        System.out.println(date);*/
 
         //snippet 33
         /*LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
@@ -291,11 +296,11 @@ public class Main{
         performAnimalEnrichment(start, end, period);*/
 
         //snippet 39
-        /*Period wrong = Period.ofYears(1).ofWeeks(1); //check the class file*/
+        /*Period wrong1 = Period.ofYears(1).ofWeeks(1); //check the class file*/
 
         //snippet 40
-        /*Period wrong = Period.ofYears(1);
-        wrong = Period.ofWeeks(1);*/
+        /*Period wrong2 = Period.ofYears(1);
+        wrong2 = Period.ofWeeks(1);*/
 
         //snippet 41
         /*LocalDate date = LocalDate.of(2015, 1, 20);
@@ -307,11 +312,13 @@ public class Main{
         System.out.println(time.plus(period));*/
 
         //snippet 42
-        /*LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
+        /*LocalDate date = LocalDate.of(2020, Month.APRIL, 20);
         System.out.println(date.getDayOfWeek());
         System.out.println(date.getMonth());
         System.out.println(date.getYear());
-        System.out.println(date.getDayOfYear());*/
+        System.out.println(date.getDayOfYear());
+        System.out.println(date.getDayOfMonth());*/
+
 
         //snippet 43
         /*LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
@@ -326,7 +333,7 @@ public class Main{
         LocalTime time = LocalTime.of(11, 12, 34);
         LocalDateTime dateTime = LocalDateTime.of(date, time);
         DateTimeFormatter shortDateTime =
-                DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+                DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
         System.out.println(shortDateTime.format(dateTime));
         System.out.println(shortDateTime.format(date));
         System.out.println(shortDateTime.format(time)); //what is wrong with this code ?*/
@@ -339,10 +346,10 @@ public class Main{
         System.out.println(dateTime.format(f));*/
 
         //snippet 46
-        /*DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
         LocalDate date = LocalDate.parse("01 02 2015", f);
         LocalTime time = LocalTime.parse("11:22");
         System.out.println(date);
-        System.out.println(time);*/
+        System.out.println(time);
     }
 }
