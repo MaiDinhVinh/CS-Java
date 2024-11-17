@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="00800075-1413-43b6-ba82-a9f1e08d692b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/C3J8SE1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/C3J8SE1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 3 - Core Java APIs.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 3 - Core Java APIs.pptx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="C3J8SE1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,6 +80,8 @@
       <workItem from="1731534305426" duration="262000" />
       <workItem from="1731534692895" duration="27082000" />
       <workItem from="1731715876984" duration="6603000" />
+      <workItem from="1731835307221" duration="4279000" />
+      <workItem from="1731868198002" duration="2000" />
     </task>
     <servers />
   </component>
