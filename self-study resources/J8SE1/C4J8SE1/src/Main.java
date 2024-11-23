@@ -8,13 +8,11 @@ import static java.util.Arrays.*;
 import static java.util.Arrays.asList;
 static import java.util.Arrays.*;*/
 public class Main{
-    static int i = 10;
     //for snippet 2
     /*static{
         i = 10;
     }
-
-    public static int i;*/
+    public static int i = 10;*/
 
     //for snippet 3
     /*final public static void ExampleMethod(int i){
@@ -72,7 +70,7 @@ public class Main{
 
 
     //double conversion issue, duplicate question (Q3), can ask later
-    public Integer demo6(){
+    public Long demo6(){
         byte b = 10;
         return b;
     }
@@ -183,7 +181,7 @@ public class Main{
         //snippet 11 - check the import statements too
         /*System.out.println(MAX_VALUE); //explain this
         String[] arr = {"hello"};
-        List<String> arrlist = asList(arr); //explain this*/
+        List<String> arrlist = asList(arr);*/ //explain this
 
         //snippet 12 - check the import statements
 
@@ -225,5 +223,9 @@ public class Main{
         //snippet 22 - also check the method above
         /*play(4);
         play(4L);*/
+
+        /////////////////////////////////////////////////////////
+        //////////////////END OF FIRST PART//////////////////////
+        /////////////////////////////////////////////////////////
     }
 }
