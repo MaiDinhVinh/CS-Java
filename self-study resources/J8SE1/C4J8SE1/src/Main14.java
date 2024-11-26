@@ -1,4 +1,14 @@
-package PACKAGE_NAME;
+class Swan1 {
+    int numberEggs; // instance variable
+    //what is the problem with this field ?
+}
 
-public class Main14 {
+class Swan2{
+    private int numberEggs;
+    public int getNumberEggs() {
+        return numberEggs;
+    }
+    public void setNumberEggs(int numberEggs) {
+        if (numberEggs >= 0) this.numberEggs = numberEggs;
+    }
 }
