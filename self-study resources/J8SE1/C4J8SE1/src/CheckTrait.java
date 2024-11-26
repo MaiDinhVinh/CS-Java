@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public interface checkTrait {
+public interface CheckTrait {
+    boolean test(Animal a);
 }
