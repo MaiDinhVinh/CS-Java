@@ -227,5 +227,41 @@ public class Main{
         /////////////////////////////////////////////////////////
         //////////////////END OF FIRST PART//////////////////////
         /////////////////////////////////////////////////////////
+
+        //snippet 23 - check Main 5
+
+        //snippet 24 - check Bunny class
+
+        //snippet 25 - check Main 6
+
+        //snippet 26 - also check Main 6
+
+        //snippet 27 - check Main 7
+
+        //snippet 28 - check Main 8
+
+        //snippet 29 - check Main 9
+
+        //snippet 30 - check Main 10
+
+        //snippet 31 - check Main 11
+
+        //snippet 32 - check Main 12
+
+        //snippet 33 - check Main 13
+
+        //snippet 34 - check Main 14 (class Swan1)
+
+        //snippet 35 - also check Main 14 (class Swan2)
+
+        //snippet 36 - check Main15
+
+        //snippet 37 - check Main 16
+
+        //snippet 38 - check Main 17
+
+        /*Snippet 39 - check:
+        * Animals class, CheckTrait interface,
+        * CheckIfHopper class, Main18 class*/
     }
 }
