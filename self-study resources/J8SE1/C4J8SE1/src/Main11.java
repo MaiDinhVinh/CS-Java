@@ -1,12 +1,13 @@
 class InitializationOrderSimple {
     private String name = "Torchie";
     { System.out.println(name); }
-    private static int COUNT = 0;
+    public static int COUNT = 0;
     static{
-        System.out.println(COUNT);
+        System.out.println(COUNT + "In static 1");
     }
     static{
-        COUNT += 10; System.out.println(COUNT);
+        COUNT += 10;
+        System.out.println(COUNT + "In static 2");
     }
     public InitializationOrderSimple() {
         System.out.println("constructor");
