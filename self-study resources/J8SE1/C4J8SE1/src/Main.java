@@ -263,5 +263,20 @@ public class Main{
         /*Snippet 39 - check:
         * Animals class, CheckTrait interface,
         * CheckIfHopper class, Main18 class*/
+
+        //snippet 40 - check Main 18, new code
+
+        //snippet 41 - check Main 18, new code 2 - 3
+
+        //snippet 42 - check Main19
+
+        //snippet 43
+        /*List<String> bunnies = new ArrayList<>();
+        bunnies.add("long ear");
+        bunnies.add("floppy");
+        bunnies.add("hoppy");
+        System.out.println(bunnies); // [long ear, floppy, hoppy]
+        bunnies.removeIf(s -> s.charAt(0) != 'h');
+        System.out.println(bunnies);*/
     }
 }
