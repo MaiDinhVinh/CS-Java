@@ -6,7 +6,6 @@ class NotImmutable {
     public StringBuilder getBuilder() {
         return builder; //what should we do here ?
     }
-
     //what can we also add here ?
 }
 
