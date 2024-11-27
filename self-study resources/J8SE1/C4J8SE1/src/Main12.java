@@ -7,7 +7,8 @@ class InitializationOrder {
     }
 
     {
-        COUNT++; System.out.println(COUNT);
+        COUNT++;
+        System.out.println(COUNT);
     }
 
     public InitializationOrder() {
