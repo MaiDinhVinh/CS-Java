@@ -9,7 +9,7 @@ public class Main18 {
         animals.add(new Animal("turtle", false, true));
 
         //old code
-        print(animals, new CheckIfHopper());
+        /*print(animals, new CheckIfHopper());*/
 
         //new code
         print(animals, a -> a.canHop());
