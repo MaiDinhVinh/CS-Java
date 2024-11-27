@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3d0a20c-ba76-4b1e-a7c2-2e4980d2f059" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my/city/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my/school/Classroom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/C4J8SE1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/C4J8SE1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main17.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 4 - Methods and Encapsulation.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 4 - Methods and Encapsulation.pptx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +45,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.CallInitializationOrderSimple.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitializationOrder.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main18.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunHere1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.YetMoreInitializationOrder.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -85,6 +95,9 @@
       <workItem from="1732688012883" duration="1331000" />
       <workItem from="1732710562378" duration="18000" />
       <workItem from="1732710589178" duration="404000" />
+      <workItem from="1732713073666" duration="1002000" />
+      <workItem from="1732714080469" duration="5587000" />
+      <workItem from="1732723170683" duration="3000" />
     </task>
     <servers />
   </component>
