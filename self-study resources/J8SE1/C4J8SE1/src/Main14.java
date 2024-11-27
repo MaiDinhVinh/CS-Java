@@ -10,5 +10,7 @@ class Swan2{
     }
     public void setNumberEggs(int numberEggs) {
         if (numberEggs >= 0) this.numberEggs = numberEggs;
+        /*Swan1 sw = new Swan1();
+        sw.numberEggs = -1;*/
     }
 }
