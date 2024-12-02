@@ -1,0 +1,2 @@
+public class Main3 {
+}
