@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class BactrianCamel {
+public class BactrianCamel extends Camel{
+    /*private int getNumberOfHumps() {
+        return 2;
+    }*/
 }
