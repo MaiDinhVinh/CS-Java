@@ -1,4 +1,2 @@
-package PACKAGE_NAME;
-
-public class Elephant {
-}
+/*public class Elephant extends Mammal{
+}*/
