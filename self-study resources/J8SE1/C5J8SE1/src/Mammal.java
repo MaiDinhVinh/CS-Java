@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public class Mammal {
+    public Mammal(int age) {
+    }
 }
