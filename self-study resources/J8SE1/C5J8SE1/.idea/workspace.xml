@@ -5,31 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc7eec3-3acd-47b2-a7c6-83194871b2d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Animal4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BigCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BigCat2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bird2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Eagle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Flamingo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumpbackWhale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumpbackWhale2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lion2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q7AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q7AbstractInheirtor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Swan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Walrus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Walrus2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Whale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Whale2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Animal9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BactrianCamel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/BactrianCamel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BactrianCamel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/BactrianCamel2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bear2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Bear2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BigCat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/BigCat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BigCat2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/BigCat2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bird2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Bird2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Camel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Camel2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Canine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Canine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chimpanzee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Chimpanzee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Eagle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Elephant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Elephant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Elephant2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Elephant2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Elephant3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Elephant3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flamingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Flamingo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gorilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Gorilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Groundhog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Groundhog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumpbackWhale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/HumpbackWhale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumpbackWhale2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/HumpbackWhale2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InsufficientDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/InsufficientDataException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Lion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lion2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Lion2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lion3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Lion3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Mammal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mammal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Mammal2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mammal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Mammal3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Panda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Panda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Panda2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Panda2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Penguin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Q7AbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/q7/Q7AbstractClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Q7AbstractInheirtor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/q7/Q7AbstractInheirtor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Rabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reptile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Reptile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reptile2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Reptile2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Shark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Snake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Snake2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Swan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Swan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Walrus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Walrus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Walrus2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Walrus2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Whale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Whale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Whale2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Whale2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zebra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Zebra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Zoo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +76,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -54,22 +91,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/self-study resources/J8SE1/C5J8SE1/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Chimpanzee.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/self-study resources/J8SE1/C5J8SE1/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/part1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,6 +132,7 @@
       <workItem from="1733123026686" duration="3496000" />
       <workItem from="1733155291127" duration="7462000" />
       <workItem from="1733198519081" duration="7330000" />
+      <workItem from="1733212464272" duration="227000" />
     </task>
     <servers />
   </component>
