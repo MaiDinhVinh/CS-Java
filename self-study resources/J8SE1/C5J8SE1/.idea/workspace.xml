@@ -5,47 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc7eec3-3acd-47b2-a7c6-83194871b2d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C5J8SE1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BactrianCamel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BactrianCamel2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bear2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Camel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Camel2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Canine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chimpanzee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Elephant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Elephant2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Elephant3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gorilla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Groundhog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InsufficientDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mammal2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mammal3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Panda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Panda2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Penguin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rabbit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reptile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reptile2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Zebra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BigCat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BigCat2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bird2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eagle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Flamingo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HumpbackWhale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HumpbackWhale2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lion2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q7AbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q7AbstractInheirtor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Swan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Walrus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Walrus2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Whale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Whale2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +88,7 @@
       <updated>1733123025571</updated>
       <workItem from="1733123026686" duration="3496000" />
       <workItem from="1733155291127" duration="7462000" />
+      <workItem from="1733198519081" duration="7330000" />
     </task>
     <servers />
   </component>
