@@ -45,5 +45,27 @@ public class Main {
         //snippet 22 - Check Bear2, Panda2 class
 
         //snippet 23 - check Bird, Penguin class
+
+        //snippet 24 - check Animal4, Swan class
+
+        //snippet 25 - check Main3 class
+
+        //snippet 26 - check Main4 class
+
+        //snippet 27 - also check Main4 class
+
+        //snippet 28 - check Whale, HumpbackWhale class
+
+        //snippet 29 - check Whale2, HumpbackWhale2 class
+
+        //snippet 30 - check Animal5, Walrus class
+
+        //snippet 31 - check Animal6, Bird2, Flamingo class
+
+        //snippet 32 - check Aminal7, Walrus2, Eagle class
+
+        //snippet 33 - check Animal8, BigCat, Lion2 class
+
+        //snippet 34 - check Animal9, BigCat2, Lion3
     }
 }
