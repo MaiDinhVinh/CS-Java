@@ -1,6 +1,7 @@
 package part1;
 
 public class Wolf extends Canine {
+    @Override
     public double getAverageWeight() {
         return super.getAverageWeight()+20; //what happen if we remove "super" ?
     }
