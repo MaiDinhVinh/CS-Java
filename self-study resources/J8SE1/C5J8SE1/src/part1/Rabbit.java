@@ -4,9 +4,9 @@ public class Rabbit {
     /*public Rabbit(){
         super();
         super.clone();
-    }*/
+    }
 
-    /*public Rabbit(){
+    public Rabbit(){
         super;
         super().clone();
     }*/
