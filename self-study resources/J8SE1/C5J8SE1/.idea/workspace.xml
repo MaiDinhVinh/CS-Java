@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc7eec3-3acd-47b2-a7c6-83194871b2d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Super.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Super2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Super3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/C5J8SE1/part1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/C5J8SE1/part1/Wolf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/C5J8SE1/part1/Wolf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +17,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,6 +43,7 @@
     "Application.Super.executor": "Run",
     "Application.Super2.executor": "Run",
     "Application.Super3.executor": "Run",
+    "Application.Super4.executor": "Run",
     "Application.Wolf.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -100,7 +85,7 @@
       <workItem from="1733198519081" duration="7330000" />
       <workItem from="1733212464272" duration="227000" />
       <workItem from="1733316759483" duration="5854000" />
-      <workItem from="1733621852435" duration="7017000" />
+      <workItem from="1733621852435" duration="15919000" />
     </task>
     <servers />
   </component>
