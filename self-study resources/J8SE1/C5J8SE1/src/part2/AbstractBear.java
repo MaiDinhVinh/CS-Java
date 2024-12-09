@@ -1,4 +1,5 @@
 package part2;
 
-/*public class AbstractBear extends Herbivore5, Omnivore4{
-}*/
+public abstract class AbstractBear implements
+        Herbivore5, Omnivore4{
+}
