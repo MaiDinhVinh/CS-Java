@@ -1,3 +1,4 @@
-/*
-public class Walrus2 extends Animal7{
+package part1;
+
+/*public class Walrus2 extends Animal7{
 }*/
