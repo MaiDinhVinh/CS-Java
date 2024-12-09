@@ -7,10 +7,10 @@ public class Sub extends Super{
     }
 
     public static void main(String[] args) {
-        /*Sub sb = new Sub();
-        sb.method1();*/
+        Sub sb = new Sub();
+        sb.method1();
 
-        /*Super sup = new Sub();
-        sup.method1();*/
+        Super sup = new Sub();
+        sup.method1();
     }
 }
