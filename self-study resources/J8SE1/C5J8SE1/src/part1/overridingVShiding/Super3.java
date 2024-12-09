@@ -6,16 +6,16 @@ public class Super3 {
     }
 
     public static void main(String[] args) {
-        /*Sub3 su3 = new Sub3();
-        Sub3.method3();*/
+        Sub3 su3 = new Sub3();
+        Sub3.method3();
 
-        /*Super3 sup3 = new Super3();
-        sup3.method3();*/
+        Super3 sup3 = new Super3();
+        sup3.method3();
 
-        /*Super3 sup3_2 = new Sub3();
-        sup3_2.method3();*/
+        Super3 sup3_2 = new Sub3();
+        sup3_2.method3();
 
-        /*Sub3.method3();
-        Super3.method3();*/
+        Sub3.method3();
+        Super3.method3();
     }
 }
