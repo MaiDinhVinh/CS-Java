@@ -100,7 +100,7 @@ public class Main {
 
         //snippet 47 - check HasTail, HasWhiskers, Seal interfaces
 
-        //snippet 48 - check HasTail2, HasWhiskers2 interface,s Harbor, LeopardSeal classes
+        //snippet 48 - check HasTail2, HasWhiskers2 interfaces, Harbor, LeopardSeal classes
 
         //snippet 49 - check CanRun, HasFur interfaces, Cheetah, Hyena classes
 
@@ -120,6 +120,6 @@ public class Main {
 
         //snippet 57 - check IsWarmBlooded interface
 
-        //snippet 59 - check Carnivore interface
+        //snippet 58 - check Carnivore interface
     }
 }
