@@ -9,10 +9,10 @@ public class Sub3 extends Super3{
     }
 
     public static void main(String[] args) {
-        /*Sub3 su3 = new Sub3();
-        su3.getStr();*/
+        Sub3 su3 = new Sub3();
+        su3.getStr();
 
-        /*Super3 sup3 = new Sub3();
-        sup3.getStr();*/
+        Super3 sup3 = new Sub3();
+        sup3.getStr();
     }
 }
