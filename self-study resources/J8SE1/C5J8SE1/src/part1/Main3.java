@@ -1,5 +1,6 @@
-/*
-abstract class Cow {
+package part1;
+
+/*abstract class Cow {
 }
 
 class Chicken {
@@ -11,5 +12,4 @@ abstract class Turtle {
     public abstract int getAge() {
         return 10;
     }
-}
-*/
+}*/
