@@ -5,34 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc7eec3-3acd-47b2-a7c6-83194871b2d0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/part3/Alligator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Bird2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Bunny.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Capybara.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Cat6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Crocodile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/HasFins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/HasTail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Hop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Lemur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Peacock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Primate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Reptile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Rodent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/SharkFamily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/Walk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part3/ZooWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Bird2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Bird2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Flamingo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Flamingo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/HumpbackWhale2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/HumpbackWhale2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Main4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Main4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Walrus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Walrus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Walrus2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Walrus2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/Whale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/Whale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Sub3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/overridingVShiding/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/overridingVShiding/Super3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/overridingVShiding/Super3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Sub2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Sub3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Sub4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Sub4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Super2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/variableHiding/Super3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/variableHiding/Super3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/AbstractBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/AbstractBear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/CanSwim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/CanSwim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/Carnivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Carnivore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/Elephant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Elephant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/LeopardSeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/LeopardSeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/Seal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Seal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part2/Supervore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part2/Supervore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chapter 5 - Class Design.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5 - Class Design.pptx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,8 +94,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +114,7 @@
       <workItem from="1733316759483" duration="5854000" />
       <workItem from="1733621852435" duration="15919000" />
       <workItem from="1733648870743" duration="6486000" />
+      <workItem from="1733894386999" duration="11486000" />
     </task>
     <servers />
   </component>

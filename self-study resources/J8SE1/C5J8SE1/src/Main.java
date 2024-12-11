@@ -121,5 +121,37 @@ public class Main {
         //snippet 57 - check IsWarmBlooded interface
 
         //snippet 58 - check Carnivore interface
+
+        ////////////////////////////////////////////
+        //            END OF PART 2               //
+        ////////////////////////////////////////////
+
+        /*! PART 3 STARTS IN "part3" PACKAGE !*/
+
+        //snippet 59 - check HasFins, SharkFamily interfaces
+
+        //snippet 60 - check Walk, Run interfaces, Cat class
+
+        //snippet 61 - check Cat2 interface
+
+        //snippet 62 - check Cat3 class
+
+        //snippet 63 - check Cat4 class
+
+        //snippet 64 - check Hop interface and Bunny class
+
+        //snippet 65 - check HasTail interface, Primate, Lemur classes
+
+        //snippet 66 - check Lemur class again
+
+        //snippet 67 - check Bird, Fish classes
+
+        //snippet 68 - check Rodent, Capybara classes
+
+        //snippet 69 - also check Capybara classes
+
+        //snippet 70 - check Bird2, Peacock classes
+
+        //snippet 71 - check Reptile, Alligator, Crocodile, Zooworker class
     }
 }
