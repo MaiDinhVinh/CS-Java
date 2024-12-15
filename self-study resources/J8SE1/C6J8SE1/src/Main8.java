@@ -1,5 +1,4 @@
-/*
-class CanNotHopException extends Exception { }
+/*class CanNotHopException extends Exception { }
 class Hopper2 {
     public void hop() throws CanNotHopException { }
 }
