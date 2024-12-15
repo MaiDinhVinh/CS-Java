@@ -61,8 +61,10 @@ public class Main{
         } catch (Exception e) {
                 result += "done";
         }
+        System.out.println(result);
         return result;
     }*/
+
 
     //for snippet 23
     /*public static void test1(int a){
@@ -71,9 +73,9 @@ public class Main{
     }*/
 
     //for snippet 35
-    /*private static void hop() {
+    private static void hop() {
         throw new RuntimeException("cannot hop");
-    }*/
+    }
     public static void main(String[] args) throws Exception{
         //snippet 1 - check Zoo class
 
@@ -206,13 +208,13 @@ public class Main{
         //snippet 34 - check Main10 class
 
         //snippet 35 - also check Hop method
-        /*try {
+        try {
             hop();
         } catch (Exception e) {
             System.out.println(e);
             System.out.println(e.getMessage());
             e.printStackTrace();
-        }*/
+        }
 
         //snippet 36 - check Main11 class
     }
