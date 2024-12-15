@@ -4,4 +4,5 @@ class Hopper {
 }
 class Bunny2 extends Hopper {
     public void hop() throws IllegalStateException { }
-}*/
+}
+*/
