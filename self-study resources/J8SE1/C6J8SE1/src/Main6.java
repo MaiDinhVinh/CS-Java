@@ -11,4 +11,5 @@ public class Main6{
         eatCarrot();
     }
     private static void eatCarrot() { }
-}*/
+}
+*/
