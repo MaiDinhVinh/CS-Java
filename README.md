@@ -14,3 +14,7 @@
 - My first major milestone, after 6 months of pure painfulness :) 
 **achieved on Oct, 15, 2024**
 ![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCFA-eCertificate.png)
+
+- Finally, after 8 months of waiting, I finally did it :))
+**achieved on Dec, 27. 2024**
+![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCA-eCertificate.png)
