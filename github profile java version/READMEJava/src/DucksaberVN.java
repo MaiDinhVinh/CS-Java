@@ -14,7 +14,9 @@ public interface DucksaberVN{
     public static final String FAVORITE_SUBJECT = "Physic hater, CS lover, Mathematic enjoyer";
 
     /**
-     * I will try to obtain the famous {@code Oracle Certified Professional Java SE 8 (1z0-809)} in the future too !*/
+     * I will try to obtain the famous {@code Oracle Certified Professional Java SE 8 (1z0-809)}<p>
+     * in the future too !
+     * </p> */
 
     public static final List<String> CURRENT_CERTIFIED_SKILL =  Arrays.asList(
             "Oracle Certified Foundation Associate Java SE 8 (1z0-811)",
