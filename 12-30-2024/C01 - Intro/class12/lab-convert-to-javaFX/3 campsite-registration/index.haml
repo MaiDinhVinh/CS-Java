@@ -1,0 +1,116 @@
+!!! 5
+%head
+  %link{rel: "stylesheet", type:"text/css", href:"https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"}
+  %link{rel: "stylesheet", type:"text/css", href:"//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css"}
+  %link{rel: "stylesheet", type:"text/css", href:"//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css"}  
+  %link{rel: "stylesheet", type:"text/css", href:"https://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css"}
+  
+  %script{type: "text/javascript",src: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"}
+  %script{type: "text/javascript",src: "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"}
+  %script{type: "text/javascript",src: "//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"}
+  %script{type: "text/javascript",src: "//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js"}
+  %script{type: "text/javascript",src: "https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js"}
+%body  
+  .container  
+    .panel.panel-primary.dialog-panel
+      .panel-heading 
+        %h5 Almaguin Campground - Reservation
+      .panel-body
+        %form.form-horizontal{role: "form"}
+          .form-group
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_accomodation"} Accomodation
+            .col-md-2
+              %select.form-control{id: "id_accomodation"}
+                %option RV
+                %option Tent
+                %option Cabin/Lodging
+          .form-group
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_title"} Name
+            .col-md-8
+              .col-md-2
+                .form-group.internal
+                  %select.form-control{id: "id_title"}
+                    %option Mr
+                    %option Ms                    
+                    %option Mrs
+                    %option Miss
+                    %option Dr
+              .col-md-3.indent-small
+                .form-group.internal
+                  %input.form-control{id: "id_first_name", type: "text", placeholder: "First Name"}
+              .col-md-3.indent-small
+                .form-group.internal
+                  %input.form-control{id: "id_last_name", type: "text", placeholder: "Last Name"}
+          .form-group    
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_adults"} Guests        
+            .col-md-8
+              .col-md-2
+                .form-group.internal
+                  %input.form-control.col-md-8{id: "id_adults", type: "number", placeholder: "18+ years"}
+              .col-md-3.indent-small
+                .form-group.internal
+                  %input.form-control{id: "id_children", type: "number", placeholder: "2-17 years"}          
+              .col-md-3.indent-small
+                .form-group.internal
+                  %input.form-control{id: "id_children_free", type: "number", placeholder: "< 2 years"}
+          .form-group    
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_email"} Contact
+            .col-md-6
+              .form-group
+                .col-md-11
+                  %input.form-control{id: "id_email", type: "text", placeholder: "E-mail"}
+              .form-group.internal
+                .col-md-11
+                  %input.form-control{id: "id_phone", type: "text", placeholder: "Phone: (xxx) - xxx xxxx"}
+          .form-group 
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_checkin"} Checkin
+            .col-md-8
+              .col-md-3
+                .form-group.internal.input-group
+                  %input.form-control.datepicker{id: "id_checkin"}  
+                  %span.input-group-addon
+                    %i.glyphicon.glyphicon-calendar
+              %label.control-label.col-md-2{for: "id_checkout"} Checkout
+              .col-md-3
+                .form-group.internal.input-group
+                  %input.form-control.datepicker{id: "id_checkout"}  
+                  %span.input-group-addon
+                    %i.glyphicon.glyphicon-calendar
+          .form-group          
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_equipment"} Equipment type
+            .col-md-8
+              .col-md-3          
+                .form-group.internal
+                  %select.form-control{id: "id_equipment"}
+                    %option Travel trailer
+                    %option Fifth wheel
+                    %option RV/Motorhome
+                    %option Tent trailer
+                    %option Pickup camper
+                    %option Camper van
+              .col-md-9
+                .form-group.internal
+                  %label.control-label.col-md-3{for:"id_slide"} Slide-outs
+                  .make-switch{id:"id_slide_switch","data-on-label" => "YES", "data-off-label"=> "NO"}
+                    %input{type:"checkbox", value:"chk_hydro", id: "id_slide"}
+          .form-group    
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_service"} Required Service
+            .col-md-8
+              %select.multiselect{multiple:"multiple",id:"id_service"}
+                %option{value:"hydro"} Hydro
+                %option{value:"water"} Water
+                %option{value:"sewer"} Sewer              
+          .form-group    
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_pets"} Pets
+            .col-md-8
+              .make-switch{id:"id_pets_switch", "data-on-label" => "YES", "data-off-label"=> "NO"}
+                %input{type:"checkbox", value:"chk_hydro", id: "id_pets"}
+          .form-group    
+            %label.control-label.col-md-2.col-md-offset-2{for: "id_comments"} Comments
+            .col-md-6
+              %textarea.form-control{id: "id_comments", rows: "3", placeholder: "Additional comments"}      
+          .form-group         
+            .col-md-offset-4.col-md-3
+              %button.btn-lg.btn-primary{type: "submit"} Request Reservation
+            .col-md-3
+              %button.btn-lg.btn-danger{type: "submit", style: "float:right"} Cancel

@@ -1,0 +1,58 @@
+download gluon scene builder for javase 8
+https://gluonhq.com/products/scene-builder/
+https://download2.gluonhq.com/scenebuilder/8.5.0/install/windows/x64/SceneBuilder-8.5.0.exe
+https://download2.gluonhq.com/scenebuilder/8.5.0/install/mac/SceneBuilder-8.5.0.dmg
+run as administrator
+installation folder: c:\program files\java\scenebuilder
+
+activate javafx by creating a project
+netbeans > tools > options > java > javafx tab > scene builder home > ...select the installation folder
+
+start with an empty javafx project (always run project, not file)
+create new empty fxml file
+	delete all xml
+	double click to open it in scene builder
+	
+design basic fxml the same as given fxml ui
+	WITHOUT fx:id, id, styleClass ...
+	may use show preview to test ui
+	
+write main class to invoke ui
+	run and see controller missing
+	
+write an empty controller for fxml aka. code behind
+	fx:controller="class12_javafx_ui.RectangleAreaController"
+	run UI
+	demo controller by adding initialize code
+	@Override
+    public void initialize(URL url, ResourceBundle rb) {
+        textfield.setText(LocalDateTime.now().toString());
+    }
+
+labeled control
+	drag and drop imageview in calculate button
+
+fxml + css
+	<?import java.net.URL?>
+	<stylesheets>
+        <URL value="@RectangleArea.css" />
+    </stylesheets>
+	styleClass="input"
+	id="xxx"
+
+css
+	.input {
+		-fx-border-color: darkred;
+	}
+
+fx:id in fxml to access controls in controller
+	view > show sample controller
+	copy and paste to controller
+	
+Event
+	scene builder event in code tab
+	show event in fxml
+	code event in controller
+	
+Alert Dialogue
+	reset confirmation
