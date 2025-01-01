@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.RegistrationUIController">
+   <stylesheets>
+      <URL value="@RegistrationUICss.css" />
+   </stylesheets>
+   <children>
+      <Line endX="119.0" layoutX="147.0" layoutY="53.0" startX="-119.0" stroke="#656464" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="14.0" prefHeight="26.0" prefWidth="173.0" text="REGISTRATION" textFill="#615d5d">
+         <font>
+            <Font name="Sarabun Regular" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radBtnPersonal" layoutX="45.0" layoutY="76.0" mnemonicParsing="false" onAction="#radioBtnPersonalClick" prefHeight="20.0" prefWidth="88.0" styleClass="dot" stylesheets="@RegistrationUICss.css" text="Personal" textAlignment="CENTER" textFill="#615d5d">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radBtnCompany" layoutX="156.0" layoutY="76.0" mnemonicParsing="false" onAction="#radioBtnCompanyClick" styleClass="dot" text="Company" textAlignment="CENTER" textFill="#615d5d">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <Line endX="119.0" layoutX="145.0" layoutY="116.0" startX="-119.0" stroke="#656464" />
+      <TextField fx:id="txtEmailInput" layoutX="85.0" layoutY="133.0" prefHeight="29.0" prefWidth="160.0" promptText="Email">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0084ff" height="27.0" layoutX="24.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="61.0" />
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="41.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@email_logo_transparent_white_29x27.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0084ff" height="27.0" layoutX="24.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="61.0" />
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="40.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@person_9742864.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNameInput" layoutX="85.0" layoutY="187.0" prefHeight="29.0" prefWidth="160.0" promptText="Name">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0084ff" height="27.0" layoutX="24.0" layoutY="239.0" stroke="BLACK" strokeType="INSIDE" width="61.0" />
+      <PasswordField fx:id="txtPasswordInput" layoutX="85.0" layoutY="238.0" prefHeight="29.0" prefWidth="160.0" promptText="Password">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="40.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@—Pngtree—vector%20shield%20icon_3762822.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radBtnMale" layoutX="59.0" layoutY="290.0" mnemonicParsing="false" onAction="#radioBtnMaleClick" prefHeight="20.0" prefWidth="88.0" styleClass="dot" text="Male" textAlignment="CENTER" textFill="#615d5d">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radBtnFemale" layoutX="153.0" layoutY="291.0" mnemonicParsing="false" onAction="#radioBtnFemaleClick" styleClass="dot" text="Female" textAlignment="CENTER" textFill="#615d5d">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <TextFlow layoutX="4.0" layoutY="327.0" prefHeight="74.0" prefWidth="184.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="By clicking Register, you agree on our" textAlignment="CENTER">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="HyperLinkTaC" onAction="#hyperLinkTACClick" text="Terms and Conditions">
+               <font>
+                  <Font name="Sarabun Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </TextFlow>
+      <Button fx:id="BtnRegistrationConfirm" layoutX="198.0" layoutY="327.0" mnemonicParsing="false" onAction="#registrationConfirmClick" prefHeight="37.0" prefWidth="69.0" styleClass="registration-button" stylesheets="@RegistrationUICss.css" text="Register" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
