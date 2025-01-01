@@ -1,0 +1,16 @@
+.radio-button:selected .dot{
+    -fx-background-color: #0084ff;
+    -fx-background-insets: 0;
+}
+
+.registration-button{
+    -fx-background-color: #0084ff;
+}
+
+.registration-button:hover{
+    -fx-background-color: #0874cc;
+}
+
+.registration-button:pressed{
+    -fx-background-color: #105896;
+}
