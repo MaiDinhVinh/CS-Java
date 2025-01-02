@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201c2fb1-1034-44a0-98f8-45716b0bc786" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DucksaberVN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DucksaberVN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../12-30-2024/C01 - Intro/LabWorks/EX2/EX2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../12-30-2024/C01 - Intro/LabWorks/EX2/src/MainDir/SignUpFormUICss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../self-study resources/J8SE1/C1J8SE1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../self-study resources/J8SE1/C1J8SE1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,7 @@
       <workItem from="1722663972710" duration="756000" />
       <workItem from="1735460867675" duration="1343000" />
       <workItem from="1735462399269" duration="36000" />
+      <workItem from="1735825964199" duration="4000" />
     </task>
     <servers />
   </component>
