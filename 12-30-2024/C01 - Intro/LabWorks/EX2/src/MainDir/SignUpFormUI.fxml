@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.SignUpFormUIController">
+   <stylesheets>
+      <URL value="@SignUpFormUICss.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="662.0" prefWidth="449.0">
+         <children>
+            <Text fill="#8cc63f" fontSmoothingType="LCD" layoutX="30.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account" wrappingWidth="57.7239990234375">
+               <font>
+                  <Font name="Sarabun Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFullNameInput" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="50.0" prefHeight="42.0" prefWidth="366.0" promptText="Full Name">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font></TextField>
+            <Line endX="100.0" endY="-3.0" layoutX="-13.0" layoutY="60.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="40.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@person_9742864.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmailAddressInput" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="109.0" prefHeight="42.0" prefWidth="366.0" promptText="Email Address">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Line endX="100.0" endY="-3.0" layoutX="-12.0" layoutY="119.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="41.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email-black-envelope-shape.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtPaaswordInput" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="168.0" prefHeight="42.0" prefWidth="366.0" promptText="Password">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Line endX="100.0" endY="-3.0" layoutX="-12.0" layoutY="178.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="42.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@—Pngtree—vector%20shield%20icon_3762822.png" />
+               </image>
+            </ImageView>
+            <Text fill="#8cc63f" fontSmoothingType="LCD" layoutX="68.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth" wrappingWidth="97.05732727050781">
+               <font>
+                  <Font name="Sarabun Bold" size="15.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="txtDobInput" layoutX="27.0" layoutY="263.0" prefHeight="29.0" prefWidth="176.0" promptText="MM/DD/YYYY" />
+            <ToggleButton fx:id="btnGenderMale" layoutX="225.0" layoutY="262.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Male" textFill="#8a8686">
+               <font>
+                  <Font name="Sarabun Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="btnGenderFemale" layoutX="312.0" layoutY="262.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Female" textFill="#8a8686">
+               <font>
+                  <Font name="Sarabun Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <Text fill="#8cc63f" fontSmoothingType="LCD" layoutX="285.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="54.0000185072422">
+               <font>
+                  <Font name="Sarabun Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#8cc63f" fontSmoothingType="LCD" layoutX="30.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment details" wrappingWidth="117.7239990234375">
+               <font>
+                  <Font name="Sarabun Bold" size="15.0" />
+               </font>
+            </Text>
+            <ToggleButton fx:id="btnVisaPayment" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="26.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnVisaPaymentClick" prefHeight="30.0" prefWidth="187.0" text="Credit Card" textAlignment="RIGHT" textFill="#8a8686">
+               <font>
+                  <Font name="Sarabun Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <ImageView fitHeight="15.0" fitWidth="37.0" layoutX="33.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@visa-logo.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="btnPayPalPayment" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="217.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnPayPalPaymentClick" prefHeight="30.0" prefWidth="183.0" text="PayPal" textAlignment="RIGHT" textFill="#8a8686">
+               <font>
+                  <Font name="Sarabun Bold" size="14.0" />
+               </font>
+            </ToggleButton>
+            <ImageView fitHeight="23.0" fitWidth="54.0" layoutX="224.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngwing.com.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtCardNumberInput" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="391.0" prefHeight="42.0" prefWidth="376.0" promptText="Card Number">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Line endX="100.0" endY="-3.0" layoutX="-13.0" layoutY="401.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="41.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@—Pngtree—vector%20credit%20card%20icon_4184472.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtCardCvcInput" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="449.0" prefHeight="44.0" prefWidth="177.0" promptText="Card CVC">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </PasswordField>
+            <Line endX="100.0" endY="-3.0" layoutX="-13.0" layoutY="460.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="39.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@person_9742864.png" />
+               </image>
+            </ImageView>
+            <DatePicker fx:id="txtExpiredDateInput" layoutX="216.0" layoutY="449.0" prefHeight="44.0" prefWidth="186.0" promptText="Expired Date (MM/YY)" />
+            <Hyperlink layoutX="27.0" layoutY="517.0" text="Terms and Conditions" textFill="#8cc63f">
+               <font>
+                  <Font name="Sarabun Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <CheckBox fx:id="btnTacAccept" layoutX="31.0" layoutY="560.0" mnemonicParsing="false" textFill="#7c7a7a">
+               <font>
+                  <Font name="Sarabun Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <Text fontSmoothingType="LCD" layoutX="58.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy." wrappingWidth="371.83953857421875">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnRegistrationConfirm" layoutX="176.0" layoutY="602.0" mnemonicParsing="false" onAction="#btnRegistrationClick" prefHeight="30.0" prefWidth="81.0" styleClass="toggle-button" text="Sign Up">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
