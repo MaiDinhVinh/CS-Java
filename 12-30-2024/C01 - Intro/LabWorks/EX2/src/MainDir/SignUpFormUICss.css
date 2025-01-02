@@ -1,0 +1,21 @@
+.toggle-button:hover{
+    -fx-background-color: #90C31F;
+}
+
+.toggle-button:pressed{
+    -fx-background-color: #7DAC1B;
+}
+
+
+.toggle-button:pressed:selected{
+    -fx-background-color: #7DAC1B;
+}
+
+.toggle-button:selected{
+    -fx-background-color: #90C31F;
+}
+
+
+
+
+
