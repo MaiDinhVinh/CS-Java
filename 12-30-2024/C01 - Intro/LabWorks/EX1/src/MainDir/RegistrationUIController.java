@@ -148,7 +148,47 @@ public class RegistrationUIController implements Initializable {
 
     @FXML
     void registrationConfirmClick(ActionEvent event) {
-        
+      String missingUserTypeError = "The user type cannot be empty !";
+
+      String missingEmailError = "The email field cannot be empty !";
+
+      String missingPasswordError = "The password field cannot be empty !";
+
+      String missingNameError = "The user name field cannot be empty !";
+
+      String missingGenderError = "The user's gender field cannot be empty !";
+
+      boolean userTypeNotSelected = false;
+      boolean isEmailFieldEmpty = false;
+      boolean isPasswordFieldEmpty = false;
+      boolean isNameFieldEmpty = false;
+      boolean isGenderFieldEmpty = false;
+      if(radBtnCompany.isSelected() == false & radBtnPersonal.isSelected() == false) userTypeNotSelected = true;
+      if(txtEmailInput.getText().equals("")) isEmailFieldEmpty = true;
+      if(txtPasswordInput.getText().equals("")) isPasswordFieldEmpty = true;
+      if(txtNameInput.getText().equals("")) isNameFieldEmpty = true;
+      if(radBtnMale.isSelected() == false & radBtnFemale.isSelected() == false) isGenderFieldEmpty = true;
+
+      String finalErrorMessage = "";
+          if(userTypeNotSelected) finalErrorMessage = finalErrorMessage + missingUserTypeError + "\n";
+          if(isEmailFieldEmpty) finalErrorMessage = finalErrorMessage + missingEmailError + "\n";
+          if(isPasswordFieldEmpty) finalErrorMessage = finalErrorMessage + missingPasswordError + "\n";
+          if(isNameFieldEmpty) finalErrorMessage = finalErrorMessage + missingNameError + "\n";
+          if(isGenderFieldEmpty) finalErrorMessage = finalErrorMessage + missingGenderError + "\n";
+      if(finalErrorMessage.equals("")){
+          Alert registrationSuccessful = new Alert(Alert.AlertType.INFORMATION);
+          registrationSuccessful.setHeaderText("Registration is successful !");
+          registrationSuccessful.setTitle("Registration completed");
+          registrationSuccessful.showAndWait();
+      }else{
+          Alert registrationFailed = new Alert(Alert.AlertType.ERROR);
+          registrationFailed.setHeaderText("Registration failed due to the following reason\n"
+                  + finalErrorMessage);
+          registrationFailed.setTitle("Registration FAILED");
+          registrationFailed.showAndWait();
+      }
+
+
     }
 
 }
