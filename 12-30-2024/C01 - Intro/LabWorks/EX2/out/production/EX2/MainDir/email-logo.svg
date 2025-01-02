@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 27">
+  <!-- Envelope body -->
+  <rect x="2" y="5" width="25" height="18" fill="#4A90E2" rx="2"/>
+  
+  <!-- Envelope flap -->
+  <path d="M2 7 L14.5 15 L27 7 L27 5 L2 5 Z" fill="#357ABD"/>
+  
+  <!-- Mail symbol -->
+  <path d="M2 7 L14.5 15 L27 7" fill="none" stroke="white" stroke-width="1.5"/>
+</svg>
