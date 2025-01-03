@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.Registration2UIController">
+    <stylesheets>
+        <URL value="@Registration2UICss.css" />
+    </stylesheets>
+    <children>
+      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@checkbox-152186_640.png" />
+         </image>
+      </ImageView>
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="63.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+         <font>
+            <Font name="Sarabun Bold" size="27.0" />
+         </font>
+      </Text>
+      <Line endX="-81.0" layoutX="129.0" layoutY="74.0" startX="-129.0" stroke="#8a8a8a" />
+      <Text fill="#afc91c" fontSmoothingType="LCD" layoutX="51.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details" wrappingWidth="202.48532104492188">
+         <font>
+            <Font name="Sarabun Bold" size="21.0" />
+         </font>
+      </Text>
+      <Line endX="692.1666259765625" layoutX="378.0" layoutY="74.0" startX="-174.5" stroke="#8a8a8a" />
+      <Text fontSmoothingType="LCD" layoutX="170.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email *" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="235.0" layoutY="98.0" prefHeight="27.0" prefWidth="205.0" styleClass="text-field" />
+      <Text fontSmoothingType="LCD" layoutX="142.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password *" wrappingWidth="103.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="509.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat email *" wrappingWidth="142.49029140919447">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmailRepeat" layoutX="634.0" layoutY="98.0" prefHeight="27.0" prefWidth="205.0" styleClass="text-field" />
+      <Text fontSmoothingType="LCD" layoutX="479.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repeat password *" wrappingWidth="166.49029140919447">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="882.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* obligatory field" wrappingWidth="166.49029140919447">
+         <font>
+            <Font name="Sarabun Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="-81.0" layoutX="130.0" layoutY="206.0" startX="-129.0" stroke="#8a8a8a" />
+      <Text fill="#afc91c" fontSmoothingType="LCD" layoutX="50.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Details" wrappingWidth="202.48532104492188">
+         <font>
+            <Font name="Sarabun Bold" size="21.0" />
+         </font>
+      </Text>
+      <Line endX="143.5" layoutX="381.0" layoutY="207.0" startX="-174.5" stroke="#8a8a8a" />
+      <Line endX="143.5" layoutX="381.0" layoutY="208.0" startX="143.5" startY="292.0" stroke="#8a8a8a" />
+      <Text fontSmoothingType="LCD" layoutX="104.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name *" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="180.0" layoutY="225.0" prefHeight="27.0" prefWidth="322.0" styleClass="text-field" />
+      <Text fontSmoothingType="LCD" layoutX="101.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone *" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPhone" layoutX="181.0" layoutY="260.0" prefHeight="27.0" prefWidth="207.0" styleClass="text-field" />
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="103.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="180.0" layoutY="296.0" prefHeight="27.0" prefWidth="322.0" />
+      <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City *" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCity" layoutX="180.0" layoutY="332.0" prefHeight="27.0" prefWidth="322.0" />
+      <PasswordField fx:id="txtPassword" layoutX="235.0" layoutY="131.0" prefHeight="27.0" prefWidth="205.0" styleClass="text-field" />
+      <PasswordField fx:id="txtPasswordRepeat" layoutX="634.0" layoutY="132.0" prefHeight="27.0" prefWidth="205.0" styleClass="text-field" />
+      <ChoiceBox fx:id="btnSelectCountry" layoutX="180.0" layoutY="368.0" prefHeight="27.0" prefWidth="155.0" />
+      <Text fontSmoothingType="LCD" layoutX="88.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country *" wrappingWidth="77.86400521919131">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="94.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website" wrappingWidth="63.81867980957031">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="179.0" layoutY="405.0" prefHeight="27.0" prefWidth="322.0" />
+      <Line endX="-81.0" layoutX="655.0" layoutY="207.0" startX="-129.0" stroke="#8a8a8a" />
+      <Text fill="#afc91c" fontSmoothingType="LCD" layoutX="574.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Further Information" wrappingWidth="202.48532104492188">
+         <font>
+            <Font name="Sarabun Bold" size="21.0" />
+         </font>
+      </Text>
+      <Line endX="129.0" layoutX="971.0" layoutY="207.0" startX="-204.0" stroke="#8a8a8a" />
+      <Text fontSmoothingType="LCD" layoutX="611.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender *" wrappingWidth="77.86401835083961">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radBtnGenderMale" layoutX="695.0" layoutY="227.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radBtnGenderFemale" layoutX="781.0" layoutY="228.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </RadioButton>
+      <Text fontSmoothingType="LCD" layoutX="594.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthdate *" wrappingWidth="91.19733133912086">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="btnSelectDay" layoutX="859.0" layoutY="262.0" prefHeight="27.0" prefWidth="48.0" />
+      <ChoiceBox fx:id="btnSelectMonth" layoutX="695.0" layoutY="262.0" prefHeight="27.0" prefWidth="155.0" />
+      <TextField fx:id="txtDateYear" layoutX="919.0" layoutY="263.0" prefHeight="27.0" prefWidth="78.0" />
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="1006.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e.g: 1970" wrappingWidth="77.86401835083961">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="580.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality *" wrappingWidth="100.53070536255836">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="btnSelectNationality" layoutX="695.0" layoutY="301.0" prefHeight="27.0" prefWidth="192.0" />
+      <CheckBox fx:id="chkBoxChildren" layoutX="694.0" layoutY="339.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" />
+      <Text fontSmoothingType="LCD" layoutX="602.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Children *" wrappingWidth="100.53070536255836">
+         <font>
+            <Font name="Sarabun Regular" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="171.0" layoutX="550.0" layoutY="384.0" stroke="BLACK" strokeType="INSIDE" width="501.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.024038461538461536" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#aec41d47" offset="0.8952702702702703" />
+                  <Stop color="#aec41b87" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="553.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This registration form helps us provide you with personalized service and account security. All fields marked with * are required. Your personal details will be kept confidential and used only for account-related communications. Please ensure your email address is correct as it will be used for account verification and password recovery. For security, use a strong password with at least 8 characters including numbers and special characters." textAlignment="CENTER" wrappingWidth="496.5306443274021">
+         <font>
+            <Font name="Sarabun Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#8a8a8a" fontSmoothingType="LCD" layoutX="563.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helpful information" wrappingWidth="264.53070536255836">
+         <font>
+            <Font name="Sarabun Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#afc91c" fontSmoothingType="LCD" layoutX="44.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms and Mailing" wrappingWidth="202.48532104492188">
+         <font>
+            <Font name="Sarabun Bold" size="21.0" />
+         </font>
+      </Text>
+      <Line endX="-81.0" layoutX="128.0" layoutY="601.0" startX="-129.0" stroke="#8a8a8a" />
+      <Line endX="291.83331298828125" layoutX="392.0" layoutY="602.0" startX="-174.5" stroke="#8a8a8a" />
+      <Line endX="-23.66668701171875" endY="70.33331298828125" layoutX="708.0" layoutY="639.0" startX="-23.66668701171875" startY="-36.5" stroke="#8a8a8a" />
+      <CheckBox fx:id="chkBoxTAC" layoutX="39.0" layoutY="620.0" mnemonicParsing="false" text="* I accept the">
+         <font>
+            <Font name="Sarabun Regular" size="19.0" />
+         </font>
+      </CheckBox>
+      <Hyperlink layoutX="181.0" layoutY="616.0" onAction="#hyperLinkTAC" text="Terms and Condition">
+         <font>
+            <Font name="Sarabun Regular" size="19.0" />
+         </font>
+      </Hyperlink>
+      <CheckBox layoutX="39.0" layoutY="654.0" mnemonicParsing="false" text="I want to receive personalized offers by your site">
+         <font>
+            <Font name="Sarabun Regular" size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="39.0" layoutY="688.0" mnemonicParsing="false" text="Allow partners to send me personalized offers and related services">
+         <font>
+            <Font name="Sarabun Regular" size="19.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnRegister" layoutX="727.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnRegisterClick" prefHeight="63.0" prefWidth="166.0" text="Register &gt;&gt;" textFill="WHITE">
+         <font>
+            <Font name="Sarabun Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
