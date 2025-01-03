@@ -1,0 +1,26 @@
+.button-registration{
+    -fx-background-color: #3498db;
+}
+
+.button-cancel{
+    -fx-background-color: #D9534F;
+}
+
+.button-registration:hover{
+    -fx-background-color: #2977ab;
+}
+
+.button-cancel:hover{
+    -fx-background-color: #b34542;
+}
+
+.button-registration:pressed{
+    -fx-background-color: #23628c;
+}
+
+.button-cancel:pressed{
+    -fx-background-color: #8a3633;
+}
+
+
+
