@@ -1,0 +1,11 @@
+.text-field:focused{
+    -fx-background-color: #92d492;
+}
+
+.choice-box:focused{
+    -fx-background-color: #92d492;
+}
+
+.button{
+    -fx-background-color: linear-gradient(#aec41b, #ffffff);
+}
