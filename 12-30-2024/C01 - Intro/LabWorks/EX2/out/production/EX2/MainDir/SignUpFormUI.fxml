@@ -57,17 +57,6 @@
                   <Image url="@email-black-envelope-shape.png" />
                </image>
             </ImageView>
-            <TextField fx:id="txtPaaswordInput" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="168.0" prefHeight="42.0" prefWidth="366.0" promptText="Password">
-               <font>
-                  <Font name="Sarabun Bold" size="13.0" />
-               </font>
-            </TextField>
-            <Line endX="100.0" endY="-3.0" layoutX="-12.0" layoutY="178.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
-            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="42.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@—Pngtree—vector%20shield%20icon_3762822.png" />
-               </image>
-            </ImageView>
             <Text fill="#8cc63f" fontSmoothingType="LCD" layoutX="68.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth" wrappingWidth="97.05732727050781">
                <font>
                   <Font name="Sarabun Bold" size="15.0" />
@@ -137,7 +126,7 @@
                </image>
             </ImageView>
             <DatePicker fx:id="txtExpiredDateInput" layoutX="216.0" layoutY="449.0" prefHeight="44.0" prefWidth="186.0" promptText="Expired Date (MM/YY)" />
-            <Hyperlink layoutX="27.0" layoutY="517.0" text="Terms and Conditions" textFill="#8cc63f">
+            <Hyperlink fx:id="hyperLinkTAC" layoutX="27.0" layoutY="517.0" onAction="#hyperLinkClick" text="Terms and Conditions" textFill="#8cc63f">
                <font>
                   <Font name="Sarabun Bold" size="15.0" />
                </font>
@@ -157,6 +146,17 @@
                   <Font name="Sarabun Bold" size="13.0" />
                </font>
             </Button>
+            <PasswordField fx:id="txtPaaswordInput" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="165.0" prefHeight="42.0" prefWidth="366.0" promptText="Password">
+               <font>
+                  <Font name="Sarabun Bold" size="13.0" />
+               </font>
+            </PasswordField>
+            <Line endX="100.0" endY="-3.0" layoutX="-12.0" layoutY="175.0" startX="100.0" startY="25.333335876464844" stroke="#bfbebe" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="41.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@—Pngtree—vector%20shield%20icon_3762822.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
