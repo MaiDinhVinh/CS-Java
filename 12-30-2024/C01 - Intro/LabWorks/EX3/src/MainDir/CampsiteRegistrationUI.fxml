@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.CampsiteRegistrationUIController">
+    <stylesheets>
+        <URL value="@CampsiteRegistrationUICss.css" />
+    </stylesheets>
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3498db" height="94.0" layoutX="-83.0" layoutY="-41.0" stroke="BLACK" strokeType="INSIDE" width="1184.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="55.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Almaguin Campground - Reservation">
+         <font>
+            <Font name="Sarabun Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="317.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accomodation" wrappingWidth="118.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="boxAccomodationType" layoutX="462.0" layoutY="71.0" prefHeight="27.0" prefWidth="162.0" promptText="Accomodation type" />
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="349.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="50.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="boxUserTitle" layoutX="462.0" layoutY="112.0" prefHeight="36.0" prefWidth="106.0" promptText="Title" />
+      <TextField fx:id="txtUserFirstName" layoutX="579.0" layoutY="112.0" prefHeight="4.0" prefWidth="152.0" promptText="First Name">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserLastName" layoutX="742.0" layoutY="111.0" prefHeight="4.0" prefWidth="152.0" promptText="Last Name">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="345.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guests" wrappingWidth="58.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="343.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="65.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserContactEmail" layoutX="462.0" layoutY="212.0" prefHeight="36.0" prefWidth="433.0" promptText="E-mail">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserContactPhone" layoutX="462.0" layoutY="257.0" prefHeight="36.0" prefWidth="433.0" promptText="Phone: (XXX) - XXX XXXX">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="343.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkin" wrappingWidth="65.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="txtCheckInDate" layoutX="462.0" layoutY="311.0" prefHeight="36.0" prefWidth="152.0" />
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="647.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout" wrappingWidth="74.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="txtCheckOutDate" layoutX="742.0" layoutY="311.0" prefHeight="36.0" prefWidth="152.0" />
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="313.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment type" wrappingWidth="126.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="boxEquipmentType" layoutX="462.0" layoutY="361.0" prefHeight="36.0" prefWidth="152.0" promptText="Equipment type" />
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="645.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slide-outs" wrappingWidth="85.03169345855713">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="chkBoxSlideOuts" layoutX="742.0" layoutY="370.0" mnemonicParsing="false" />
+      <TextArea fx:id="txtAreaReqServ" layoutX="462.0" layoutY="412.0" prefHeight="94.0" prefWidth="74.0" />
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="309.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Required Service" wrappingWidth="133.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="355.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pets" wrappingWidth="37.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="chkBoxPets" layoutX="462.0" layoutY="523.0" mnemonicParsing="false" />
+      <TextArea fx:id="txtAreaComments" layoutX="462.0" layoutY="554.0" prefHeight="140.0" prefWidth="433.0" promptText="Additional comments">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <Text fill="#7c7a7a" fontSmoothingType="LCD" layoutX="331.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" wrappingWidth="85.03167724609375">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnRequestReservation" layoutX="462.0" layoutY="717.0" mnemonicParsing="false" onAction="#btnReqReservationClick" prefHeight="50.0" prefWidth="201.0" styleClass="button-registration" text="Request Reservation" textFill="WHITE">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="776.0" layoutY="717.0" mnemonicParsing="false" onAction="#btnCancelClick" prefHeight="50.0" prefWidth="118.0" styleClass="button-cancel" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtGuestMoreThan18" layoutX="462.0" layoutY="163.0" prefHeight="36.0" prefWidth="106.0" promptText="18+ years">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGuest2To17" layoutX="579.0" layoutY="163.0" prefHeight="4.0" prefWidth="152.0" promptText="2 - 17 years">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGuestLessThan2" layoutX="742.0" layoutY="163.0" prefHeight="4.0" prefWidth="152.0" promptText="&lt; 2 years">
+         <font>
+            <Font name="Sarabun Bold" size="17.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
