@@ -1,0 +1,11 @@
+.home-button{
+    -fx-background-color: #BC9930;
+}
+
+.generic-button{
+    -fx-background-color: transparent;
+}
+
+.generic-button:hover{
+    -fx-background-color: #BC9930;
+}
