@@ -1,0 +1,47 @@
+###Property###
+Upgrade class12_javafx_ui
+
+refactor: ZERO = "0" and update resetTextFields()
+
+refactor calculatePerimeter, calculateArea
+	try-catch surrounds "parse"
+
+property: wrapper around a value to signal changes
+controls can listen to changes of property
+
+perimeter, area listen to length, width
+
+reset btn listen to length, width
+	disableEnableReset() with try-catch
+	
+(Optional)
+progress bar, spinner, checkbox 
+	gridpane new row
+	vbox span remaining
+	initSpinner
+
+###MULTI-SCENE###
+
+
+***************************************
+Show the UI first for S to get the goal
+***************************************
+
+
+Exp IndexUI.fxml (doc hierarchy)
+Exp EditUI.fxml (doc hierarchy) to do insert/update
+
+Exp Navigator.java (singleton)
+	2 constants of fxml
+	FXMLLoader
+	stage
+	private constructor and static getInstance()
+	goTo()
+	goToIndex()
+		==> usage in Main.java
+		run app to see
+	goToEdit(id) ~~ /?id="2" in php
+		initialize(id)
+		
+Exp IndexUIController (all methods)
+Exp EditUIController (all methods)
