@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.ContactPageUIController">
+   <stylesheets>
+      <URL value="@MultisceneUICss.css" />
+   </stylesheets>
+   <content>
+      <Pane prefHeight="1000.0" prefWidth="1100.0">
+         <children>
+            <Text fill="#bc9930" fontSmoothingType="LCD" layoutX="66.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classic">
+               <font>
+                  <Font name="Sarabun Bold" size="40.0" />
+               </font>
+            </Text>
+            <Button layoutX="594.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnHomeClick" prefHeight="46.0" prefWidth="97.0" styleClass="home-button" text="Home">
+               <font>
+                  <Font name="Sarabun Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="713.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAboutClick" prefHeight="46.0" prefWidth="97.0" styleClass="generic-button" text="About">
+               <font>
+                  <Font name="Sarabun Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="828.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBlogClick" prefHeight="46.0" prefWidth="97.0" styleClass="generic-button" text="Blog">
+               <font>
+                  <Font name="Sarabun Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="948.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnContactClick" prefHeight="46.0" prefWidth="103.0" styleClass="generic-button" text="Contact">
+               <font>
+                  <Font name="Sarabun Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="161.0" fitWidth="1083.0" layoutX="-1.0" layoutY="71.0" pickOnBounds="true">
+               <image>
+                  <Image url="@tm-contact-img.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
