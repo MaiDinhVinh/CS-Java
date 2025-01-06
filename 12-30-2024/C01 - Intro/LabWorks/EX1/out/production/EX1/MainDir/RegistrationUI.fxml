@@ -27,12 +27,12 @@
             <Font name="Sarabun Regular" size="20.0" />
          </font>
       </Label>
-      <RadioButton fx:id="radBtnPersonal" layoutX="45.0" layoutY="76.0" mnemonicParsing="false" onAction="#radioBtnPersonalClick" prefHeight="20.0" prefWidth="88.0" styleClass="dot" stylesheets="@RegistrationUICss.css" text="Personal" textAlignment="CENTER" textFill="#615d5d">
+      <RadioButton fx:id="radBtnPersonal" layoutX="45.0" layoutY="76.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="88.0" styleClass="dot" stylesheets="@RegistrationUICss.css" text="Personal" textAlignment="CENTER" textFill="#615d5d">
          <font>
             <Font name="SansSerif Bold" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="radBtnCompany" layoutX="156.0" layoutY="76.0" mnemonicParsing="false" onAction="#radioBtnCompanyClick" styleClass="dot" text="Company" textAlignment="CENTER" textFill="#615d5d">
+      <RadioButton fx:id="radBtnCompany" layoutX="156.0" layoutY="76.0" mnemonicParsing="false" styleClass="dot" text="Company" textAlignment="CENTER" textFill="#615d5d">
          <font>
             <Font name="SansSerif Bold" size="13.0" />
          </font>
@@ -71,12 +71,12 @@
             <Image url="@—Pngtree—vector%20shield%20icon_3762822.png" />
          </image>
       </ImageView>
-      <RadioButton fx:id="radBtnMale" layoutX="59.0" layoutY="290.0" mnemonicParsing="false" onAction="#radioBtnMaleClick" prefHeight="20.0" prefWidth="88.0" styleClass="dot" text="Male" textAlignment="CENTER" textFill="#615d5d">
+      <RadioButton fx:id="radBtnMale" layoutX="59.0" layoutY="290.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="88.0" styleClass="dot" text="Male" textAlignment="CENTER" textFill="#615d5d">
          <font>
             <Font name="SansSerif Bold" size="13.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="radBtnFemale" layoutX="153.0" layoutY="291.0" mnemonicParsing="false" onAction="#radioBtnFemaleClick" styleClass="dot" text="Female" textAlignment="CENTER" textFill="#615d5d">
+      <RadioButton fx:id="radBtnFemale" layoutX="153.0" layoutY="291.0" mnemonicParsing="false" styleClass="dot" text="Female" textAlignment="CENTER" textFill="#615d5d">
          <font>
             <Font name="SansSerif Bold" size="13.0" />
          </font>
