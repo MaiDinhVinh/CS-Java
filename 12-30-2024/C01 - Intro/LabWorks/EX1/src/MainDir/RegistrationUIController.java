@@ -51,17 +51,16 @@ public class RegistrationUIController implements Initializable {
         * 1 cách code khác thay thế 2 code bên dưới, gợi ý bởi
         * Claude 3.5 Sonnet*/
 
-        /*ToggleGroup userTypeGroup = new ToggleGroup();
+        ToggleGroup userTypeGroup = new ToggleGroup();
         radBtnPersonal.setToggleGroup(userTypeGroup);
         radBtnCompany.setToggleGroup(userTypeGroup);
 
         ToggleGroup genderGroup = new ToggleGroup();
         radBtnMale.setToggleGroup(genderGroup);
         radBtnFemale.setToggleGroup(genderGroup);
-        */
     }
 
-    @FXML
+    /*@FXML
     void radioBtnCompanyClick(ActionEvent event) {
         if(radBtnPersonal.isSelected()){
             Alert personalRadSelected = new Alert(Alert.AlertType.ERROR);
@@ -71,17 +70,17 @@ public class RegistrationUIController implements Initializable {
 
             Optional<ButtonType> confirmationResponse = personalRadSelected.showAndWait();
 
-            /*
+            *//*
             * lưu ý: method disarm() cho button k hoạt động đc ở đây, phải dùng method
             * setSelected(<boolean value>) để logic code mới chạy đc
             * => logic code đúng nhưng lại dùng sai method + quá ngu trong việc
-            * quên k save file .fxml lại*/
+            * quên k save file .fxml lại*//*
 
             if(confirmationResponse.get() == ButtonType.OK) radBtnCompany.setSelected(false);
         }
-    }
+    }*/
 
-    @FXML
+    /*@FXML
     void radioBtnPersonalClick(ActionEvent event) {
         if(radBtnCompany.isSelected()){
             Alert companyRadSelected = new Alert(Alert.AlertType.ERROR);
@@ -89,19 +88,19 @@ public class RegistrationUIController implements Initializable {
                     "please choose again !");
             companyRadSelected.setTitle("ERROR");
 
-            /*
+            *//*
              * lưu ý: method disarm() cho button k hoạt động đc ở đây, phải dùng method
              * setSelected(<boolean value>) để logic code mới chạy đc
              * => logic code đúng nhưng lại dùng sai method + quá ngu trong việc
-             * quên k save file .fxml lại*/
+             * quên k save file .fxml lại*//*
 
             Optional<ButtonType> confirmationResponse = companyRadSelected.showAndWait();
 
             if(confirmationResponse.get() == ButtonType.OK) radBtnCompany.setSelected(false);
         }
-    }
+    }*/
 
-    @FXML
+    /*@FXML
     void radioBtnFemaleClick(ActionEvent event) {
         if(radBtnMale.isSelected()) {
             Alert maleRadSelected = new Alert(Alert.AlertType.ERROR);
@@ -109,19 +108,19 @@ public class RegistrationUIController implements Initializable {
                     "please choose again !");
             maleRadSelected.setTitle("ERROR");
 
-            /*
+            *//*
              * lưu ý: method disarm() cho button k hoạt động đc ở đây, phải dùng method
              * setSelected(<boolean value>) để logic code mới chạy đc
              * => logic code đúng nhưng lại dùng sai method + quá ngu trong việc
-             * quên k save file .fxml lại*/
+             * quên k save file .fxml lại*//*
 
             Optional<ButtonType> confirmationResponse = maleRadSelected.showAndWait();
 
             if (confirmationResponse.get() == ButtonType.OK) radBtnFemale.setSelected(false);
         }
-    }
+    }*/
 
-    @FXML
+    /*@FXML
     void radioBtnMaleClick(ActionEvent event) {
         if(radBtnFemale.isSelected()) {
             Alert femaleRadSelected = new Alert(Alert.AlertType.ERROR);
@@ -129,17 +128,17 @@ public class RegistrationUIController implements Initializable {
                     "please choose again !");
             femaleRadSelected.setTitle("ERROR");
 
-            /*
+            *//*
              * lưu ý: method disarm() cho button k hoạt động đc ở đây, phải dùng method
              * setSelected(<boolean value>) để logic code mới chạy đc
              * => logic code đúng nhưng lại dùng sai method + quá ngu trong việc
-             * quên k save file .fxml lại*/
+             * quên k save file .fxml lại*//*
 
             Optional<ButtonType> confirmationResponse = femaleRadSelected.showAndWait();
 
             if (confirmationResponse.get() == ButtonType.OK) radBtnMale.setSelected(false);
         }
-    }
+    }*/
 
     @FXML
     void hyperLinkTACClick(ActionEvent event) throws URISyntaxException, IOException {
