@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="370.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.UI.UIController.InsertTeacherUIController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="59.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert teacher" textAlignment="CENTER" wrappingWidth="295.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="21.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher name" textAlignment="CENTER" wrappingWidth="104.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: JavaFX">
+         <font>
+            <Font />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="11.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher DOB" textAlignment="CENTER" wrappingWidth="118.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="12.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher SSID" textAlignment="CENTER" wrappingWidth="118.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="28.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnBackToIndexClick" text="&lt;&lt; Back to Index">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="177.0" layoutY="257.0" mnemonicParsing="false" text="Summit">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="257.0" mnemonicParsing="false" text="Reset">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker layoutX="126.0" layoutY="138.0" promptText="MM/DD/YYYY" />
+      <TextField layoutX="126.0" layoutY="198.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: 10900934567">
+         <font>
+            <Font />
+         </font>
+      </TextField>
+      <Label layoutX="26.0" layoutY="316.0" text="Message: Waiting for input....">
+         <font>
+            <Font name="Sarabun Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
