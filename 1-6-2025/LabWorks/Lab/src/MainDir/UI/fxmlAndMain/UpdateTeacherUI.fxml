@@ -45,7 +45,7 @@
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="273.0" layoutY="257.0" mnemonicParsing="false" text="Reset">
+      <Button layoutX="273.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnResetClick" text="Reset">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
