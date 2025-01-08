@@ -7,15 +7,13 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Arrays;
+import java.util.Optional;
 
 public class InsertModuleUIController implements Initializable {
 
@@ -90,6 +88,16 @@ public class InsertModuleUIController implements Initializable {
 
     @FXML
     void btnResetClick(ActionEvent event) {
+        Alert resetAlert = new Alert(Alert.AlertType.CONFIRMATION);
+        resetAlert.setTitle("Reset confirmation");
+        resetAlert.setHeaderText("Are you sure you want to reset all ?");
 
+        Optional<ButtonType> confirmationResponse = resetAlert.showAndWait();
+        if(confirmationResponse.get() == ButtonType.OK){
+            txtModNameInput.setText("");
+            txtModDurInput.setText("");
+            btnChoiceLev.setValue(null);
+            msgLabel.setText("Message: Resetted !");
+        }
     }
 }
