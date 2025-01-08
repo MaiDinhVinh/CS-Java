@@ -48,7 +48,12 @@ public class TeacherIndexUIController implements Initializable {
     @FXML
     void btnUpdateTeacherClick(ActionEvent event) throws IOException {
         Teacher selectedTeacher = teacherTv.getSelectionModel().getSelectedItem();
-        Navigator.getInstance().goToUpdateTeacher(selectedTeacher);
+        if(selectedTeacher == null){
+            Alert noSelectedTeacher = new Alert(Alert.AlertType.ERROR);
+            noSelectedTeacher.setTitle("Update error");
+            noSelectedTeacher.setHeaderText("Please choose a teacher to update !");
+            noSelectedTeacher.show();
+        }else Navigator.getInstance().goToUpdateTeacher(selectedTeacher);
     }
 
     @Override
@@ -81,7 +86,7 @@ public class TeacherIndexUIController implements Initializable {
         if(isNull){
             Alert deleteRowErr = new Alert(Alert.AlertType.ERROR);
             deleteRowErr.setTitle("Delete teacher unsucessfully !");
-            deleteRowErr.setHeaderText("No teacher is selected !, please select a book to delete");
+            deleteRowErr.setHeaderText("No teacher is selected !, please select a teacher to delete");
             deleteRowErr.show();
         }else{
             Alert deleteRowConfirmation = new Alert(Alert.AlertType.CONFIRMATION);
@@ -93,9 +98,9 @@ public class TeacherIndexUIController implements Initializable {
                 boolean isDeleted = Teacher.delete(selectedTeacher) ? true : false;
                 if(isDeleted){
                     teacherTv.getItems().remove(selectedTeacher);
-                    System.out.println("module deleted");
+                    System.out.println("teacher deleted");
                 }else{
-                    System.out.println("module deleted unsucessfully !");
+                    System.out.println("teacher deleted unsucessfully !");
                 }
             }
         }
