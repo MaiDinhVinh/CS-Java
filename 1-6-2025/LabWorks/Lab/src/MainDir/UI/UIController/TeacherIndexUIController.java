@@ -1,16 +1,20 @@
 package MainDir.UI.UIController;
 
 
+import MainDir.Beans.Module.Module;
 import MainDir.Beans.Teacher.Teacher;
 import MainDir.UI.fxmlAndMain.Navigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class TeacherIndexUIController implements Initializable {
@@ -43,7 +47,8 @@ public class TeacherIndexUIController implements Initializable {
 
     @FXML
     void btnUpdateTeacherClick(ActionEvent event) throws IOException {
-        Navigator.getInstance().goToUpdateTeacher();
+        Teacher selectedTeacher = teacherTv.getSelectionModel().getSelectedItem();
+        Navigator.getInstance().goToUpdateTeacher(selectedTeacher);
     }
 
     @Override
@@ -65,5 +70,34 @@ public class TeacherIndexUIController implements Initializable {
         teacherSSIDCol.setCellValueFactory((teacher) -> {
             return teacher.getValue().getTeacherSSIDProperty();
         });
+    }
+
+    @FXML
+    void btnTeacherDeleteClick(ActionEvent event) {
+        Teacher selectedTeacher = teacherTv.getSelectionModel().getSelectedItem();
+
+        boolean isNull = selectedTeacher == null ? true : false;
+
+        if(isNull){
+            Alert deleteRowErr = new Alert(Alert.AlertType.ERROR);
+            deleteRowErr.setTitle("Delete teacher unsucessfully !");
+            deleteRowErr.setHeaderText("No teacher is selected !, please select a book to delete");
+            deleteRowErr.show();
+        }else{
+            Alert deleteRowConfirmation = new Alert(Alert.AlertType.CONFIRMATION);
+            deleteRowConfirmation.setTitle("Delete teacher confirmation");
+            deleteRowConfirmation.setHeaderText("Are you sure you want to delete this teacher ?");
+
+            Optional<ButtonType> confirmationResponse = deleteRowConfirmation.showAndWait();
+            if(confirmationResponse.get() == ButtonType.OK){
+                boolean isDeleted = Teacher.delete(selectedTeacher) ? true : false;
+                if(isDeleted){
+                    teacherTv.getItems().remove(selectedTeacher);
+                    System.out.println("module deleted");
+                }else{
+                    System.out.println("module deleted unsucessfully !");
+                }
+            }
+        }
     }
 }
