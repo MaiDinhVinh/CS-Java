@@ -5,13 +5,11 @@ import MainDir.Beans.Teacher.Teacher;
 import MainDir.UI.fxmlAndMain.Navigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Optional;
 
 public class InsertTeacherUIController {
 
@@ -36,7 +34,17 @@ public class InsertTeacherUIController {
 
     @FXML
     void btnResetClick(ActionEvent event) {
+        Alert resetAlert = new Alert(Alert.AlertType.CONFIRMATION);
+        resetAlert.setTitle("Reset confirmation");
+        resetAlert.setHeaderText("Are you sure you want to reset all ?");
 
+        Optional<ButtonType> confirmationResponse = resetAlert.showAndWait();
+        if(confirmationResponse.get() == ButtonType.OK){
+            txtTeacherNameInput.setText("");
+            dateTeacherDOBInput.setValue(null);
+            txtTeacherSSIDInput.setText("");
+            msgLabel.setText("Message: Resetted !");
+        }
     }
 
     @FXML
@@ -65,35 +73,43 @@ public class InsertTeacherUIController {
             if (txtTeacherSSIDInput.getText().equals(""))
                 errorMessage.append("Teacher SSID cannot be empty !\n");
             else{
-                switch(txtTeacherSSIDInput.getText().substring(0, 2)){
-                    case "00":
-                    case "01":
-                    case "10":
-                    case "11":
-                        tempSSID.append(txtTeacherSSIDInput.getText().substring(0, 2));
-                        break;
-                    default:
-                        invalidSSID = true;
+                if(dateTeacherDOBInput.getValue() != null) {
+                    if(txtTeacherSSIDInput.getText().length() == 11){
+                        switch (txtTeacherSSIDInput.getText().substring(0, 2)) {
+                            case "00":
+                            case "01":
+                            case "10":
+                            case "11":
+                                tempSSID.append(txtTeacherSSIDInput.getText().substring(0, 2));
+                                break;
+                            default:
+                                invalidSSID = true;
+                        }
+                        if (Integer.valueOf(
+                                Integer.parseInt(txtTeacherSSIDInput.getText().substring(2, 4))
+                        ) != (dateTeacherDOBInput.getValue().getYear() % 100))
+                            invalidSSID = true;
+                        else
+                            tempSSID.append(txtTeacherSSIDInput.getText().substring(2, 4));
+                        if (Integer.valueOf(
+                                Integer.parseInt(txtTeacherSSIDInput.getText().substring(4, 6))
+                        ) != (dateTeacherDOBInput.getValue().getMonthValue()))
+                            invalidSSID = true;
+                        else
+                            tempSSID.append(txtTeacherSSIDInput.getText().substring(4, 6));
+                        if (!invalidSSID)
+                            teacher.setTeacherSSID(tempSSID.toString() +
+                                    txtTeacherSSIDInput.getText().substring(6));
+                        else
+                            errorMessage.append("Invalid teacher SSID !\n");
+                    }else errorMessage.append("SSID must consist of 11 digits !\n");
+                }else{
+                    if(txtTeacherSSIDInput.getText().length() > 11
+                    || txtTeacherSSIDInput.getText().length() < 11)
+                        errorMessage.append("SSID must consist of 11 digits !\n");
+                    else errorMessage.append("Invalid teacher SSID !\n"); //already invalid since DOB is missing tho
                 }
             }
-
-            if(Integer.valueOf(
-                    Integer.parseInt(txtTeacherSSIDInput.getText().substring(2, 4))
-            ) != (dateTeacherDOBInput.getValue().getYear()%100))
-                invalidSSID = true;
-            else
-                tempSSID.append(txtTeacherSSIDInput.getText().substring(2, 4));
-            if(Integer.valueOf(
-                    Integer.parseInt(txtTeacherSSIDInput.getText().substring(4, 6))
-            ) != (dateTeacherDOBInput.getValue().getMonthValue()))
-                invalidSSID = true;
-            else
-                tempSSID.append(txtTeacherSSIDInput.getText().substring(4, 6));
-            if(!invalidSSID)
-                teacher.setTeacherSSID(tempSSID.toString() +
-                        txtTeacherSSIDInput.getText().substring(6));
-            else
-                errorMessage.append("Invalid teacher SSID !\n");
         }
         final String ERROR_MESSAGE = errorMessage.toString();
         if(ERROR_MESSAGE.equals("")){
