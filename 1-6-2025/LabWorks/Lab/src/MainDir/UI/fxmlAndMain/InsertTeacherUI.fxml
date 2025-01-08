@@ -20,7 +20,7 @@
             <Font name="Sarabun Bold" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: JavaFX">
+      <TextField fx:id="txtTeacherNameInput" layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: John Smith">
          <font>
             <Font />
          </font>
@@ -40,23 +40,23 @@
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="177.0" layoutY="257.0" mnemonicParsing="false" text="Summit">
+      <Button layoutX="177.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnSubmitClick" text="Submit">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="273.0" layoutY="257.0" mnemonicParsing="false" text="Reset">
+      <Button layoutX="273.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnResetClick" text="Reset">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <DatePicker layoutX="126.0" layoutY="138.0" promptText="MM/DD/YYYY" />
-      <TextField layoutX="126.0" layoutY="198.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: 10900934567">
+      <DatePicker fx:id="dateTeacherDOBInput" layoutX="126.0" layoutY="138.0" promptText="MM/DD/YYYY" />
+      <TextField fx:id="txtTeacherSSIDInput" layoutX="126.0" layoutY="198.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: 10900934567">
          <font>
             <Font />
          </font>
       </TextField>
-      <Label layoutX="26.0" layoutY="316.0" text="Message: Waiting for input....">
+      <Label fx:id="msgLabel" layoutX="26.0" layoutY="316.0" text="Message: Waiting for input....">
          <font>
             <Font name="Sarabun Bold Italic" size="13.0" />
          </font>
