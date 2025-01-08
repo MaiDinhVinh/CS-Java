@@ -1,5 +1,9 @@
 package MainDir.UI.fxmlAndMain;
 
+import MainDir.Beans.Module.Module;
+import MainDir.Beans.Teacher.Teacher;
+import MainDir.UI.UIController.UpdateModuleUIController;
+import MainDir.UI.UIController.UpdateTeacherUIController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -77,11 +81,15 @@ public class Navigator {
         this.goTo(TEACHER_INSERT_FXML);
     }
 
-    public void goToUpdateModule() throws IOException {
+    public void goToUpdateModule(Module selectedMod) throws IOException {
         this.goTo(MOD_UPDATE_FXML);
+        UpdateModuleUIController updateModCtrl = loader.getController();
+        updateModCtrl.initialize(selectedMod);
     }
 
-    public void goToUpdateTeacher() throws IOException {
+    public void goToUpdateTeacher(Teacher selectedTeacher) throws IOException {
         this.goTo(TEACHER_UPDATE_FXML);
+        UpdateTeacherUIController updateTeachCtrl = loader.getController();
+        updateTeachCtrl.initialize(selectedTeacher);
     }
 }
