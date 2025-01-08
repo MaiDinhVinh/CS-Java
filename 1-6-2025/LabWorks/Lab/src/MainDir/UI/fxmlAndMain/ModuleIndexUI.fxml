@@ -50,7 +50,7 @@
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="616.0" layoutY="579.0" mnemonicParsing="false" text="- Delete a module">
+      <Button layoutX="616.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnDelModClick" text="- Delete a module">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
