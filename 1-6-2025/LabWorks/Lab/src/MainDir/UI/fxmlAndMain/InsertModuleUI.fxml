@@ -30,7 +30,7 @@
             <Font name="Sarabun Bold" size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="txtModDurInput" layoutX="154.0" layoutY="137.0" prefHeight="27.0" prefWidth="237.0" promptText="e.g: JavaFX">
+      <TextField fx:id="txtModDurInput" layoutX="154.0" layoutY="137.0" prefHeight="27.0" prefWidth="237.0" promptText="e.g: 60 mins">
          <font>
             <Font />
          </font>
