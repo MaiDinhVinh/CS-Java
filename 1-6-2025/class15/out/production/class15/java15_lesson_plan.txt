@@ -1,0 +1,79 @@
+***************
+change password to login mysql
+	login phpmyadmin (Edit my.ini and insert skip-grant-tables below [mysqld] if needed)
+	click Server 127.0.0.1
+	click User accounts
+	check root||localhost, click edit priviledges
+	click Change password
+	Type in password and GO
+	Open "C:\xampp\phpMyAdmin\config.inc.php", edit
+		$cfg['Servers'][$i]['password'] = 'yourPWD';
+		
+	Restart apache and mysql		
+https://techbloghunting.com/2016/08/25/how-to-set-phpmyadmin-password-on-xampp-or-wamp-server/
+
+****************
+
+https://www.mysql.com/products/connector/
+
+copy jar file to "lib" folder in project
+
+DbService.java
+
+Book bean represents book table
+	property (wrapper), getters, setters
+	Property getters
+	ObservableList in selectAll which signal changes in the list
+		exp how to connect and query MySQL
+
+IndexUI fxml
+	tableview and table column fx:id
+	controller add @fxml fields
+
+IndexUI initialize
+	TableView add an ObservableList of books
+	TableColumn map to each property of a book
+
+IndexUIController
+	tvBooks.getSelectionModel().getSelectedItem(); //select a book in table view
+	pass the book to goToEdit() in Navigator
+
+
+DELETE
+	Book selectedBook = tvBooks.getSelectionModel().getSelectedItem();
+		if (selectedBook == null) { //no book is selected
+            selectBookWarning();
+	
+	delete dialog
+		Book.delete
+		update tableview if successful
+
+
+INSERT
+Navigator.getInstance().goToEdit(null); //null means insert; not-null means update
+	public void goToEdit(Book editBook) throws IOException {
+	ctrl.initialize(editBook)
+EditUIController
+	public void initialize(Book editBook)
+	private Book editBook = null; //insert or edit
+	submitClick to insert
+		private Book extractBookFromFields()
+	
+
+
+UPDATE
+IndexUIController
+	Book updateBook = tvBooks.getSelectionModel().getSelectedItem();
+        
+	if (updateBook == null) { //no book is selected
+		selectBookWarning();
+	} else { //a book is selected
+		Navigator.getInstance().goToEdit(updateBook);
+	}
+EditUIController update	
+	passing seleted book
+	collect new values and ID from passed book
+	update table
+	
+
+
