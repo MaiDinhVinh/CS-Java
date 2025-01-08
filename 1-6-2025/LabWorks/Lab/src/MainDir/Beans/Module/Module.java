@@ -8,9 +8,7 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Module {
     private ObjectProperty<Integer> id;
@@ -98,5 +96,83 @@ public class Module {
         return modules;
     }
 
+    public static boolean delete(Module selectedMod) {
+        String sqlDel = "DELETE FROM Module WHERE id = ?;";
+        try(
+                Connection conn = MySQLService.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sqlDel);
+        ){
+            stmt.setInt(1, selectedMod.getId());
+
+            boolean isDeleted = stmt.executeUpdate() == 1 ? true : false;
+            if(isDeleted){
+                return true;
+            }else{
+                return false;
+            }
+        }catch(Exception e){
+            System.err.println("Error encountered !");
+            return false;
+        }
+    }
+
+    public static Module insert(Module mod) throws SQLException {
+        String sqlInsert = "INSERT INTO Module(mod_name, mod_duration, mod_level) "
+                + "VALUES(?, ?, ?);";
+        ResultSet key = null;
+        try(
+                Connection conn = MySQLService.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sqlInsert,Statement.RETURN_GENERATED_KEYS);
+                ){
+
+            stmt.setString(1, mod.getModName());
+            stmt.setInt(2, Integer.parseInt(mod.getModDuration().toString()));
+            stmt.setString(3, mod.getModLevel());
+
+            int rowUpdated = stmt.executeUpdate();
+
+            if(rowUpdated == 1){
+                key = stmt.getGeneratedKeys();
+                key.next();
+                int insertModuleKey = key.getInt(1);
+                mod.setModuleId(insertModuleKey);
+                return mod;
+            }else{
+                System.err.println("no module inserted !");
+                return null;
+            }
+        } catch (Exception e) {
+            System.err.println("Error encountered !");
+            return null;
+        }finally{
+            if(key != null) key.close();
+        }
+    }
+
+    public static boolean update(Module mod){
+        String sqlUpdate = "UPDATE Module " +
+                "SET mod_name = ?, mod_duration = ?, mod_level = ? " +
+                "WHERE id = ?;";
+        try(
+                Connection conn = MySQLService.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sqlUpdate);
+                ){
+            stmt.setString(1, mod.getModName());
+            stmt.setInt(2, Integer.parseInt(Integer.toString(mod.getModDuration())));
+            stmt.setString(3, mod.getModLevel());
+            stmt.setInt(4, mod.getId());
+
+            int rowUpdated = stmt.executeUpdate();
+
+            if(rowUpdated == 1) return true;
+            else{
+                System.out.println("No module updated !");
+                return false;
+            }
+        }catch(Exception e){
+            System.err.println("sql update error encountered !");
+            return false;
+        }
+    }
 
 }
