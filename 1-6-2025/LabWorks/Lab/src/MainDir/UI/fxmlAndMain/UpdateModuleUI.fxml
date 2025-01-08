@@ -20,7 +20,7 @@
             <Font name="Sarabun Bold" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: JavaFX">
+      <TextField fx:id="txtModName" layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="e.g: JavaFX">
          <font>
             <Font />
          </font>
@@ -30,7 +30,7 @@
             <Font name="Sarabun Bold" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="154.0" layoutY="137.0" prefHeight="27.0" prefWidth="237.0" promptText="e.g: JavaFX">
+      <TextField fx:id="txtModDuration" layoutX="154.0" layoutY="137.0" prefHeight="27.0" prefWidth="237.0" promptText="e.g: JavaFX">
          <font>
             <Font />
          </font>
@@ -40,13 +40,13 @@
             <Font name="Sarabun Bold" size="15.0" />
          </font>
       </Text>
-      <ComboBox layoutX="124.0" layoutY="198.0" prefHeight="27.0" prefWidth="177.0" promptText="Choose a level" />
+      <ComboBox fx:id="btnModLevel" layoutX="124.0" layoutY="198.0" prefHeight="27.0" prefWidth="177.0" promptText="Choose a level" />
       <Button layoutX="28.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnBackToIndexClick" text="&lt;&lt; Back to Index">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="177.0" layoutY="257.0" mnemonicParsing="false" text="Summit">
+      <Button layoutX="177.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnSubmitClick" text="Submit">
          <font>
             <Font name="Sarabun Bold" size="13.0" />
          </font>
@@ -56,7 +56,7 @@
             <Font name="Sarabun Bold" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="26.0" layoutY="318.0" text="Message: Waiting for input...">
+      <Label fx:id="msgLabel" layoutX="26.0" layoutY="318.0" text="Message: Waiting for input...">
          <font>
             <Font name="Sarabun Bold Italic" size="13.0" />
          </font>
