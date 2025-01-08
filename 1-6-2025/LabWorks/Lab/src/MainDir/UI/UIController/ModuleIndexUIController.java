@@ -48,7 +48,12 @@ public class ModuleIndexUIController implements Initializable {
     @FXML
     void btnUpdateModClick(ActionEvent event) throws IOException {
         Module selectedMod = modTv.getSelectionModel().getSelectedItem();
-        Navigator.getInstance().goToUpdateModule(selectedMod);
+        if(selectedMod == null){
+            Alert noSelectedTeacher = new Alert(Alert.AlertType.ERROR);
+            noSelectedTeacher.setTitle("Update error");
+            noSelectedTeacher.setHeaderText("Please choose a module to update !");
+            noSelectedTeacher.show();
+        }else Navigator.getInstance().goToUpdateModule(selectedMod);
     }
 
     @FXML
@@ -60,12 +65,12 @@ public class ModuleIndexUIController implements Initializable {
         if(isNull){
             Alert deleteRowErr = new Alert(Alert.AlertType.ERROR);
             deleteRowErr.setTitle("Delete module unsucessfully !");
-            deleteRowErr.setHeaderText("No book is selected !, please select a book to delete");
+            deleteRowErr.setHeaderText("No module is selected !, please select a module to delete");
             deleteRowErr.show();
         }else{
             Alert deleteRowConfirmation = new Alert(Alert.AlertType.CONFIRMATION);
             deleteRowConfirmation.setTitle("Delete module confirmation");
-            deleteRowConfirmation.setHeaderText("Are you sure you want to delete this book ?");
+            deleteRowConfirmation.setHeaderText("Are you sure you want to delete this module ?");
 
             Optional<ButtonType> confirmationResponse = deleteRowConfirmation.showAndWait();
             if(confirmationResponse.get() == ButtonType.OK){
