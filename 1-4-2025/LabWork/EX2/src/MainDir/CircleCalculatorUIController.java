@@ -28,16 +28,14 @@ public class CircleCalculatorUIController implements Initializable {
                 (observable, oldValue, newValue) -> {
                     if(txtRadInput.getText().equals("")){
                         txtRadInput.setText(ZERO);
-                        calculateCircumference();
-                        calculateArea();
                     }else{
                         if(!txtRadInput.getText().equals("0") & txtRadInput.getText().charAt(0) == '0'){
                             String tempInput = txtRadInput.getText().substring(1);
                             txtRadInput.setText(tempInput);
                         }
-                        calculateCircumference();
-                        calculateArea();
                     }
+                    calculateCircumference();
+                    calculateArea();
         });
     }
 
