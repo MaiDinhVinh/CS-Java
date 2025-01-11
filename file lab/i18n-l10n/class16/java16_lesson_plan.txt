@@ -1,0 +1,42 @@
+create new config in netbeans project properties
+	parameters: --language=en --country=US
+	
+
+javase
+demo normal code
+	=> internationalization issue
+
+Intro to MessagesBundle.properties file (key = value) in languages package
+	base property and derived property
+
+Intro to Locale and ResourceBundle (looking for MessagesBundle_xx_XX files)
+	
+
+Copy and refactor above code to be i18n
+
+
+javafx
+update all MessagesBundle files (the dictionaries)
+	must use netbeans to edit properties files
+	javafx supported languages: Locale constants
+
+scenebuilder text property
+	Replace with Internationalized String
+	show in fxml %xxxx
+	<placeholder> //before columns in tableview, this is not in scenebuilder
+	  <Label text="%tv.placeholder" />
+    </placeholder>
+
+
+Translator.java
+	static block run the first time class is used
+
+Main.java
+	Locale currentLocale = new Locale("en", "US");
+	Translator.setLocale(currentLocale);
+	String windowsTitle = Translator.getResource().getString("stage.title");
+
+Navigator.goTo
+	loader.setResources(Translator.getResource());
+
+Apply Locale for index and delete alert
