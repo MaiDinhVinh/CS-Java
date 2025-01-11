@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.UI.UIController.HomeUIController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="68.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%title.app">
+         <font>
+            <Font name="Sarabun Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="179.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%text.select">
+         <font>
+            <Font name="Sarabun Regular" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="103.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnModuleClick" prefHeight="48.0" prefWidth="147.0" text="%button.module" textAlignment="CENTER">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="270.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnTeacherClick" prefHeight="48.0" prefWidth="147.0" text="%button.teacher" textAlignment="CENTER">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fontSmoothingType="LCD" layoutX="22.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Sarabun Regular" size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="btnPreferLang" layoutX="164.0" layoutY="366.0" onAction="#btnPreferLangClick" prefHeight="17.0" prefWidth="131.0" />
+      <Text fontSmoothingType="LCD" layoutX="7.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%text.preferred.language">
+         <font>
+            <Font name="Sarabun Regular" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

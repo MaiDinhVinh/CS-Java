@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.UI.UIController.ModuleIndexUIController">
+   <children>
+      <GridPane prefHeight="570.0" prefWidth="860.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="0.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="340.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="563.0" minWidth="10.0" prefWidth="258.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="174.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="modTv" prefHeight="588.0" prefWidth="860.0" GridPane.columnSpan="4" GridPane.rowSpan="4">
+                <placeholder>
+                    <Label text="%tableview.module.placeholder" />
+                </placeholder>
+              <columns>
+                <TableColumn fx:id="modIDCol" prefWidth="88.0" text="%table.column.id" />
+                  <TableColumn fx:id="modNameCol" prefWidth="340.0" text="%table.column.name" />
+                  <TableColumn fx:id="modLevelCol" prefWidth="258.0" text="%table.column.level" />
+                  <TableColumn fx:id="modDurationCol" prefWidth="173.0" text="%table.column.duration" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+      <Button layoutX="88.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnBackToHomeClick" text="%button.home.return">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="266.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnInsertModClick" text="%button.module.insert">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnUpdateModClick" text="%button.module.update">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="616.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnDelModClick" text="%button.module.delete">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
