@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="370.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDir.UI.UIController.UpdateTeacherUIController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="59.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%title.teacher.update" textAlignment="CENTER" wrappingWidth="295.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="21.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%label.teacher.update.name" textAlignment="CENTER" wrappingWidth="104.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTeacherName" layoutX="126.0" layoutY="79.0" prefHeight="27.0" prefWidth="265.0" promptText="%placeholder.teacher.update.name">
+         <font>
+            <Font />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="11.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%label.teacher.update.dob" textAlignment="CENTER" wrappingWidth="118.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="12.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%label.teacher.update.ssid" textAlignment="CENTER" wrappingWidth="118.260009765625">
+         <font>
+            <Font name="Sarabun Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="28.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnBackToIndexClick" text="%button.teacher.update.back">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="177.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnSubmitClick" text="%button.teacher.update.submit">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnResetClick" text="%button.teacher.update.reset">
+         <font>
+            <Font name="Sarabun Bold" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateDOBTeacher" layoutX="126.0" layoutY="138.0" promptText="%placeholder.teacher.update.dob" />
+      <TextField fx:id="txtTeacherSSID" layoutX="126.0" layoutY="198.0" prefHeight="27.0" prefWidth="265.0" promptText="%placeholder.teacher.update.ssid">
+         <font>
+            <Font />
+         </font>
+      </TextField>
+      <Label fx:id="msgLabel" layoutX="26.0" layoutY="316.0" text="%message.teacher.update.waiting">
+         <font>
+            <Font name="Sarabun Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
