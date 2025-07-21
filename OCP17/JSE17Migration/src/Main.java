@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class Main {
@@ -28,10 +29,8 @@ public class Main {
     //for snippet 20
 
     void compareIntegers2(Number number) {
-        if (!(number instanceof Integer data)) {
-            return;
-        } else {
-            System.out.println(data);
+        if (number instanceof Integer data) {
+            System.out.println(data.compareTo(5));
         }
     }
 
@@ -50,15 +49,18 @@ public class Main {
 
     //for snippet 26
     void printIntegerTwice(Number number) {
-        if (number instanceof Integer data)
+        if (!(number instanceof Integer data))
+            System.out.println("hello world");
+        else
             System.out.print(data.intValue());
-        //System.out.print(data.intValue()); // DOES NOT COMPILE
     }
 
     //for snippet 27
     void printOnlyIntegers(Number number) {
         if (!(number instanceof Integer data))
             return;
+        else
+            System.out.print(data.intValue());
         System.out.print(data.intValue());
     }
 
@@ -100,6 +102,7 @@ public class Main {
         //snippet 2
 
 //        String eyeTest = "\"Java Study Guide\"\n by Scott & Jeanne";
+//        System.out.println(eyeTest);
 
         //snippet 3
 
@@ -116,15 +119,23 @@ public class Main {
 //                """; //Explain this part ? (the double quote)
 //        System.out.print(pyramid);
 
+//        String hello = """
+//                        Helloworld   \s""";
+//        String hello2 = "helloworld    \s";
+//        System.out.print(hello);
+//        System.out.println("\n");
+//        System.out.print(hello2);
+
         //snippet 5
 
-        //String block = """doe""";
+//        String block = """doe""";
 
         //snippet 6
 
 //        String block1 = """
 //                doe \
 //                deer""";
+//        System.out.println(block1);
 
         //snippet 7
 
@@ -132,6 +143,7 @@ public class Main {
 //                doe \n
 //                deer
 //                """;
+//        System.out.print(block2);
 
         //snippet 8
 
@@ -139,6 +151,7 @@ public class Main {
 //                 "doe\"\"\"
 //                 \"deer\"""
 //                """;
+//        System.out.println(block);
 
         //snippet 9
 
@@ -151,11 +164,13 @@ public class Main {
 
 //        var number = 7;
 //        number = 4;
-//        //number = "five";
+////        number = "five";
 
         //snippet 12
-
+//
 //        var silly
+//                = 1;
+//        int a
 //                = 1;
 
         //snippet 13
@@ -176,8 +191,8 @@ public class Main {
 
         //snippet 14
 
-        //int a, var b = 3;
-        //var n = null;
+//        int a, var b = 3;
+//        var n = null;
 
         //snippet 15 - check method addition above
 
@@ -205,8 +220,8 @@ public class Main {
         //snippet 22
 
 //        Number number2 = 123;
-//        if (number1 instanceof final Integer data) {
-//            //data = 12;
+//        if (number2 instanceof final Integer data) {
+////            data = 12;
 //        }
 
         //snippet 23 - check printIntegersGreaterThan5Ver1 method above
@@ -216,7 +231,7 @@ public class Main {
 //        Integer value = 123;
 //        if (value instanceof Integer) {
 //        }
-//        //if(value instanceof Integer data) {}
+//        if(value instanceof Integer data) {}
 
         //snippet 25 - check printIntegersGreaterThan5Ver2 method above
 
@@ -229,9 +244,8 @@ public class Main {
 //        Number number3 = 123;
 //        if (!(number3 instanceof Integer data))
 //            return;
-//        else {
+//        else
 //            System.out.print(data.intValue());
-//        }
 //
 //        //snippet 29
 //        if (number3 instanceof Integer data2)
@@ -261,11 +275,12 @@ public class Main {
 
         //snippet 32
 
-//        int s = 10;
+        int s = 10;
 //        int b = switch (s) {
 //            case 1 -> 10;
 //            case 2 -> 30;
 //            case 10 -> {
+//                System.out.println("hello world");
 //                yield 40;
 //            }
 //            default -> {
@@ -291,9 +306,10 @@ public class Main {
 //        String tb1 = """
 //                Hello, my name is Vinh
 //                How are you today?""";
-//        System.out.print(tb1.indent(2));
-//        System.out.print(tb1.indent(-1));
-//        System.out.print(tb1.indent(0));
+//        tb1 = tb1.indent(2);
+//        tb1 = tb1.indent(-1);
+//        tb1 = tb1.indent(0);
+//        System.out.println(tb1);
 
         //snippet 35
 
@@ -319,7 +335,7 @@ public class Main {
 
         //snippet 38
 
-//        var str = "1\\t2";
+//        var str = "1\\c";
 //        System.out.println(str);
 //        System.out.println(str.translateEscapes());
 
@@ -348,7 +364,7 @@ public class Main {
 //        var total = 100;
 //        System.out.println("%s:%n Score: %.1f out of %d"
 //                .formatted(name, score, total));
-//        System.out.println("%s:%n Score: %.2f out of %d"
+//        System.out.println("%s:%n Score: %.3f out of %d"
 //                .formatted(name, score, total));
 
         //snippet 42
@@ -362,12 +378,12 @@ public class Main {
         //snippet 43
 
 //        System.out.println("%1.0f".formatted(443.234));
-//        System.out.println("%1.4f".formatted(443.234));
+//        System.out.println("%-1.4f".formatted(443.234));
 
         //snippet 44
-        System.out.println("%8.3f".formatted(443.234));
-        System.out.println("%9.4f".formatted(443.234));
-        System.out.println("%08.3f".formatted(443.234));
-        System.out.println("%09.4f".formatted(443.234));
+//        System.out.println("%8.3f".formatted(443.234));
+//        System.out.println("%9.4f".formatted(443.234));
+//        System.out.println("%08.3f".formatted(443.234));
+//        System.out.println("%09.4f".formatted(443.234));
     }
 }
