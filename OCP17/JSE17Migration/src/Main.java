@@ -150,6 +150,11 @@ public class Main {
         System.out.println(steps.length);
     }
 
+    //for snippet 81
+    
+//    public void fly(int[] lengths) {}
+//    public void fly(int... lengths) {}
+
     public static void main(String[] args) {
         //snippet 1
 
@@ -455,10 +460,10 @@ public class Main {
 //        System.out.println(Arrays.compare(new int[] {1}, new String[] {"a"}));
 
         //snippet 47
-//        System.out.println(Arrays.mismatch(new int[] {1}, new int[] {1}));
+//        System.out.println(Arrays.mismatch(new int[] {1}, new int[] {1})); //neg
 //        System.out.println(Arrays.mismatch(new String[] {"a"},
-//                new String[] {"A"}));
-//        System.out.println(Arrays.mismatch(new int[] {1, 2}, new int[] {1}));
+//                new String[] {"A"})); //0
+//        System.out.println(Arrays.mismatch(new int[] {1, 2}, new int[] {1})); //1
 
         //snippet 48
 //        System.out.println(LocalDate.now());
@@ -518,7 +523,7 @@ public class Main {
 //        var start = LocalDate.of(2022, Month.JANUARY, 1);
 //        var end = LocalDate.of(2022, Month.MARCH, 30);
 //        var period = Period.ofMonths(1); // create a period
-//        performAnimalEnrichment(start, end, period);
+//        performAnimalEnrichment2(start, end, period);
 
         //snippet 57
 
@@ -573,8 +578,8 @@ public class Main {
 //        var one = LocalTime.of(5, 15);
 //        var two = LocalTime.of(6, 30);
 //        var date = LocalDate.of(2016, 1, 20);
-//        System.out.println(ChronoUnit.HOURS.between(one, two));
-//        System.out.println(ChronoUnit.MINUTES.between(one, two));
+//        System.out.println(ChronoUnit.HOURS.between(one, two)); //1
+//        System.out.println(ChronoUnit.MINUTES.between(one, two)); //75
 //        System.out.println(ChronoUnit.MINUTES.between(one, date)); //?
 
         //snippet 65
@@ -667,5 +672,9 @@ public class Main {
         //snippet 79
 
 //        walkDog(1, null);
+
+        //snippet 80 - check Bird and Swan class
+
+        //snippet 81 - check 2 fly methods above
     }
 }
