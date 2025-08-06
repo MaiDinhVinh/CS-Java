@@ -74,5 +74,91 @@ public class Main{
         //snippet 36 - check Season4 Enum
 
         //snippet 37 - check Season5 Enum
+
+        ////////////////////////////////////////
+        //// SECTION 2
+        ////////////////////////////////////////
+
+        //snippet 38 - check Frog class
+
+        //snippet 39 - check zoo1 and zoo2 package
+
+        //snippet 40 - check zoo3 package
+
+        //snippet 41 - check Antelope class
+
+        //snippet 42 - check Mammal class
+
+        //snippet 43 - check Wolf class
+
+        //snippet 44 - check Snake1 class
+
+        //snippet 45 - check Snake2 class
+
+        //snippet 46 - check Snake3 class
+
+        //snippet 47 - check Snake4 class
+
+        //snippet 48 - check Snake5 class
+
+        //snippet 49 - check Swim interface
+
+        //snippet 50 - check Crane class
+
+        //snippet 51 - check Poacher class
+
+        //snippet 52 - check Crane2 class
+
+        //snippet 53 - check Crane3 record
+
+        //snippet 54 - check Crane3 record again
+
+        //snippet 55 - check Crane3 record again
+
+        //snippet 56 - check Crane3 record again
+
+        //snippet 57 - check Crane3 record again
+
+        //snippet 58 - check Crane4 record
+
+        //snippet 59 - check Crane5 record
+
+        //snippet 60 - check Crane6 record
+
+        //snippet 61 - check Crane7 record
+
+        //snippet 62 - check Crane7 record again
+
+        //snippet 63 - check Crane8 record
+
+        //snippet 64 - check Crane8 record again
+
+        //snippet 65 - check Crane9 record
+
+        //snippet 66 - check Crane9 record again
+
+        //snippet 67 - check Home class
+
+        //snippet 68 - check Home class again
+
+        //snippet 69 - check Home class again
+
+        //snippet 70 - check A class
+
+        //snippet 71 - check Fox class
+
+        //snippet 72 - check Park class
+
+        //snippet 73 - check PrintNumbers class
+
+        //snippet 74 - check PrintNumbers class again
+
+        //snippet 75 - check ZooGiftShop class
+
+        //snippet 76 - check ZooGiftShop2 class
+
+        //snippet 77 - check Gorilla class
+
+        //snippet 78 - check Fish class
     }
 }
