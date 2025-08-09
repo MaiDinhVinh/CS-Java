@@ -14,12 +14,12 @@ public class Home {
     }
 
     public void enterRoom() {
-        var room = new Room();
+        var room = this.new Room();
         room.enter();
     }
     public static void main(String[] args) {
-        var home = new Home();
-        home.enterRoom();
+//        var home = new Home();
+//        home.enterRoom();
 
         //for snippet 68
 
