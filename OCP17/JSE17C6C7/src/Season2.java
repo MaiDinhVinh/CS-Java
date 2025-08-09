@@ -9,4 +9,5 @@ public enum Season2 {
     }
     public void printExpectedVisitors() {
         System.out.println(expectedVisitors);
-    } }
+    }
+}
