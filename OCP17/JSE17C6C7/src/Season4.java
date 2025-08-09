@@ -8,3 +8,9 @@ public enum Season4 {
     SPRING, FALL;
     public String getHours() { return "9am-5pm"; }
 }
+
+class test{
+    public static void main(String[] args) {
+        System.out.println(Season4.SPRING.getHours());
+    }
+}
