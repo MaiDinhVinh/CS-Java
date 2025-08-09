@@ -1,4 +1,4 @@
 package section2.zoo3;
 
-public class Emperor {
+public class Emperor{
 }
