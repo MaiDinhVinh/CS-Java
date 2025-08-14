@@ -10,7 +10,7 @@ class Test3{
         System.out.print(methodRef.check());
 
         //for snippet 14
-        var str2 = "";2
+        var str2 = "";
         StringChecker lambda2 = () -> str.startsWith("Zoo");
 
         //explain these ?
