@@ -2,7 +2,7 @@ package section2;
 
 public class PrintNumbers {
     private int length = 5;
-    public void calculate() {
+    public Object calculate() {
         final int width = 20;
         class Calculator {
             public void multiply() {
@@ -11,6 +11,7 @@ public class PrintNumbers {
         }
         var calculator = new Calculator();
         calculator.multiply();
+        return calculator;
     }
     public static void main(String[] args) {
          var printer = new PrintNumbers();
