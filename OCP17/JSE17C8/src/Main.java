@@ -159,8 +159,8 @@ public class Main{
 
         //snippet 32
 
-//        Predicate<String> egg = s -> s.contains("egg");
-//        Predicate<String> brown = s -> s.contains("brown");
+        Predicate<String> egg = s -> s.contains("egg");
+        Predicate<String> brown = s -> s.contains("brown");
 
         //snippet 33
 
@@ -189,7 +189,7 @@ public class Main{
         //snippet 37
 
 //        BooleanSupplier b1 = () -> true;
-//        BooleanSupplier b2 = () -> Math.random()> .5;
+//        BooleanSupplier b2 = () -> Math.random() > .5;
 //        System.out.println(b1.getAsBoolean());
 //        System.out.println(b2.getAsBoolean());
 
