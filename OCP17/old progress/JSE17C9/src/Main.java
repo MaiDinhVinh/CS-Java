@@ -93,11 +93,12 @@ public class Main{
 //        List<String> list = new ArrayList<>();
 //        list.add("SD");
 //        list.add(0, "NY");
-//        list.set(1, "FL");
+//        list.set(1, "FL"); //NY, FL
 //        System.out.println(list.get(0));
 //        list.remove("NY");
 //        list.remove(0);
 //        list.set(0, "?");
+//        System.out.println(list);
 
         //snippet 13
 
@@ -134,10 +135,10 @@ public class Main{
         //snippet 17
 
 //        Set<Integer> set = new HashSet<>();
-//        boolean b1 = set.add(66); // true
-//        boolean b2 = set.add(10); // true
-//        boolean b3 = set.add(66); // false
-//        boolean b4 = set.add(8); // true
+//        boolean b1 = set.add(66);
+//        boolean b2 = set.add(10);
+//        boolean b3 = set.add(66);
+//        boolean b4 = set.add(8);
 //        set.forEach(System.out::println);
 
         //snippet 18
@@ -162,11 +163,11 @@ public class Main{
 //        Deque<Integer> deque = new LinkedList<>();
 //        deque.offerFirst(10);
 //        deque.offerLast(4);
-//        deque.peekFirst();
-//        deque.pollFirst();
-//        deque.pollLast();
-//        deque.pollFirst();
-//        deque.peekFirst();
+//        System.out.println(deque.peekFirst());
+//        System.out.println(deque.pollFirst());
+//        System.out.println(deque.pollLast());
+//        System.out.println(deque.pollFirst());
+//        System.out.println(deque.peekFirst());
 
         //snippet 21
 
@@ -247,8 +248,8 @@ public class Main{
 //        Map<Integer, Integer> map = new HashMap<>();
 //        map.put(1, 2);
 //        map.put(2, 4);
-//        Integer original = map.replace(2, 10); // 4
-//        System.out.println(map); // {1=2, 2=10}
+//        Integer original = map.replace(2, 10);
+//        System.out.println(map);
 //        map.replaceAll((k, v) -> k + v);
 //        System.out.println(map);
 
@@ -265,7 +266,7 @@ public class Main{
         //snippet 31
 
 //        BiFunction<String, String, String> mapper = (v1, v2)
-//                -> v1.length()> v2.length() ? v1: v2;
+//                -> v1.length() > v2.length() ? v1: v2;
 //        Map<String, String> favorites = new HashMap<>();
 //        favorites.put("Jenny", "Bus Tour");
 //        favorites.put("Tom", "Tram");
@@ -296,5 +297,11 @@ public class Main{
 //        favorites.merge("Jenny", "Skyride", mapper);
 //        favorites.merge("Sam", "Skyride", mapper);
 //        System.out.println(favorites);
+
+        HashSet<String> a = new HashSet<>();
+        a.add("hello");
+        a.forEach(System.out::println);
+
+        ArrayDeque
     }
 }
