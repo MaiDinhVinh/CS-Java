@@ -1,0 +1,2 @@
+public class Animal1 {
+}
