@@ -176,8 +176,7 @@ public class Main {
 //        String pyramid = """
 //                  *
 //                 * *
-//                * * *
-//                """; //Explain this part ? (the double quote)
+//                * * *"""; //Explain this part ? (the double quote)
 //        System.out.print(pyramid);
 
 //        String hello = """
@@ -194,8 +193,8 @@ public class Main {
         //snippet 6
 
 //        String block1 = """
-//                doe \
-//                deer""";
+////                doe \
+////                deer""";
 //        System.out.println(block1);
 
         //snippet 7
@@ -228,7 +227,7 @@ public class Main {
 ////        number = "five";
 
         //snippet 12
-//
+
 //        var silly
 //                = 1;
 //        int a
@@ -242,12 +241,12 @@ public class Main {
 //
 //        if (check) {
 //            answer = 2;
-//            } else {
+//        } else {
 //            answer = 3;
-//            }
+//        }
 //        System.out.println(answer);
 
-        //snippet 13
+//        snippet 13
 //        var a = 10, b = 12;
 
         //snippet 14
