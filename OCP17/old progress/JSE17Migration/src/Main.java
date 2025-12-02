@@ -383,19 +383,16 @@ public class Main {
 //        String tb3 = "Hello" + "My name is Vinh" + "How are you today";
 //        System.out.print(tb3.indent(1));
 
-        //snippet 37 - AI is dumb
+        //snippet 37
 
-//        String literalPhrase = "" +
-//                "    {\n" +
-//                "      greeting: \"hello\",\n" +
-//                "      audience: \"text blocks\"\n" +
-//                "    }"; //the AI added a \n in this line => causing confusion
-//        String cleaned = literalPhrase.stripIndent();
-//        System.out.print(cleaned);
+//        var concat = " a\n"
+//        + "  b\n"
+//        + " c";
+//        System.out.println(concat.indent(-1));
 
         //snippet 38
 
-//        var str = "1\\c";
+//        var str = "1\tc";
 //        System.out.println(str);
 //        System.out.println(str.translateEscapes());
 
@@ -432,7 +429,7 @@ public class Main {
 //        var name = "James";
 //        var score = 90.25;
 //        var total = 100;
-//        System.out.println("%s:%n Score: %5.2f out of %d"
+//        System.out.println("%s:%n Score: %06.2f out of %d"
 //                .formatted(name, score, total));
 
         //snippet 43
@@ -459,10 +456,10 @@ public class Main {
 //        System.out.println(Arrays.compare(new int[] {1}, new String[] {"a"}));
 
         //snippet 47
-//        System.out.println(Arrays.mismatch(new int[] {1}, new int[] {1})); //neg
+//        System.out.println(Arrays.mismatch(new int[] {1}, new int[] {1}));
 //        System.out.println(Arrays.mismatch(new String[] {"a"},
-//                new String[] {"A"})); //0
-//        System.out.println(Arrays.mismatch(new int[] {1, 2}, new int[] {1})); //1
+//                new String[] {"A"}));
+//        System.out.println(Arrays.mismatch(new int[] {1, 2}, new int[] {1}));
 
         //snippet 48
 //        System.out.println(LocalDate.now());
