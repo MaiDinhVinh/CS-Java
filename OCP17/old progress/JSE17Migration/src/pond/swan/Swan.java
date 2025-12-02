@@ -11,8 +11,12 @@ public class Swan extends Bird{
         System.out.print(other.text);
         }
     public void helpOtherBirdSwim() {
-        Bird other = new Bird();
-//        other.floatInWater();
-//        System.out.print(other.text);
+        a other = new a();
+        other.floatInWater();
+        System.out.print(other.text);
         }
+}
+
+class a extends Swan{
+
 }
