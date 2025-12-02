@@ -159,13 +159,15 @@ public class Main{
 
         //snippet 32
 
-        Predicate<String> egg = s -> s.contains("egg");
-        Predicate<String> brown = s -> s.contains("brown");
+//        Predicate<String> egg = s -> s.contains("egg");
+//        Predicate<String> brown = s -> s.contains("brown");
 
         //snippet 33
 
-//        Predicate<String> brownEggs = s -> s.contains("egg") && s.contains("brown");
-//        Predicate<String> otherEggs = s -> s.contains("egg") && !s.contains("brown");
+//        Predicate<String> brownEggs = s ->
+//                s.contains("egg") && s.contains("brown");
+//        Predicate<String> otherEggs = s ->
+//                s.contains("egg") && !s.contains("brown");
 
         //snippet 34
 
