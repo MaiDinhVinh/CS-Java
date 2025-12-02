@@ -1,4 +1,4 @@
 package section2.zoo3;
 
-public class Emperor{
+public final class Emperor extends Penguin1{
 }
