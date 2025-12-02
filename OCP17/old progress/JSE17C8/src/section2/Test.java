@@ -4,6 +4,7 @@ import java.util.function.Predicate;
 
 public class Test {
     private Predicate<String> pred = this::hello;
+//    private Predicate<String> pred2 = a -> this.hello(a);
     public boolean hello(String a){
         return a.startsWith("h");
     }
