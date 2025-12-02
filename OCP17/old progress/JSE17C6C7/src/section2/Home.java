@@ -28,6 +28,6 @@ public class Home {
 //        room.enter();
 
         //for snippet 69
-        new Home().new Room().enter();
+//        new Home().new Room().enter();
     }
 }
