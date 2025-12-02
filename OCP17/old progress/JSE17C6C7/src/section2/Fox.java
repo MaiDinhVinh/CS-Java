@@ -8,6 +8,10 @@ public class Fox {
     public static void visitFriend() {
 //        new Den();
     }
+
+    public static void main(String[] args) {
+//        new Den();
+    }
 }
 class Squirrel {
     public void visitFox() {
