@@ -9,13 +9,13 @@ class Test2{
         System.out.println(s == Season.SUMMER);
 
         //for snippet 28
-        for(var season: Season.values()) {
+        for(Enum season: Season.values()) {
             System.out.println(season.name() + " " + season.ordinal());
         }
 
         //for snippet 29
 
-//        if ( Season.SUMMER == 2) {}
+//        if (Season.SUMMER == 2) {}
 
         //for snippet 30
 
@@ -27,13 +27,11 @@ class Test2{
         switch(summer) {
             case WINTER:
                 System.out.print("Get out the sled!");
-                break;
             case SUMMER:
                 System.out.print("Time for the pool!");
-                break;
             default:
                 System.out.print("Is it summer yet?");
-        }
+        };
 
         //for snippet 32
 
