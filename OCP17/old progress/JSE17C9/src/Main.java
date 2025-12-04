@@ -298,10 +298,84 @@ public class Main{
 //        favorites.merge("Sam", "Skyride", mapper);
 //        System.out.println(favorites);
 
-        HashSet<String> a = new HashSet<>();
-        a.add("hello");
-        a.forEach(System.out::println);
+        /////////////////////////////////
+        /// SECTION 2
+        /////////////////////////////////
 
-        ArrayDeque
+        //snippet 34 - check Duck class
+
+        //snippet 35 - check Animal class
+
+        //snippet 36 - check LegacyDuck class
+
+        //snippet 37 - check MissingDuck class
+
+        //snippet 38 - check Product class
+
+        //snippet 39 - check Duck2 class
+
+        //snippet 40
+
+//        Comparator<Duck2> byWeight = (d1, d2) -> d1.getWeight()-d2.getWeight();
+
+        //snippet 41
+
+//        Comparator<Duck2> byWeight = Comparator.comparing(Duck2::getWeight);
+
+        //snippet 42
+
+//        var byWeight = new Comparator<Duck2>() { // DOES NOT COMPILE
+//            public int compareTo(Duck2 d1, Duck2 d2) {
+//                return d1.getWeight()-d2.getWeight();
+//            }
+//        };
+
+        //snippet 43 - check Squirrel class
+
+        //snippet 44 - check MultiFieldComparator class
+
+        //snippet 45
+
+//        Comparator<Squirrel> c = Comparator.comparing(Squirrel::getSpecies)
+//                .thenComparingInt(Squirrel::getWeight);
+
+        //snippet 46
+
+//        var c = Comparator.comparing(Squirrel::getSpecies).reversed();
+
+        //snippet 47 - check SortRabbits class
+
+        //snippet 48 - check SortRabbits class again
+
+        //snippet 49 - check SortRabbits class again
+
+        //snippet 50
+
+//        List<Integer> list = Arrays.asList(6,9,1,8);
+//        Collections.sort(list);
+//        System.out.println(Collections.binarySearch(list, 6));
+//        System.out.println(Collections.binarySearch(list, 3)); //explain ?
+
+        //snippet 51
+
+//        var names = Arrays.asList("Fluffy", "Hoppy");
+//        Comparator<String> c = Comparator.reverseOrder();
+//        var index = Collections.binarySearch(names, "Hoppy", c);
+//        System.out.println(index);
+
+        //snippet 52 - check UseTreeSet class
+
+        //snippet 53 - check UseTreeSet class again
+
+        //snippet 54
+
+//        List<String> bunnies = new ArrayList<>();
+//        bunnies.add("long ear");
+//        bunnies.add("floppy");
+//        bunnies.add("hoppy");
+//        System.out.println(bunnies);
+//        bunnies.sort((b1, b2) -> b1.compareTo(b2));
+//        System.out.println(bunnies);
+
     }
 }
