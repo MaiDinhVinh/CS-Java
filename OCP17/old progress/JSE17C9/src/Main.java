@@ -2,13 +2,37 @@ import java.util.*;
 import java.util.function.BiFunction;
 
 public class Main{
+
+    //for snippet 55
+
+    static void printNames(List list) {
+        for (int i = 0; i < list.size(); i++) {
+            String name = (String) list.get(i);
+            System.out.println(name);
+        }
+    }
+
+    //for snippet 71
+
+    public static void printList(List<Object> list) {
+        for (Object x: list)
+            System.out.println(x);
+    }
+
+    //for snippet 72
+
+    public static void printList2(List<?> list) {
+        for (Object x: list)
+            System.out.println(x);
+    }
+
     public static void main(String[] args) {
         //snippet 1
 
 //        Collection<String> list = new ArrayList<>();
 //        list.add("Magician");
 //        list.add("Assistant");
-//        System.out.println(list); // [Magician, Assistant]
+//        System.out.println(list);
 //        list.removeIf(s -> s.startsWith("A"));
 //        System.out.println(list);
 
@@ -33,9 +57,9 @@ public class Main{
 //        var set1 = Set.of(1, 2);
 //        var set2 = Set.of(2, 1);
 //
-//        System.out.println(list1.equals(list2)); //false
-//        System.out.println(set1.equals(set2)); //true
-//        System.out.println(list1.equals(set1)); //false
+//        System.out.println(list1.equals(list2));
+//        System.out.println(set1.equals(set2));
+//        System.out.println(list1.equals(set1));
 
         //snippet 5
 
@@ -76,7 +100,9 @@ public class Main{
 
 //        var strings = new ArrayList<String>(); //?
 //        strings.add("a");
-//        for (String s: strings) { }
+//        for (String s: strings) {
+//            System.out.println(s);
+//        }
 
         //snippet 10
 
@@ -112,6 +138,7 @@ public class Main{
 //        list.add(3);
 //        list.add(2);
 //        list.add(1);
+//        list.add(2);
 //        list.remove(2);
 //        list.remove(Integer.valueOf(2));
 //        System.out.println(list);
@@ -129,7 +156,7 @@ public class Main{
 
         //snippet 16
 
-//        Set<Character> letters = Set.of('z', 'o', 'o');
+//        Set<Character> letters = Set.of('z', 'o');
 //        Set<Character> copy = Set.copyOf(letters);
 
         //snippet 17
@@ -157,6 +184,7 @@ public class Main{
 //        queue.add(4);
 //        System.out.println(queue.remove());
 //        System.out.println(queue.peek());
+//        System.out.println(queue);
 
         //snippet 20
 
@@ -274,8 +302,8 @@ public class Main{
 //        String jenny = favorites.merge("Jenny", "Skyride", mapper);
 //        String tom = favorites.merge("Tom", "Skyride", mapper);
 //
-//        System.out.println(favorites); // {Tom=Skyride, Jenny=Bus Tour}
-//        System.out.println(jenny); // Bus Tour
+//        System.out.println(favorites);
+//        System.out.println(jenny);
 //        System.out.println(tom);
 
         //snippet 32
@@ -377,5 +405,99 @@ public class Main{
 //        bunnies.sort((b1, b2) -> b1.compareTo(b2));
 //        System.out.println(bunnies);
 
+        /////////////////////////////////
+        /// SECTION 3
+        /////////////////////////////////
+
+        //snippet 55 - check printNames method above too
+
+//        List names = new ArrayList(); //explain ?
+//        names.add(new StringBuilder("Webby"));
+//        printNames(names);
+
+        //snippet 56
+
+//        List<String> names = new ArrayList<String>();
+//        names.add(new StringBuilder("Webby"));
+
+        //snippet 57 - check Crate class
+
+        //snippet 58 - check Elephant class too
+
+//        Elephant elephant = new Elephant();
+//        Crate<Elephant> crateForElephant = new Crate<>();
+//        crateForElephant.packCrate(elephant);
+//        Elephant inNewHome = crateForElephant.lookInCrate();
+
+        //snippet 59 - check Zebra class too
+
+//        Crate<Zebra> crateForZebra = new Crate<>();
+
+        //snippet 60 - check Robot class too
+
+//        Robot joeBot = new Robot();
+//        Crate<Robot> robotCrate = new Crate<>();
+//        robotCrate.packCrate(joeBot);
+        // ship to Houston
+//        Robot atDestination = robotCrate.lookInCrate();
+
+        //snippet 61 - check SizeLimitedCrate class too
+
+//        Elephant elephant = new Elephant();
+//        Integer numPounds = 15_000;
+//        SizeLimitedCrate<Elephant, Integer> c1
+//                = new SizeLimitedCrate<>(elephant, numPounds);
+
+        //snippet 59 - check LongTailAnimal class
+
+        //snippet 60 - check LongTailAnimal2 class
+
+        //snippet 61 - check LongTailAnimal2 class again
+
+        //snippet 62 - check Mammal class
+
+        //snippet 63 - check Shippable interface
+
+        //snippet 64 - check ShippableRobotCrate class
+
+        //snippet 65 - check ShippableAbstractCrate class
+
+        //snippet 66 - check ShippableCrate class
+
+        //snippet 67 - check Handler class
+
+        //snippet 68 - check More class
+
+        //snippet 69 - check TrickyCrate class
+
+        //snippet 70 - check CrateRecord record too
+
+//        Robot robot = new Robot();
+//        CrateRecord<Robot> record = new CrateRecord<>(robot);
+
+        //snippet 71 - check printList method above too
+
+//        List<String> keywords = new ArrayList<>();
+//        keywords.add("java");
+//        printList(keywords);
+
+        //snippet 72
+
+//        List<Integer> numbers = new ArrayList<>();
+//        numbers.add(Integer.valueOf(42));
+//        List<Object> objects = numbers;
+//        objects.add("forty two");
+//        System.out.println(numbers.get(1));
+
+        //snippet 73 - check printList2 method above too
+
+//        List<String> keywords = new ArrayList<>();
+//        keywords.add("java");
+//        printList2(keywords);
+
+        //snippet 74
+
+//        List<?> x1 = new ArrayList<>();
+//        var x2 = new ArrayList<>();
     }
 }
