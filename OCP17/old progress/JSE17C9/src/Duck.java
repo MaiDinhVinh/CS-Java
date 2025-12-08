@@ -8,7 +8,7 @@ public class Duck implements Comparable<Duck> {
         return name;
     }
     public int compareTo(Duck d) {
-        return name.compareTo(d.name); //trace JDK code
+        return name.compareTo(d.name);
     }
     public static void main(String[] args) {
         var ducks = new ArrayList<Duck>();
