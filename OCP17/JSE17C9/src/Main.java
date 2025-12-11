@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 import java.util.function.BiFunction;
 
@@ -25,6 +27,42 @@ public class Main{
         for (Object x: list)
             System.out.println(x);
     }
+
+    //for snippet 77
+
+    public static long total(List<? extends Number> list) {
+        long count = 0;
+        for (Number number: list)
+            count += number.longValue();
+        return count;
+    }
+
+    //for snippet 83
+
+    <T> T first(List<? extends T> list) {
+        return list.get(0);
+    }
+
+    //for snippet 84
+
+//    <T> <? extends T> second(List<? extends T> list) {
+//        return list.get(0);
+//    }
+
+    //for snippet 85
+
+//    <B extends A> B third(List<B> list) {
+//        return new B();
+//    }
+
+    //for snipept 86
+
+    void fourth(List<? super B> list) {}
+
+    //for snippet 87
+
+//    <X> void fifth(List<X super B> list) {
+//    }
 
     public static void main(String[] args) {
         //snippet 1
@@ -499,5 +537,44 @@ public class Main{
 
 //        List<?> x1 = new ArrayList<>();
 //        var x2 = new ArrayList<>();
+
+        /////////////////////////////////
+        /// SECTION 4
+        /////////////////////////////////
+
+        //snippet 75
+
+//        ArrayList<Number> list = new ArrayList<Integer>();
+
+        //snippet 76
+
+//        List<? extends Number> list = new ArrayList<Integer>();
+
+        //snippet 77 - check total method above
+
+        //snippet 78 - check Main2 class
+
+        //snippet 79 - check Flyer interface
+
+        //snippet 80
+
+//        List<? super IOException> exceptions = new ArrayList<Exception>();
+//        exceptions.add(new Exception());
+//        exceptions.add(new IOException());
+//        exceptions.add(new FileNotFoundException());
+
+        //snippet 81 - check A class
+
+        //snippet 82 - check A class again
+
+        //snippet 83 - check method first above
+
+        //snippet 84 - check method second above
+
+        //snippet 85 - check method third above
+
+        //snippet 86 - check method fourth above
+
+        //snippet 87 - check method fifth above
     }
 }
