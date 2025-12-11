@@ -1,4 +1,4 @@
-public class Handler {
+public class Handler<T>{
     public static <T> void prepare(T t) {
         System.out.println("Preparing " + t);
     }

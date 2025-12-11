@@ -417,7 +417,7 @@ public class Main{
 
         //snippet 56
 
-//        List<String> names = new ArrayList<String>();
+//        List<String> names = new ArrayList<>();
 //        names.add(new StringBuilder("Webby"));
 
         //snippet 57 - check Crate class
@@ -438,7 +438,7 @@ public class Main{
 //        Robot joeBot = new Robot();
 //        Crate<Robot> robotCrate = new Crate<>();
 //        robotCrate.packCrate(joeBot);
-        // ship to Houston
+//        //ship to Houston
 //        Robot atDestination = robotCrate.lookInCrate();
 
         //snippet 61 - check SizeLimitedCrate class too
@@ -446,7 +446,7 @@ public class Main{
 //        Elephant elephant = new Elephant();
 //        Integer numPounds = 15_000;
 //        SizeLimitedCrate<Elephant, Integer> c1
-//                = new SizeLimitedCrate<>(elephant, numPounds);
+//                = new SizeLimitedCrate<x  >(elephant, numPounds);
 
         //snippet 59 - check LongTailAnimal class
 

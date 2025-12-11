@@ -14,6 +14,6 @@ public class UseTreeSet {
         //for snippet 53
 
 //        Set<Rabbit> rabbits2 = new TreeSet<>((r1, r2) -> r1.id - r2.id);
-//        rabbits.add(new Rabbit());
+//        rabbits2.add(new Rabbit());
     }
 }
