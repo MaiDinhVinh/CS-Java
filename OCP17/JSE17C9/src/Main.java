@@ -39,9 +39,9 @@ public class Main{
 
     //for snippet 83
 
-    <T> T first(List<? extends T> list) {
-        return list.get(0);
-    }
+//    <T> T first(List<? extends T> list) {
+//        return list.get(0);
+//    }
 
     //for snippet 84
 
