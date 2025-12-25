@@ -711,7 +711,8 @@ public class Main{
 
 //        var ohMy = Stream.of("lions", "tigers", "bears");
 //        var map = ohMy.collect(groupingBy(String::length,
-//                Collectors.mapping(s -> s.charAt(0), minBy((a, b) -> a - b))));
+//                Collectors.mapping(s -> s.charAt(0),
+//                        minBy((a, b) -> a - b))));
 //        System.out.println(map); //error ?
 
         //snippet 100 - check Main3
