@@ -4,13 +4,21 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.text.DecimalFormat;
+import java.text.MessageFormat;
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Properties;
+import java.util.ResourceBundle;
 import java.util.Scanner;
+import java.util.stream.Stream;
+
+import static java.time.format.FormatStyle.SHORT;
 
 public class Main {
     //for snippet 1
@@ -173,7 +181,29 @@ public class Main {
         }
     }
 
+    //for snippet 79
 
+    public static void print(DateTimeFormatter dtf,
+                             LocalDateTime dateTime, Locale locale) {
+        System.out.println(dtf.format(dateTime) + " --- "
+                + dtf.withLocale(locale).format(dateTime));
+    }
+
+    //for snippet 80
+
+    public static void printCurrency(Locale locale, double money) {
+        System.out.println(
+                NumberFormat.getCurrencyInstance().format(money)
+                        + ", " + locale.getDisplayLanguage());
+    }
+
+    //for snippet 83
+
+    public static void printWelcomeMessage(Locale locale) {
+        var rb = ResourceBundle.getBundle("Zoo", locale);
+        System.out.println(rb.getString("hello")
+                + ", " + rb.getString("open"));
+    }
 
     public static void main(String[] args) {
         //snippet 1 - check indexOf method above
@@ -349,6 +379,7 @@ public class Main {
 //        try (MyFileClass is = new MyFileClass(1),
 //                os = new MyFileClass(2)) {
 //        }
+//
 //        try (MyFileClass ab = new MyFileClass(1),
 //                MyFileClass cd = new MyFileClass(2)) {
 //        }
@@ -535,6 +566,194 @@ public class Main {
         //snippet 66
 
 //        DateTimeFormatter.ofPattern("'Time is: hh:mm: ");
+
+
+        /////////////////////////////////
+        /// SECTION 2
+        /////////////////////////////////
+
+        //snippet 67
+
+//        Locale locale = Locale.getDefault();
+//        System.out.println(locale);
+
+        //snippet 68
+
+//        System.out.println(Locale.GERMAN);
+//        System.out.println(Locale.GERMANY);
+
+        //snippet 69
+
+//        System.out.println(new Locale("fr"));
+//        System.out.println(new Locale("hi", "IN"));
+
+        //snippet 70
+
+//        Locale l1 = new Locale.Builder()
+//                .setLanguage("en")
+//                .setRegion("US")
+//                .build();
+//
+//        Locale l2 = new Locale.Builder()
+//                .setRegion("US")
+//                .setLanguage("en")
+//                .build();
+
+        //snippet 71
+
+//        System.out.println(Locale.getDefault());
+//        Locale locale = new Locale("fr");
+//        Locale.setDefault(locale);
+//        System.out.println(Locale.getDefault());
+
+        //snippet 72
+
+//        int attendeesPerYear = 3_200_000;
+//        int attendeesPerMonth = attendeesPerYear / 12;
+//        var us = NumberFormat.getInstance(Locale.US);
+//        System.out.println(us.format(attendeesPerMonth));
+//        var gr = NumberFormat.getInstance(Locale.GERMANY);
+//        System.out.println(gr.format(attendeesPerMonth));
+//        var ca = NumberFormat.getInstance(Locale.CANADA_FRENCH);
+//        System.out.println(ca.format(attendeesPerMonth));
+
+        //snippet 73
+
+//        double price = 48;
+//        var myLocale = NumberFormat.getCurrencyInstance();
+//        System.out.println(myLocale.format(price));
+
+        //snippet 74
+
+//        double successRate = 0.802;
+//        var us = NumberFormat.getPercentInstance(Locale.US);
+//        System.out.println(us.format(successRate));
+//        var gr = NumberFormat.getPercentInstance(Locale.GERMANY);
+//        System.out.println(gr.format(successRate));
+
+        //snippet 75
+
+//        try{
+//            String s = "40.45";
+//            var en = NumberFormat.getInstance(Locale.US);
+//            System.out.println(en.parse(s));
+//            var fr = NumberFormat.getInstance(Locale.FRANCE);
+//            System.out.println(fr.parse(s)); //explain the lost of ... ? france decimal
+//        }catch(ParseException e){
+//            e.printStackTrace();
+//        }
+
+        //snippet 76
+
+//        try{
+//            String income = "$92,807.99";
+//            var cf = NumberFormat.getCurrencyInstance();
+//            double value = (Double) cf.parse(income);
+//            System.out.println(value);
+//        }catch(ParseException e){
+//            e.printStackTrace();
+//        }
+
+        //snippet 77
+
+//        var formatters = Stream.of(
+//                NumberFormat.getCompactNumberInstance(),
+//                NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.SHORT),
+//                NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.LONG),
+//                NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.SHORT),
+//                NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.LONG),
+//                NumberFormat.getNumberInstance());
+//
+//        formatters.map(s -> s.format(7_123_456)).forEach(System.out::println); //explain deeper
+
+        //snippet 78
+
+//        var formatters = Stream.of(
+//        NumberFormat.getCompactNumberInstance(),
+//        NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.SHORT),
+//        NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.LONG),
+//        NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.SHORT),
+//        NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.LONG),
+//        NumberFormat.getNumberInstance());
+//
+//        formatters.map(s -> s.format(314_900_000)).forEach(System.out::println);
+
+        //snippet 79 - check method print above too
+
+//        Locale.setDefault(new Locale("en", "US"));
+//        var italy = new Locale("it", "IT");
+//        var dt = LocalDateTime.of(2022, Month.OCTOBER, 20, 15, 12, 34);
+//        print(DateTimeFormatter.ofLocalizedDate(SHORT),dt,italy);
+//        print(DateTimeFormatter.ofLocalizedTime(SHORT),dt,italy);
+//        print(DateTimeFormatter.ofLocalizedDateTime(SHORT,SHORT),dt,italy);
+
+        //snippet 80 - check printCurrency method above
+
+//        var spain = new Locale("es", "ES");
+//        var money = 1.23;
+//        Locale.setDefault(new Locale("en", "US"));
+//        printCurrency(spain, money);
+//        Locale.setDefault(Locale.Category.DISPLAY, spain);
+//        printCurrency(spain, money);
+//        Locale.setDefault(Locale.Category.FORMAT, spain);
+//        printCurrency(spain, money);
+
+        //snippet 81
+
+//        Locale us = new Locale("en", "US");
+//        Locale france = new Locale("fr", "FR");
+//        Locale englishCanada = new Locale("en", "CA");
+//        Locale frenchCanada = new Locale("fr", "CA");
+
+        //snippet 82 - check US and France prop files
+
+        //snippet 83 - check printWelcomeMessage method above too
+
+//        var us = new Locale("en", "US");
+//        var france = new Locale("fr", "FR");
+//        printWelcomeMessage(us);
+//        printWelcomeMessage(france);
+
+        //snippet 84
+
+//        var us = new Locale("en", "US");
+//        ResourceBundle rb = ResourceBundle.getBundle("Zoo", us);
+//        rb.keySet().stream()
+//                .map(k -> k + ": " + rb.getString(k))
+//                .forEach(System.out::println);
+
+        //snippet 85 - check Test1 resource bundle folder too
+
+//        Locale.setDefault(new Locale("en", "US"));
+//        Locale locale = new Locale("en", "CA");
+//        ResourceBundle rb = ResourceBundle.getBundle("Test1", locale);
+//        System.out.print(rb.getString("hello"));
+//        System.out.print(". ");
+//        System.out.print(rb.getString("name"));
+//        System.out.print(" ");
+//        System.out.print(rb.getString("open"));
+//        System.out.print(" ");
+//        System.out.print(rb.getString("visitors"));
+
+        //snippet 86 - check Test2 resource bundle prop file too
+
+//        ResourceBundle rb = ResourceBundle.getBundle("Test2");
+//        String format = rb.getString("helloByName");
+//        System.out.print(MessageFormat.format(format, "Tammy", "Henry"));
+
+        //snippet 87
+
+//        var props = new Properties();
+//        props.setProperty("name", "Our zoo");
+//        props.setProperty("open", "10am");
+
+        //snippet 88
+
+//        var props = new Properties();
+//        props.setProperty("name", "Our zoo");
+//        props.setProperty("open", "10am");
+//        props.get("open");
+//        props.get("open", "The zoo will be open soon");
     }
 }
 class AnimalsOutForAWalk extends RuntimeException {}
