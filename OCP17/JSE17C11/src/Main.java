@@ -647,7 +647,8 @@ public class Main {
 
 //        try{
 //            String income = "$92,807.99";
-//            var cf = NumberFormat.getCurrencyInstance();
+//            Locale lc = new Locale("en", "US");
+//            var cf = NumberFormat.getCurrencyInstance(lc);
 //            double value = (Double) cf.parse(income);
 //            System.out.println(value);
 //        }catch(ParseException e){
@@ -658,25 +659,36 @@ public class Main {
 
 //        var formatters = Stream.of(
 //                NumberFormat.getCompactNumberInstance(),
-//                NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.SHORT),
-//                NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.LONG),
-//                NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.SHORT),
-//                NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.LONG),
+//                NumberFormat.getCompactNumberInstance(
+//                        Locale.getDefault(), NumberFormat.Style.SHORT),
+//                NumberFormat.getCompactNumberInstance(
+//                        Locale.getDefault(), NumberFormat.Style.LONG),
+//                NumberFormat.getCompactNumberInstance(
+//                        Locale.GERMAN, NumberFormat.Style.SHORT),
+//                NumberFormat.getCompactNumberInstance(
+//                        Locale.GERMAN, NumberFormat.Style.LONG),
 //                NumberFormat.getNumberInstance());
 //
-//        formatters.map(s -> s.format(7_123_456)).forEach(System.out::println); //explain deeper
+//        formatters.map(
+//                s -> s.format(7_123_456))
+//                .forEach(System.out::println); //explain deeper
 
         //snippet 78
 
 //        var formatters = Stream.of(
 //        NumberFormat.getCompactNumberInstance(),
-//        NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.SHORT),
-//        NumberFormat.getCompactNumberInstance(Locale.getDefault(), NumberFormat.Style.LONG),
-//        NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.SHORT),
-//        NumberFormat.getCompactNumberInstance(Locale.GERMAN, NumberFormat.Style.LONG),
+//        NumberFormat.getCompactNumberInstance
+//                (Locale.getDefault(), NumberFormat.Style.SHORT),
+//        NumberFormat.getCompactNumberInstance
+//                (Locale.getDefault(), NumberFormat.Style.LONG),
+//        NumberFormat.getCompactNumberInstance
+//                (Locale.GERMAN, NumberFormat.Style.SHORT),
+//        NumberFormat.getCompactNumberInstance
+//                (Locale.GERMAN, NumberFormat.Style.LONG),
 //        NumberFormat.getNumberInstance());
 //
-//        formatters.map(s -> s.format(314_900_000)).forEach(System.out::println);
+//        formatters.map(s -> s.format
+//                (314_900_000)).forEach(System.out::println);
 
         //snippet 79 - check method print above too
 
