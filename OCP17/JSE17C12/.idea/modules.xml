@@ -3,10 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JSE17C12.iml" filepath="$PROJECT_DIR$/JSE17C12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agency/agency.iml" filepath="$PROJECT_DIR$/agency/agency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/care/care.iml" filepath="$PROJECT_DIR$/care/care.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dinos/dinos.iml" filepath="$PROJECT_DIR$/dinos/dinos.iml" />
       <module fileurl="file://$PROJECT_DIR$/feeding/feeding.iml" filepath="$PROJECT_DIR$/feeding/feeding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reservations/reservations.iml" filepath="$PROJECT_DIR$/reservations/reservations.iml" />
       <module fileurl="file://$PROJECT_DIR$/staff/staff.iml" filepath="$PROJECT_DIR$/staff/staff.iml" />
       <module fileurl="file://$PROJECT_DIR$/talks/talks.iml" filepath="$PROJECT_DIR$/talks/talks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/visitor/visitor.iml" filepath="$PROJECT_DIR$/visitor/visitor.iml" />
     </modules>
   </component>
 </project>
