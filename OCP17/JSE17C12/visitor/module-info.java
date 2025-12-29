@@ -1,0 +1,5 @@
+// module-info.java
+module zoo.visitor {
+    requires zoo.tours.api;
+    requires zoo.tours.reservations;
+}
