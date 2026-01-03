@@ -66,7 +66,7 @@ public class Main {
 
         //snippet 30 - check zoo.tours.agency mod-info
 
-        //snipept 31 - compile and jarthe zoo.tours.agency module
+        //snipept 31 - compile and jar the zoo.tours.agency module
 
         //snippet 32 - run the java command on feeding module
 
@@ -89,5 +89,7 @@ public class Main {
         //snippet 41 - run jdeps with .. flag on Animatronic jar
 
         //snippet 42 - run jlnk with talks module
+
+        //snippet 43 - check zoo.butterfly and zoo.caterpillar module
     }
 }
