@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/JSE17C12.iml" filepath="$PROJECT_DIR$/JSE17C12.iml" />
       <module fileurl="file://$PROJECT_DIR$/agency/agency.iml" filepath="$PROJECT_DIR$/agency/agency.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterfly/butterfly.iml" filepath="$PROJECT_DIR$/butterfly/butterfly.iml" />
       <module fileurl="file://$PROJECT_DIR$/care/care.iml" filepath="$PROJECT_DIR$/care/care.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caterpillar/caterpillar.iml" filepath="$PROJECT_DIR$/caterpillar/caterpillar.iml" />
       <module fileurl="file://$PROJECT_DIR$/dinos/dinos.iml" filepath="$PROJECT_DIR$/dinos/dinos.iml" />
       <module fileurl="file://$PROJECT_DIR$/feeding/feeding.iml" filepath="$PROJECT_DIR$/feeding/feeding.iml" />
       <module fileurl="file://$PROJECT_DIR$/reservations/reservations.iml" filepath="$PROJECT_DIR$/reservations/reservations.iml" />
