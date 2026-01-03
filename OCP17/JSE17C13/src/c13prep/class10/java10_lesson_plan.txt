@@ -1,0 +1,111 @@
+credit to: Jim Wilson
+
+Multithreading and Concurrency
+e.g. 
+the PHP project built by 1 person vs 10 persons
+
+slide 4, 5: process vs. thread
+	Windows has multiple processes running at the same time (show task manager)
+	windows 7 task manager shows #process and #thread
+	process bears threads (threads are process' children)
+
+slide 6, 7, 8: (optional) single threaded, multi-threading and concurrency 
+	concurrency is when multi threads request the same resources
+	e.g. when building a house, different builders need to get water at the same time
+	
+
+slide 9: benefits of multithreading
+
+Exp Adder.java (thread.sleep(1000))
+demo: it takes ~6000ms to complete
+
+demo (not exp): AdderRunnable.java takes ~1000ms to complete
+slide 12, 13 to exp the background knowledge
+
+Exp AdderRunnable.java (Runnable + Thread classes to run multithreading)
+implements Runnable/run()
+Thread array, start(), join()
+***comment join() to see mis-management
+
+===>Managing threads is a NIGHTMARE (slide 24)
+===>Let Java do the management job i.e. Thread Pool: ExecutorService / Executors class (slide 25, 26)
+	e.g. when building a house, we only care how many workers there are. 
+		How the workers works together is managed by their supervisor NOT US
+
+Exp AdderThreadPool.java (analog analogous to ***SWIMMING POOL WITH MULTIPLE LANES***)
+	
+	***thread may die, can't read files, infinite loop...
+	***==>ThreadPool will manage threads
+
+
+	tasks will be QUEUED for available lanes to swim
+	after tasks swim to the end, lanes are` free
+	other tasks can use free lanes
+
+	ExecutorService es = Executors.newFixedThreadPool(3);	
+
+	/**
+	 * submit a task to executor
+	 * it starts doing its work 
+	 * if there is an available thread in the pool
+	 */
+	es.submit(adder);
+
+	/**
+	 * signal all tasks finish and shutdown gracefully, 
+	 * no new task accepted
+	 * this has to be called, otherwise main will never end
+	 * even if all tasks has been completed
+	 */
+	es.shutdown(); 
+	
+	/**
+	 * it should be called after es.shutdown(),
+	 * es will let all tasks to finish first
+	 * by the time provided, if there is any task still running
+	 * es kills the task
+	 * 
+	 */
+	es.awaitTermination(15, TimeUnit.SECONDS); 
+	
+===> threads are working INDEPENDENTLY (loosely coupled)
+===> we need to know the results of their works.
+
+slide 31, 32: results/exceptions are stored in memory. Undesirable
+
+slide 33, 34: results/exceptions are returned to main
+
+slide 35: Callable instead of Runnable to return results
+			Future to collect the results
+
+
+Exp AdderWithReturn.java
+	Future<Integer>[] results = new Future[6];
+	
+	/**
+	 * submit a task to executor
+	 * it starts doing its work 
+	 * if there is an available thread in the pool
+	 * result will be returned to a future
+	 */
+	results[i] = es.submit(adder);
+
+	/**
+	 * the future requests result
+	 * it waits if necessary for the correspondent tasks to complete, 
+	 * and then retrieves its result.
+	 */
+	int value = results[i].get(); 
+
+
+	/**
+	 * Exception raised in Adder
+	 */
+	Throwable addEx = e.getCause();
+	System.err.println(addEx.getMessage());
+	
+
+Summary: diff files to compare
+	Adder vs. AdderRunnable
+	AdderRunnable vs. AdderThreadPool
+	AdderThreadPool vs. AdderWithReturn

@@ -1,0 +1,58 @@
+For each task, create a new class implementing Runnable or Callable.
+
+Each object of the class reads a file of football-match details in 1 Premier League season
+(Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR) //read note.txt for abbreviation meanings
+ 
+Find the result using multithreading and lambda
+
+/**Runnable*/
+~~
+Sout (System.out.println) the number of draw matches in each season
+//sout
+PL2016-17: xxx draw matches
+PL2017-18: yyy draw matches
+
+
+~~
+Sout the number of matches in which HomeTeam won in HTR but lost in FTR
+//sout 
+PL2016-17: xxx matches HomeTeam won in HTR but lost in FTR
+PL2017-18: yyy matches HomeTeam won in HTR but lost in FTR
+
+
+~~
+Sout the total goals both teams scored in the season
+//sout 
+PL2016-17: xxx goals
+PL2017-18: yyy goals
+
+~~
+Sout the number of matches which had the most goals
+//sout 
+PL2016-17: xxx matches had the most goals of ??? goals
+PL2017-18: yyy matches had the most goals of ??? goals
+
+
+/**Callable and Future*/
+~~
+Sout the total number of goals Arsenal scored in 6 seasons
+//sout
+Arsenal scored xxx goals in 6 seasons
+
+
+~~
+Sout the total number of matches that Liverpool (as both hometeam and awayteam) won in 6 seasons 
+//sout
+Liverpool won xxx matches in 6 seasons
+
+
+~~
+Sout the season in which Chelsea scored the least number of goals (as both hometeam and awayteam)
+//sout
+Chelsea scored the least goals of xxx in season yyyy
+
+
+~~
+Sout the total number of matches that "Man United" won as hometeam from September to December in all 6 seasons.
+//sout
+Man United won xxx matches as hometeam from September to December in all 6 seasons

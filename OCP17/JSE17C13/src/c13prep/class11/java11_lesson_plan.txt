@@ -1,0 +1,36 @@
+###Synchronized Method###
+Exp context: bank account and worker
+	acct: 100
+	5 workers, each collect 10 for 10 times -> total 500
+	finally, acct: 600
+
+Exp how to shutdown ExecutorService properly
+
+==>acct is not guaranteed to be 600.
+
+***What goes wrong?***
+Concurrency issue
+
+Exp slide 51 by using 2 threads for demonstration
+
+slide 54: Coordinating threads
+	synchronized keyword to protect shared resources
+
+exp BankAccountSM.java (diff if needed)  to show synchronized method
+	not much difference in WorkerSM.java
+
+
+###Synchronized Block###
+exp context: 
+	bankaccount with withdrawal
+	promoworker: if deposit > 500, get 10% of surplus
+	2 promoworkers run in main
+
+==> not always the same result
+==> synchronized method is not enough
+==> synchronized block
+
+Exp PromoWorkerSB.java
+	synchronized(account): lock account for 1 worker at a time
+
+Diff PromoWorker and PromoWorkerSB if needed
