@@ -3,11 +3,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SheepManager5 {
-    private AtomicInteger sheepCount = new AtomicInteger(0);
+    private int sheepCount = 0;
     private final Object herb = new Object();
     private void incrementAndReport() {
         synchronized (herb){
-            System.out.print(sheepCount.incrementAndGet()+" ");
+            System.out.print(++sheepCount+" ");
         }
     }
 
