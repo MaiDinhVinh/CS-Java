@@ -5,17 +5,17 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SheepManager5 {
     private int sheepCount = 0;
     private final Object herb = new Object();
-    private void incrementAndReport() {
-        synchronized (herb){
-            System.out.print(++sheepCount+" ");
-        }
-    }
+//    private void incrementAndReport() {
+//        synchronized (herb){
+//            System.out.print(++sheepCount+" ");
+//        }
+//    }
 
     //for snippet 21
 
-//    private synchronized void incrementAndReport() {
-//        System.out.print(sheepCount.incrementAndGet()+" ");
-//    }
+    private synchronized void incrementAndReport() {
+        System.out.print(++sheepCount+" ");
+    }
 
     //for snippet 22
 
