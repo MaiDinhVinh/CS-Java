@@ -28,16 +28,10 @@ class a{
 
     public void increment(Lock l, int i) {
         try{
-            if(l.tryLock(5, TimeUnit.SECONDS)){
-                System.out.println("not protected");
-                try{
-                    this.a += i;
-                }finally{
-                    l.unlock();
-                }
-            }else System.out.println("protected");
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            l.lock();
+            this.a += i;
+        }finally{
+            l.unlock();
         }
     }
     @Override
