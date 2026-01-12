@@ -2,7 +2,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Main4{
-
     public static void printHello(Lock lock) {
         try {
             lock.lock();
