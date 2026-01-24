@@ -167,7 +167,8 @@ public class Main{
     private void copyPath(Path input, Path output) throws IOException {
         try (var reader = Files.newBufferedReader(input);
              var writer = Files.newBufferedWriter(output)) {
-            String line = null;while ((line = reader.readLine()) != null)
+            String line = null;
+            while ((line = reader.readLine()) != null)
                 writer.write(line);
             writer.newLine();
         }
@@ -260,7 +261,6 @@ public class Main{
     public static long getPathSize(Path source) throws IOException {
         try (var s = Files.walk(source)) {
             return s.parallel()
-                    .filter(p -> !Files.isDirectory(p))
                     .mapToLong(path -> getSize(path))
                     .sum();
         }
@@ -269,7 +269,7 @@ public class Main{
     //for snippet 84
 
     public static long getPathSize2(Path source) throws IOException {
-        try (var s = Files.walk(source, 10, FileVisitOption.FOLLOW_LINKS)) {
+        try (var s = Files.walk(source, FileVisitOption.FOLLOW_LINKS)) {
             return s.parallel()
                     .filter(p -> !Files.isDirectory(p))
                     .mapToLong(path -> getSize(path))
@@ -589,11 +589,11 @@ public class Main{
 //                        new FileInputStream("/Users/ducksabervn/DATA/hoc hanh/hoc them/comp sci/CS-Java/OCP17/JSE17C14/src/zoo-data.txt")))) {
 //            System.out.print(ois.readObject());
 //        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
+//            e.printStackTrace();
 //        } catch (IOException e) {
-//            throw new RuntimeException(e);
+//            e.printStackTrace();
 //        } catch (ClassNotFoundException e) {
-//            throw new RuntimeException(e);
+//            e.printStackTrace();
 //        }
 
         //snippet 41
