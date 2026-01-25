@@ -445,16 +445,17 @@ public class Main{
 
         //snippet 36
 
-        var sql = "SELECT not_a_column FROM names";
-        var url = "jdbc:hsqldb:zoo";
-        try (var conn = DriverManager.getConnection(url);
-             var ps = conn.prepareStatement(sql);
-             var rs = ps.executeQuery()) {while (rs.next())
-            System.out.println(rs.getString(1));
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-            System.out.println(e.getSQLState());
-            System.out.println(e.getErrorCode());
-        }
+//        var sql = "SELECT not_a_column FROM names";
+//        var url = "jdbc:hsqldb:zoo";
+//        try (var conn = DriverManager.getConnection(url);
+//             var ps = conn.prepareStatement(sql);
+//             var rs = ps.executeQuery()) {
+//            while (rs.next())
+//                System.out.println(rs.getString(1));
+//        } catch (SQLException e) {
+//            System.out.println(e.getMessage());
+//            System.out.println(e.getSQLState());
+//            System.out.println(e.getErrorCode());
+//        }
     }
 }
