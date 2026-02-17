@@ -21,3 +21,8 @@
 - Finally, after 8 months of waiting, I finally did it :))
 **achieved on Dec, 27. 2024**
 ![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCA-eCertificate.png)
+
+
+**Oracle Certified Professional**
+>2000 commits, it's time to say goodbye. This is the beginning of the end
+![](https://github.com/MaiDinhVinh/CS-Java/blob/main/OCP17-eCertificate.png)
